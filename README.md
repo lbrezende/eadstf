@@ -29,7 +29,7 @@ git add -A (para incluir arquivos, caso tenha criado imagens)
 git commit -am "comentario" (para comitar)
 
 git push origin gh-pages (para subir)
-```bash
+```
 
 
 
