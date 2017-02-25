@@ -3744,13 +3744,13 @@ small {
 .btn, .btn-large {
   text-decoration: none;
   color: #fff;
-  background-color: #D77560 !important;
+  background-color: #048f9c !important;
   text-align: center;
   letter-spacing: .5px;
   transition: .2s ease-out;
   cursor: pointer; }
   .btn:hover, .btn-large:hover {
-    background-color: #D77560 !important; }
+    background-color: #048f9c !important; }
 
 .btn-floating {
   display: inline-block;
