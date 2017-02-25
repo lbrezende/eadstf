@@ -3215,7 +3215,7 @@ table.quadro4 td.accent, table.quadro4 .quadro3 th.accent, .quadro3 table.quadro
     border-bottom-right-radius: 1.7;
     text-align: center; }
   header.page-header #titulo_aula.active {
-    top: 124px; 
+    top: 36px; 
     margin-top: 20px;
     }
 
@@ -3275,7 +3275,7 @@ table.quadro4 td.accent, table.quadro4 .quadro3 th.accent, .quadro3 table.quadro
     font-size: 1.5rem;
     padding: 5px 15px; }
   header.page-header #titulo_aula.active {
-    top: 95px; }
+    top: 36px; }
   header.page-header .brand-logo {
     font-family: "Bignoodletitling", sans-serif;
     top: 56px;
