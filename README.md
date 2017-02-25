@@ -10,22 +10,26 @@ Após clonar o repositório, altere para branch gh-pages. Se esqueceu como é, i
 
 #1 Baixe o repositório
 
-`git init
+```bash
+git init
 
 git clone https://github.com/lbrezende/eadstf.git
 
 git branch gh-pages
 
-git pull`
+git pull
+```
 
 
 #2 Submeta as alterações
 
-`git add -A (para incluir arquivos, caso tenha criado imagens)
+```bash
+git add -A (para incluir arquivos, caso tenha criado imagens)
 
 git commit -am "comentario" (para comitar)
 
-git push origin gh-pages (para subir)`
+git push origin gh-pages (para subir)
+```bash
 
 
 
