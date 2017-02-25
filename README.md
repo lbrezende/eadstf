@@ -20,6 +20,12 @@ git branch gh-pages
 git pull
 ```
 
+Depois de rodar isso uma vez, sempre que quiser baixar as alterações basta:
+
+```bash
+git pull
+```
+
 
 #2 Submeta as alterações
 
