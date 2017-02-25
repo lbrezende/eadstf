@@ -1956,33 +1956,33 @@ strong {
   background-image: url(../img/modelas.png);
   background-repeat: no-repeat;
   background-position: 160px center;
-  background-color: #E2D8C8; }
+  background-color: #EE7124; }
   #mainMenu .header {
     width: 100%;
     text-align: center; 
-    background: #CBC5AD;
+    background: #FFF;
     }
     #mainMenu .header img {
       width: 80%;
       max-width: 225px;
       height: auto;
-      margin: 10px auto -30px; }
+      margin: 10px auto -24px; }
   #mainMenu li a {
     height: auto;
     font-size: 1.6rem;
     line-height: 2.0em;
     font-family: "Bignoodletitling", sans-serif;
-    background: #CBC5AD;
+    background: #EC620D;
     margin: 1px auto;
     padding: 0px 20px;
-    color: #000;
+    color: #FFF;
     /*text-shadow: -2px 2px 2px rgba(0,0,0,1.00);*/ }
   #mainMenu li a:hover {
-    background-color: #E2D8C8;
-    color: #000; }
+    background-color: #EE7124;
+    color: #FFF; }
   #mainMenu li a.active {
-    background-color: #E2D8C8;
-    color: #000; }
+    background-color: #EE7124;
+    color: #FFF; }
   #mainMenu li .numero {
     display: inline-block;
     width: 0.8em;
@@ -2185,7 +2185,7 @@ main {
   margin: -50px 0px 0px -50px; }
 
 .capa {
-  background-color: #CBC5AD;
+  background-color: #FFF;
   font-family: "Utsaah", sans-serif; }
 
 article {
