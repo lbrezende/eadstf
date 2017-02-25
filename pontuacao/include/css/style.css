@@ -89,10 +89,10 @@
   color: #BAE9E7 !important; }
 
 .custom1.lighten-1 {
-  background-color: #A2C1AC !important; }
+  background-color: #048f9c !important; }
 
 .custom1-text.text-lighten-1 {
-  color: #A2C1AC !important; }
+  color: #048f9c !important; }
 
 .custom1.darken-1 {
   background-color: #6FC8B9 !important; }
@@ -2085,7 +2085,7 @@ header.page-header {
     top: -100%;
     left: 0px;
     /*background: #D2565C;*/
-    background:#A2C1AC;
+    background:#048f9c;
     font-family: "Bignoodletitling", sans-serif;
     font-size: 1.8rem;
     padding: 10px 35px;
@@ -2339,8 +2339,8 @@ h2:before {
 
 h3 {
   font-family: "Bignoodletitling", sans-serif;
-  background: #A2C1AC;
-  color: #000;
+  background: #048f9c;
+  color: #FFF;
   padding: 0.2rem 2.5rem;
   font-size: 2.5em; }
 
@@ -3195,7 +3195,7 @@ table.quadro4 td.accent, table.quadro4 .quadro3 th.accent, .quadro3 table.quadro
     transform: none;
     align-content: center;
     justify-content: center;
-    background: #A2C1AC;
+    background: #048f9c;
     z-index: 0;
     line-height: 2.0; }
     .logoPequena{
@@ -3449,7 +3449,7 @@ article p i {
    margin-right: 20px; 
   }
   .dica{
-  background-color: #A2C1AC;
+  background-color: #048f9c;
    margin-left: 20px; 
    margin-right: 20px; 
    max-height: 49px;
