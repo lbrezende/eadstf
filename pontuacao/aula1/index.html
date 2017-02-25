@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR" class="js no-touch cssanimations csstransforms csstransforms3d csstransitions ui-mobile">
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Aula 1 - Caminhos da pontuação | Entenda as orações adjetivas</title>
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0"> 
+
+	<link href="include/css/icon.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="include/css/bookblock.css">
+	<link rel="stylesheet" type="text/css" href="include/css/materialize.css">
+	<link rel="stylesheet" href="include/fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="include/css/style.css">	<link rel="stylesheet" type="text/css" href="include/css/aula1.css">
+	
+	<script src="include/js/modernizr.custom.79639.js"></script>
+	<script src="include/js/jquery-2.1.1.min.js"></script>
+	<script src="include/js/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="include/js/materialize.min.js"></script>
+	
+</head>
+
+<body class="ui-mobile-viewport ui-overlay-a" cz-shortcut-listen="true"><div data-role="page" data-url="" tabindex="0" class="ui-page ui-page-theme-a ui-page-active" style="min-height: 815px;">
+	<header class="page-header">
+		<nav aria-label="Menu principal">
+			<div class="brand-logo"><!-- antes tava display none se fosse height menos de 500px-->
+			<img src="include/images/ead_setas.png" style="max-height:60px;margin-right:10px;" class="" /><img class="" src="include/images/ead_logo.png" style="max-height:60px;" />&nbsp; <h1 style="float:right;" class="deslocaTitulo"><span class="bignoodle">Redação</span> <span class="nick">Argumentativa</span></h1>
+			<!--<img src="include/images/logo.png" style="max-height:60px;" class="" />&nbsp; <h1 style="float:right;" class="deslocaTitulo"><span class="bignoodle">Redação</span> <span class="nick">Argumentativa</span></h1>-->
+			</div>
+
+				<ul class="navegacao right">
+					<li id="bb-nav-prev" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Página anterior" data-tooltip-id="acbd782c-fba5-927f-6e88-83b253853abf">
+						<a class="waves-effect waves-light ui-link">
+							<span class="material-icons">chevron_left</span>
+							<span class="screen-reader-text">Página anterior</span>
+						</a>
+					</li>
+					<li id="bb-nav-next" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Próxima página" data-tooltip-id="5020c8e3-3c0c-2bca-f36d-94e72c082594">
+						<a class="waves-effect waves-light ui-link">
+							<span class="material-icons">chevron_right</span>
+							<span class="screen-reader-text">Próxima página</span>
+						</a>
+					</li>
+				</ul>
+			
+				<div class="pages right" role="status">
+					<span class="screen-reader-text">Página atual: </span>
+					<span class="page page-atual">2</span>
+					<span class="screen-reader-text"> de </span>
+					<span class="separa" aria-hidden="true">/</span>
+					<span class="page page-total">25</span>
+				</div>
+
+				<ul class="font-config right" aria-hidden="true">
+					<li>
+						<a class="tooltipped a-menos ui-link" data-position="bottom" data-delay="50" data-tooltip="Diminuir fonte" data-action="-1" data-tooltip-id="e9820861-feb1-9e78-4a23-c767e2bc6643">
+							A-
+						</a>
+					</li>
+					<li>
+						<a class="tooltipped a-zero ui-link" data-position="bottom" data-delay="50" data-tooltip="Retomar tamanho padrão da fonte" data-action="0" data-tooltip-id="defa175e-2118-0699-3fde-a7b6880fe102">
+							A
+						</a>
+					</li>
+					<li>
+						<a class="tooltipped a-mais ui-link" data-position="bottom" data-delay="50" data-tooltip="Aumentar fonte" data-action="+1" data-tooltip-id="a92f2a81-9a17-0569-6a06-ed3723861db2">
+							A+
+						</a>
+					</li>
+					<li class="separador">
+					</li>
+				</ul>
+				<script>
+				$(document).ready(function()
+				{
+					$('.font-config').on('click','a',null,function(e)
+					{
+						var action = $(this).data('action');
+						if ($(this).hasClass('disabled'))
+						{
+							e.preventDefault();
+							e.stopPropagation();
+							return false;
+						}
+						var padrao = ($('article').parent().css('font-size'));
+						var atual = ($('article').css('font-size'));
+						padrao = Number(padrao.replace('px',''));
+						atual = Number(atual.replace('px',''));
+				
+						var size = Number(atual/padrao);
+						switch (action.toString()) {
+							case '+1':
+								size *= 1.2;
+								break;
+							case '-1':
+								size *= 0.9;
+								break;
+							case '0':
+							default:
+								size = 1;
+								break;
+						}
+						console.log(size);
+				
+						if (size < .7)
+						{
+							size = 0.7;
+							$('.font-config a-menos').addClass('disabled');
+						}
+						else if (size > 2)
+						{
+							size = 2.0;
+							$('.font-config a-mais').addClass('disabled');
+						}
+						else
+						{
+							$('.font-config a-menos').removeClass('disabled');
+							$('.font-config a-mais').removeClass('disabled');
+						}
+						
+						$('article').css('font-size',size+'em');
+					});
+				})
+				</script>
+				<ul id="mainMenu" class="side-nav" role="menu" style="width: 320px; transform: translateX(-100%);">
+					<li class="header" aria-hidden="true">
+						<a class="close ui-link">
+							<span class="material-icons">close</span>
+						</a>
+						<img src="include/images/sumario.png" alt="imagem do sumário" role="presentation" style="max-width:225px" />
+					</li>
+					
+										
+					<li>
+						<a href="index.html#00-1-intro" data-target="00-1-intro" data-aula="" role="menuitem" class="ui-link">
+							Página inicial							
+						</a>
+					</li>
+					
+				
+					<li>
+						<a href="index.html#01-0-introducao" data-target="01-0-introducao" data-aula="Orçamento Público" role="menuitem" class="ui-link">
+							Dissertação							
+						</a>
+					</li>
+					
+					<li>
+						<a href="index.html#02-01-definicao" data-target="02-01-definicao" data-aula="Princípios Orçamentários" role="menuitem" class="ui-link">
+							<span class="numero">3.1&nbsp;</span>
+							Definição de dissertação
+						</a>
+					</li>
+					<li>
+						<a href="index.html#02-02-expositiva" data-target="02-02-expositiva" role="menuitem" class="ui-link">
+							<span class="numero">3.2&nbsp;</span>
+							Dissertação expositiva
+						</a>
+					</li>
+					<li>
+						<a href="index.html#02-03-analitica" data-target="02-03-analitica" role="menuitem" class="ui-link">
+							<span class="numero">3.3&nbsp;</span>
+							Dissertação analítica
+						</a>
+					</li>
+					<li>
+						<a href="index.html#02-04-estrutura" data-target="02-04-estrutura" role="menuitem" class="ui-link">
+							<span class="numero">3.4&nbsp;</span>
+							Estrutura básica do texto dissertativo
+						</a>
+					</li>
+					<li>
+						<a href="index.html#02-05-plano" data-target="02-05-plano" role="menuitem" class="ui-link">
+							<span class="numero">3.5&nbsp;</span>
+							Plano de dissertação
+						</a>
+					</li>
+					<li>
+						<a href="index.html#02-06-formas" data-target="02-06-formas" role="menuitem" class="ui-link">
+							<span class="numero">3.6&nbsp;</span>
+							Formas de desenvolver o conteúdo dissertativo
+						</a>
+					</li>
+					<li>
+						<a href="index.html#02-07-formasTexto" data-target="02-07-formasTexto" role="menuitem" class="ui-link">
+							<span class="numero">3.7&nbsp;</span>
+							Formas de desenvolver o texto argumentativo
+						</a>
+					</li>
+				
+					<li>
+						<a href="index.html#02-08-recursos" data-target="02-08-recursos" data-aula="" role="menuitem" class="ui-link">
+							<span class="numero">3.8&nbsp;</span>
+							Recursos expositivos
+						</a>
+					</li>
+					<li>
+						<a href="index.html#03-00-conclusao" data-target="03-00-conclusao" data-aula="" role="menuitem" class="ui-link">
+							Conclusão
+						</a>
+					</li>
+					<li>
+						<a href="index.html#04-00-bibliografia" data-target="04-00-bibliografia" data-aula="" role="menuitem" class="ui-link">
+							Bibliografia							
+						</a>
+					</li>
+				</ul>
+
+
+
+
+
+				<a href="index.html#" data-activates="mainMenu" id="tblcontents" class="btn waves-effect waves-light button-collapse show-on-large ui-link" aria-hidden="true"><span class="material-icons">menu</span></a>
+			</nav>
+			<script>
+			$(document).ready(function(){
+				$('.tooltipped').tooltip({delay: 50});
+			});
+			</script>		
+			<div id="titulo_aula" class="active"><h2>Aula 3 - Dissertação</h2></div>
+	</header>
+	
+	<main>
+		<div class="bb-custom-wrapper">
+			<div id="bb-bookblock" class="bb-bookblock" style="perspective: 2000px;" role="main">
+				<!-- página 1 - 00-1-intro -->
+				<div class="bb-item item-00-1-intro" id="00-1-intro" style="display: block;">
+					<div class="content">
+						<div class="scroller">
+							<article class="" id="intro">
+								<div class="container">
+									<div class="row text-center">
+										<center><img src="include/images/capa.png" class="full back-home" aria-hidden="true" alt="Imagem do título do curso de redação argumentativa" role="presentation" style="max-width:600px;"></center>
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+							<!-- página 25 - 04-00-bibliografia -->
+				<div class="bb-item item-00-2-introducao" id="00-2-introducao" style="display: none;">
+					<div class="content" >
+						<div class="scroller">
+							<article>
+								<div class="container fundoCaderno" style="">
+									<div class="row ">
+											<h3>Meta</h3>
+											<p>Apresentar os tipos de textos dissertativos.</p>
+											<p>Demonstrar como desenvolver o texto dissertativo de diversas formas.</p>
+									</div>
+									<div class="row">
+											<h3>Objetivos</h3>
+											<p>Ao final desta aula, você será capaz de:</p>
+											<ol class="bibliografia">
+												<li>Identificar os tipos de textos dissertativos;</li>
+												<li>Diferenciar o texto dissertativo-expositivo e o dissertativo-argumentativo;</li>
+												<li>Desenvolver o texto de acordo com o esquema básico dissertativo;</li>
+												<li>Empregar os recursos expositivos de acordo com a intenção comunicativa.</li>
+											</ol>
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+
+				<div class="bb-item item-01-0-introducao" id="01-0-introducao" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno">
+									<div class="row">
+										<h3>Introdução</h3>
+										<p><strong><em>Olá, caro aluno. É muito bom encontrar você novamente para mais uma jornada de estudos.</em></strong></p>
+										<p>Na aula anterior, enfocamos o parágrafo. Agora avançaremos em direção ao estudo do texto completo. Veremos, nesta aula, as diversas formas de se desenvolver o texto dissertativo. Animado para começar? Ótimo, pois temos muitas coisas interessantes para relembrar e para aprender.</p>
+										<h3>Dissertar é a mesma coisa que argumentar? </h3>
+										<p>É muito comum pensar que um texto dissertativo é também argumentativo. Há, no entanto, uma pequena diferença entre os dois. Um texto pode ter como objetivo apenas explicar ou esclarecer um dado assunto. Nesse caso, ele será considerado dissertativo-expositivo. Outro pode ir além e também analisar o assunto exposto sob determinada perspectiva. Estaremos, então, diante de um texto dissertativo expositivo-analítico. É nessa segunda possibilidade que se enquadra o texto argumentativo, aquele que, além de explicar algo, busca convencer ou persuadir o interlocutor da validade de sua tese ou proposição. </p>
+										<p>Para alguns autores, no entanto, todo e qualquer tipo de texto – narrativo, descritivo ou dissertativo (expositivo ou analítico) – apresenta intenção argumentativa. Para Platão e Fiorin, por exemplo, <span class="fundoMarrom">“Todo texto tem, por trás de si, um produtor que procura persuadir o seu leitor (ou leitores), usando para tanto vários recursos de natureza lógica e linguística. Qualquer que seja o tipo de discurso, explícita ou implicitamente, o ponto de vista do autor estará sempre presente”</span>. A diferença se dará na forma como a opinião ou o ponto de vista se manifesta. Ingedore Koch também segue a linha de que não existe neutralidade ideológica em discursos. Para ela, todo texto tem um fim persuasivo mais ou menos claro. </p>
+										<p>Nosso objeto de estudo, nesta aula, será a estruturação dos dois tipos de texto dissertativo: o expositivo e o argumentativo. Veremos como desenvolvê-los e como eles se enquadram nos documentos oficiais que produzimos no Tribunal: memorandos, ofícios, informações, pareceres, etc. </p>
+										<div class="row">
+											<div class="col l8 m12 s12 offset-l2">
+												<div class="blocos-autor">
+														<center><img src="include/images/plataoFiorin.png" style="max-width:60%" alt="foto de Othon Garcia" /></center>
+														<p class=""><strong>Francisco Platão Savioli</strong> é doutor em Linguística e Filologia Românica - pela USP. <strong>José Luiz Fiorin</strong> é doutor em Letras Clássicas e Vernáculas da USP. Ambos são autores de várias obras didáticas, entre elas: Para entender o texto - Leitura e Redação e Lições de texto, da Editora Ática.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+	
+				<div class="bb-item item-02-01-definicao" id="02-01-definicao" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno">
+									<div class="row">
+										<h3>3.1 Definição de dissertação</h3>
+										<p>De forma abrangente, dissertar é expor ideias a respeito de um dado assunto. É explicar fatos, situações ou objetos, analisá-los e apresentar provas que justifiquem e convençam o leitor da validade do ponto de vista de quem as defende. O texto dissertativo pertence ao grupo dos textos expositivos, assim como o texto de apresentação científica, o relatório, o texto didático, o artigo enciclopédico.</p>
+										<p>Um texto dissertativo apresenta os seguintes objetivos:</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Explicar algum assunto com intenção informativa ou pedagógica.</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Apresentar informações sobre um objeto ou fato específico, descrevê-lo e enumerar suas características.</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Convencer e persuadir alguém de que determinado ponto de vista é o correto.</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Discorrer sobre um assunto polêmico, expondo as diversas posições acerca do problema.</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Analisar e interpretar dados da realidade por meio de conceitos abstratos.</p>
+										<p>Os objetivos acima se aplicam, de um modo geral, a todo tipo de dissertação. Como vimos, há basicamente duas espécies: a expositiva e a analítica. Cada uma delas apresenta propósitos e características próprias. Vamos conhecê-las uma a uma?</p>
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->																		
+				<div class="bb-item item-02-02-expositiva" id="02-02-expositiva" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno">
+									<div class="row">
+										<h3>3.2 Dissertação expositiva</h3>
+										<p>O texto expositivo aborda uma verdade inquestionável, sem possibilidade de contestação. Ele apresenta informações sobre determinado objeto ou fato específico, sua descrição e principais características. O objetivo desse tipo de texto é dar a conhecer algo de forma pedagógica ou científica, sem polemizar sobre o assunto. Encontramos exemplos de textos dissertativo-expositivos em livros didáticos, científicos ou, ainda, em documentos oficiais que tenham como propósito apenas atestar, explicar ou esclarecer algo, como é o caso do relatório e da certidão.</p>
+										<p>Vamos observar um exemplo?</p>
+										<div class="col s12 l10 m10 offset-l1 offset-m1 caixaAzul" style="margin-bottom: 20px;">
+											<p class="">Wilhelm Reich (1897-1957) foi um psicanalista austríaco, discípulo de Sigmund Freud. Ele criou, a partir da Psicanálise, uma nova abordagem terapêutica, a qual, além das intervenções verbais, de fundamentação psicanalítica, também inclui intervenções corporais. Esta abordagem terapêutica foi inicialmente chamada de Vegetoterapia Caractero-Analítica e posteriormente de Orgonoterapia. Atualmente, é comum referirmo-nos a ela simplesmente como Psicoterapia Reichiana.</p>
+											<p>Reich ingressou na IPA (Associação Internacional de Psicanálise) em 1920 quando era ainda estudante de medicina, permanecendo oficialmente vinculado a esta instituição até 1934. Em 1921 passou a atender pacientes encaminhados por Freud, na Clínica Psicanalítica de Viena, da qual mais tarde foi eleito diretor. Em 1922 criou, com apoio de Freud, o Seminário de Técnica Psicanalítica de Viena, destinado à pesquisa e ao aperfeiçoamento da abordagem psicanalítica. A partir de seus estudos sobre o manejo clínico da transferência e da resistência, desenvolveu a Análise do Caráter, uma das mais importantes contribuições à abordagem clínica da psicanálise. [Extraído de <a href="http://www.nucleopsic.org.br" target="_blank">http://www.nucleopsic.org.br</a> – acesso em 17-6-2016.]</p>
+										</div>
+										<p>Você percebeu que não há nesse segmento pontos de vista do autor? O objetivo foi apenas apresentar informações objetivas sobre William Reich e a terapia desenvolvida por ele. </p>
+										<p>Assim, podemos dizer que são características do texto dissertativo-expositivo:</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Objetividade e neutralidade do autor do texto.</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Destaque para o conteúdo das afirmações: o autor não se posiciona sobre elas.</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Uso da modalidade culta e formal da língua.</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Prestação de informações em quantidade suficiente para que o leitor componha uma imagem do que é descrito.</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Generalidade e abrangência.</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Flexão dos verbos na terceira pessoa.</p>
+										<p>É preciso destacar que muitos textos dissertativos são híbridos, pois apresentam informações acerca de algum assunto cujo conhecimento o autor julga imprescindível para que os leitores possam acompanhar a discussão que se fará em seguida. Esse tipo de exposição costuma estar presente nos parágrafos iniciais de textos que analisam questões específicas.</p>
+									</div>
+
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->																										<div class="bb-item item-02-02-expositiva" id="02-02-expositiva" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno">
+									<div class="row">
+										<h3>teste</h3>
+										
+									</div>
+
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->		
+
+
+
+				<div class="bb-item item-02-03-analitica" id="02-03-analitica" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno">
+									<div class="row">
+										<h3>3.3	Dissertação analítica</h3>
+										<p>Já a dissertação expositivo-analítica expõe fatos e os analisa sob perspectiva crítica. Traz de forma marcada a presença do autor do texto, já que se espera dele avaliação particularizada sobre questões ali abordadas ou sobre um conjunto de dados considerados relevantes em determinada circunstância. Textos argumentativos inserem-se nessa categoria, com a observação de que o objetivo específico deles é convencer e persuadir o receptor do texto. </p>
+										<p>Estas são as características do texto dissertativo-analítico:</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Apresentação objetiva do tema.</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Destaque para o conteúdo das afirmações e para a avaliação do autor.</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Uso da modalidade culta e formal da língua.</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Prestação de informações em quantidade suficiente para que o leitor componha uma imagem do que é descrito.</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Perspectiva particularizada.</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Flexão dos verbos, preferencialmente, na terceira pessoa.</p>
+										<p>Vejamos um exemplo:</p>
+										<div class="col s12 l10 m10 offset-l1 offset-m1 caixaAzul" style="margin-bottom: 20px;">
+											<p class="">Afinal, a gordura faz mal?</p>
+											<p>O grande motivo que leva nutricionistas e médicos a condenar as dietas <em>low-carb</em> é o fato de serem dietas ricas em gordura, inclusive gordura saturada. Como a teoria lipídica sugere que a gordura saturada eleva o LDL, e o LDL leva à obstrução das artérias, estas dietas seriam perigosas.</p>
+											<p>Há alguns bons motivos para crer que esta postura esteja equivocada. Em primeiro lugar, é contraintuitivo uma dieta que restringe os carboidratos que nos engordam fazer mal para o sistema cardiovascular. Afinal, a obesidade é um fator de risco para doença cardiovascular, bem como para diabetes e síndrome metabólica, que, por sua vez, também são fatores de risco.</p>
+											<p>Pode parecer loucura, mas a ideia de que uma dieta rica em gordura faz mal à saúde é oriunda da década de cinquenta, baseada em um estudo epidemiológico repleto de problemas metodológicos, e nunca foi confirmada experimentalmente, não obstante os vários experimentos que foram conduzidos na tentativa de comprová-la.</p>
+											<p>A ideia de que a gordura na dieta causa doença cardíaca vem de um estudo de 1953 publicado por um fisiologista (sem experiência clínica com pacientes) chamado Ancel Keys. Keys realizou um levantamento em seis países comparando o consumo de gordura per capita (por país, sem questionários com pacientes) e a mortalidade cardiovascular (em atestados de óbito, sem confirmação de causa). A correlação parecia muito boa – boa demais para ser verdade. Em epidemiologia, não costuma haver correlações perfeitas. Na verdade, Keys omitiu os dados disponíveis de vários outros países na época. Se tais países houvessem sido incluídos na análise, a correlação caía por terra.</p>
+											<p>O que se sucedeu depois foram vários estudos de restrição de gorduras na dieta com milhares de pacientes e ao custo de bilhões de dólares, alguns mostrando menos e outros mostrando mais mortes.</p>
+											<p>Em 2001, foi publicada a metanálise (reunião de vários estudos científicos) definitiva, pela Cochrane Foundation. O resultado? Não há nenhuma diferença na mortalidade entre pessoas que restringiram a gordura na dieta e as que não restringiram.</p>
+											<p>[Souto, José Carlos. Dieta low-carb e paleolítica. <a href="http://www.lowcarb-paleo.com.br" target="_blank">http://www.lowcarb-paleo.com.br</a>.]</p>
+										</div>
+										<p>Como se pode notar pela leitura do texto acima, o articulista pretende convencer o leitor de que os riscos da ingestão de gordura são superestimados. Para comprovar sua tese, o autor apresenta dados objetivos, seguidos de sua análise crítica.</p>
+										<p>Vamos conferir, na tabela abaixo, as diferenças entre a dissertação expositiva e a analítica:</p>
+										<div class="row">
+											<div class="col l10 m10 s12 offset-l1 offset-m1">
+												<table>
+													<tr>
+														<td colspan="2" style="background:#FFF;text-align:center"><p class="semIndent"><strong>Dissertação</strong></p></td>
+													</tr>
+													<tr valign="middle">
+														<td class="tabelaAzulEscuro" valign="middle" style="vertical-align: middle;top:50%;"><p class="semIndent" style="vertical-align: middle !important;"><strong>Expositiva</strong></p></td>
+														<td class="tabelaLaranjaEscuro" valign="middle" style="vertical-align: middle;"><p class="semIndent"><strong>Analítica</strong></p></td>
+													</tr>
+													<tr>
+														<td class="tabelaAzulClaro" style="margin:0px 10px 10px 0px;"><p class="semIndent">Objetividade e neutralidade do autor. </p></td>
+														<td class="tabelaLaranjaClaro" style="margin:0px 0px 10px 0px;"><p class="semIndent">Perspectiva particularizada, subjetiva. </p></td>
+													</tr>
+													<tr>
+														<td class="tabelaAzulEscuro" style="margin:0px 10px 10px 0px;"><p class="semIndent">Destaque para o conteúdo das afirmações.</p></td>
+														<td class="tabelaLaranjaEscuro" style="margin:0px 0px 10px 0px;"><p class="semIndent">Destaque para a avaliação do autor sobre o conteúdo. </p></td>
+													</tr>
+													<tr>
+														<td class="tabelaAzulClaro" style="margin:0px 10px 10px 0px;"><p class="semIndent"><strong>Objetivo:</strong> exposição de fatos de forma genérica e abrangente.</p></td>
+														<td class="tabelaLaranjaClaro" style="margin:0px 0px 10px 0px;"><p class="semIndent"><strong>Objetivo:</strong> persuadir e convencer o leitor.</p></td>
+													</tr>
+													<tr>
+														<td class="tabelaAzulEscuro" style="margin:0px 10px 10px 0px;"><p class="semIndent">Flexão dos verbos na terceira pessoa.</p></td>
+														<td class="tabelaLaranjaEscuro" style="margin:0px 0px 10px 0px;"><p class="semIndent">Flexão dos verbos, preferencialmente, na terceira pessoa.</p></td>
+													</tr>
+													
+												</table>
+											</div>
+										</div>
+										<p>Agora que já percebemos as diferenças conceituais entre os tipos de dissertação, vamos relembrar a estrutura básica do texto dissertativo.</p>
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+
+				<div class="bb-item item-02-04-estrutura" id="02-04-estrutura" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno">
+									<div class="row">
+										<h3>3.4	Estrutura básica do texto dissertativo</h3>
+										<p>A dissertação é composta de três partes básicas:</p>
+										<div class="container">
+												<div class="row">
+													<div class="col s12 m4 l4" >
+														<a href="./include/images/estruturaBasicaA.png" target="_blank"><img src="./include/images/estruturaBasicaA.png" style="max-width:90%;" alt="Introdução é a apresentação do assunto, do problema. Geralmente há apenas um parágrafo introdutório, cuja principal característica é a apresentação da tese que será desenvolvida ao longo do texto."/></a>
+
+													</div>
+													<div class="col s12 m4 l4">
+														<a href="./include/images/estruturaBasicaB.png" target="_blank"><img src="./include/images/estruturaBasicaB.png" style="max-width:90%;" alt="Desenvolvimento é a análise crítica da ideia central. Discute-se o problema e tenta-se resolvê-lo. O desenvolvimento pode percorrer vários parágrafos, nos quais serão expostos os fundamentos para a tese proposta na introdução." /></a>
+
+													</div>
+													<div class="col s12 m4 l4">
+														<a href="./include/images/estruturaBasicaC.png" target="_blank"><img src="./include/images/estruturaBasicaC.png" style="max-width:90%;" alt="Conclusão é a parte final do texto, na qual se condensa a essência do conteúdo desenvolvido, reafirma-se o posicionamento exposto na tese ou lança-se uma perspectiva sobre o assunto. Em outras palavras, trata-se de um balanço da discussão." /></a>
+
+													</div>
+												</div>
+										</div>
+										<p>Veremos a seguir exemplos de cada uma dessas partes. O primeiro é o parágrafo introdutório de um texto de Raul Calderaro, que fala sobre a visão de Jim Rohn, pensador e palestrante norte-americano: </p>
+										<div class="col s12 l10 m10 offset-l1 offset-m1 caixaAzul" style="margin-bottom: 20px;">
+											<p class="">O fracasso na vida de uma pessoa não é um evento isolado, um desastre. Raramente falhamos da noite para o dia. Na verdade, o fracasso é geralmente o resultado inevitável de um acúmulo de pensamentos e decisões erradas. Simplificando, o fracasso não é nada mais do que alguns erros de julgamento repetidos todos os dias.</p>
+										</div>
+										<p>A introdução contém uma ideia geral, que, com frequência, traduz-se em uma afirmação de alcance universal, em uma frase eloquente ou na exposição de um problema. Pode ainda ser inspirada por um fato da atualidade, por uma lembrança ou por uma experiência pessoal. No texto de Jim Rohn transcrito acima, o primeiro parágrafo enuncia a ideia central: o fracasso é resultado de pequenos erros que cometemos ao longo do tempo.</p>
+										<p>Vejamos, agora, como o texto foi desenvolvido:</p>
+										<div class="col s12 l10 m10 offset-l1 offset-m1 caixaAzul" style="margin-bottom: 20px;">
+											<p class="">Como não percebemos que a soma de pequenos erros causam um fracasso total? Achamos que aquilo não fará diferença. Pequenas atitudes, uma hora desperdiçada aqui, outra ali, etc., não parecem ter grande efeito imediato. É a mesma lógica dos fumantes – um cigarro não mata, então vou fumar outro mais. Já sabemos como vai terminar esta história.</p>
+											<p>Vejamos como a falta de disciplina não parece afetar sua vida. Por exemplo, se você não leu pelo menos um livro nos últimos trinta dias, aparentemente nada de ruim aconteceu, parece que podemos repetir isso por mais trinta dias. Nada acontece novamente, e quando você vai ver passou um ano inteiro sem ler. Ou sem fazer exercício. Ou sem organizar a bagunça do quarto. Ou sem dizer a uma pessoa importante o quanto a ama. Aliás, pior do que não fazer alguma coisa é não notar como isso pode fazer diferença!</p>
+											<p>As consequências raramente são instantâneas. Ao contrário – elas se acumulam até que inevitavelmente chega o dia em que devemos pagar pelo preço das decisões erradas que tomamos. Decisões que, quando tomadas, pareciam pouco importantes, somadas com o passar do tempo, transformam-se numa bola de neve incontrolável.</p>
+										</div>
+										<p>Note que, no desenvolvimento, o autor explica em três parágrafos como a soma de decisões erradas e a falta de disciplina nos levam a consequências indesejadas. </p>
+										<p>Agora, observe como a conclusão do texto foi construída: </p>
+										<div class="col s12 l10 m10 offset-l1 offset-m1 caixaAzul" style="margin-bottom: 20px;">
+											<p class="">Como mudar isso? Com um pouco de disciplina praticada todos os dias. Ao trocarmos voluntariamente erros diários por disciplina diária, experimentamos resultados positivos em curto espaço de tempo. Por isso lembre-se: troque os pequenos erros pelos pequenos acertos, e com o passar do tempo isso se transformará numa grande onda de prosperidade na sua vida. [CALDERARO, Raul. O poder da disciplina. Com adaptações.]</p>
+										</div>
+										<p>Na conclusão, o autor retoma a tese exposta no início do texto e apresenta o que seria a solução para o problema abordado: se pequenas atitudes erradas levam a um mau caminho, pequenas atitudes corretas conduzem à prosperidade.</p>
+										<p>Assim como indicamos na aula de estudo do parágrafo, antes de iniciar a escrita, é muito importante planejar a redação do texto dissertativo. Para ajudá-lo nessa tarefa, apresentaremos no tópico a seguir um plano de dissertação. Vamos conhecê-lo?</p>
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+				<div class="bb-item item-02-05-plano" id="02-05-plano" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno">
+									<div class="row">
+										<h3>3.5	Plano de dissertação</h3>
+										<p>Você provavelmente já se viu diante de uma folha de papel ou diante do computador sem saber como iniciar a redação, não é mesmo? O plano de dissertação é muito útil em situações como essa, uma vez que é uma técnica de planejamento textual. Além disso, ele contribui para a criação de um texto mais eficiente, pois permite que detectemos falhas e providenciemos a correção. Para entender melhor como esse plano funciona, vamos criar um texto seguindo os passos abaixo?</p>
+										<div class="col l10 m10 s12 offset-l1 offset-m1" style="margin-bottom: 20px;">
+												<a href="./include/images/planoDissertacao.png" target="_blank"><img src="include/images/planoDissertacao.png" style="max-width:100%" /></a>
+										</div>
+										<p>Imagine que o Supremo Tribunal Federal, em consonância com sua política de responsabilidade social, entenda ser necessário desenvolver a consciência social dos servidores de seu quadro. Uma das propostas para que esse objetivo seja alcançado, além da realização de palestras e outras ações, é o incentivo à criação de projetos sociais que possam ser implantados no âmbito do Tribunal. </p>
+										<p>Agora imagine que, nesse contexto, sua seção resolva propor um projeto de incentivo à leitura para terceirizados. A chefia gostou da sugestão, mas pediu que fosse redigido um documento com a exposição detalhada da ideia. Até então, os detalhes do projeto estavam apenas na mente de seus idealizadores. Como você deve saber, transpô-los para o papel, na forma de texto, costuma causar ansiedade e medo. Temor, sobretudo, de não conseguir expor a proposta a contento e de não ser capaz de convencer as instâncias superiores da necessidade e conveniência da implantação do projeto.</p>
+										<p>Então por onde começar? Pelo primeiro passo do plano: arrolar as ideias que temos sobre o assunto. </p>
+										<div class="row">
+											<div class="col l6 m6 s12">
+												<p><img src="./include/images/primeiroPassoDissertacao.png" style="max-width:95%"></p>
+												<p>O primeiro passo é fazer o levantamento de tudo que pode ser abordado no texto. Inicie com uma “tempestade de ideias” ou <em>brainstorming</em>. Registre todos os seus pensamentos no papel. Não tente, nesse primeiro momento, ordená-los. Deixe-os fluir livres e desimpedidos. Algumas das ideias anotadas serão descartadas e outras talvez surjam mais tarde. Independentemente disso, essa listagem é fundamental.</p>
+												<p>Um possível levantamento de ideias, em nosso contexto hipotético, seria o seguinte:</p>
+												<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Importância de incentivar a leitura no âmbito do Tribunal.</p>
+												<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />O acesso a livros e revistas não é fácil para algumas pessoas.</p>
+												<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />A facilidade do acesso a livros é fator de crescimento.</p>
+												<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Formas de incentivar a leitura: palestras, círculo de leitura, etc.</p>
+												<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Incentivar os servidores a participar do projeto.</p>
+												<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Incentivar a doação de livros e revistas.</p>
+												<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Quem pode ser envolvido na implantação do projeto.</p>
+												<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />A leitura é ferramenta de inclusão social.</p>
+												<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />A leitura é um princípio da cidadania.</p>
+												<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Despertar a leitura como prazer.</p>
+												<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Desconhecimento da necessidade da leitura.</p>
+												<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />A falta de leitura impede o acesso a melhores empregos.</p>
+												<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />A leitura desenvolve a postura crítica e a reflexão.</p>
+												<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />A leitura desenvolve competências e habilidades.</p>
+												<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Incentivo à escrita.</p>
+											</div>
+											<div class="col l5 m5 s11">
+												<div class="notepad" style="">
+													<p class="notepadP"><em>Brainstorming:</em> técnica criada pelo publicitário Americano Alex Osborn com o objetivo de resolver problemas específicos ou desenvolver novas ideias para um projeto. Trata-se de ferramenta para estimular a criatividade. Seu princípio é a geração de ideias em grande quantidade. Não se deve avaliar a qualidade delas, pois o julgamento interrompe o fluxo de criação.</p>
+													<p class="notepadP">Para saber mais:<br /><center> <a href="https://integrasolucoes.wordpress.com/2013/08/12/tipos-de-brainstorming-para-geracao-de-ideias/" target="_blank">https://goo.gl/mjJZSr</a></center></p>
+													<p class="notepadP">Vídeo:<br/><center> <a href="https://www.youtube.com/watch?v=LiOT-43CG0w" target="_blank">https://goo.gl/5LT87M</a></center></p>
+
+										    	</div>
+										    </div>
+										</div>
+										<p><a href="./include/images/segundoPassoDissertacao.png" target="_blank"><img src="./include/images/segundoPassoDissertacao.png" style="max-width:95%"></a></p>
+										<p>Percebeu que temos agora uma massa de ideias desorganizadas? O passo seguinte é agrupá-las de acordo com suas semelhanças. Para isso, podemos adotar a Árvore de Ideias que vimos na Aula 2 ou recorrer a um esquema. Vejamos:</p>
+										<p>Na forma de esquema teríamos:</p>
+										<p><a href="./include/images/quadroSegundoPassoDissertacao.png" target="_blank"><img src="./include/images/quadroSegundoPassoDissertacao.png" style="max-width:90%"></a></p>
+										<p><a href="./include/images/terceiroPassoDissertacao.png" target="_blank"><img src="./include/images/terceiroPassoDissertacao.png" style="max-width:95%"></a></p>
+										<p>Depois de concluir o levantamento de ideias e de organizá-las, é preciso delimitar o tema. Afinal, ele é tão amplo que pode dar margem tanto a um livro de duzentas páginas como a um pequeno texto de três parágrafos. Se pretendermos escrever um texto com todas as ideias elencadas, teremos como resultado um amontoado de frases, às vezes desconexas, outras vezes superficiais. Daí a necessidade de delimitar o assunto, buscando-se relações entre as ideias. </p>
+										<p>O objetivo do nosso texto sobre uma política interna de incentivo à leitura, por exemplo, é apenas expor a sugestão. Caso a proposta seja aceita, aí sim será hora de redigir um projeto que explore a fundo cada aspecto do assunto. </p>
+										<p>Vejamos algumas opções de delimitação do nosso tema:</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Necessidade de incentivar a leitura.</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Como incentivar a participação dos servidores.</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Como incentivar a leitura.</p>
+										<p><a href="./include/images/quartoPassoDissertacao.png" target="_blank"><img src="./include/images/quartoPassoDissertacao.png" style="max-width:95%"></a></p>
+										<p>Cumpridas as etapas anteriores, é hora de desenvolver o assunto. De acordo com o tema proposto, podemos organizar o texto de diversas maneiras. Entre elas: causa e consequência; tempo e espaço; comparação e contraste; enumeração; exemplificação. Escolha a mais adequada e comece a escrever. Você verá cada uma dessas maneiras de organização do texto no item 3.5 – formas de desenvolver o conteúdo dissertativo.</p>
+										<p><a href="./include/images/quintoPassoDissertacao.png" target="_blank"><img src="./include/images/quintoPassoDissertacao.png" style="max-width:95%"></a></p>
+										<p>Depois de escrever o texto, faça uma revisão. Leia-o minuciosamente, observando, sobretudo, os seguintes aspectos:</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Ortografia</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Repetição de palavras: substitua palavras repetidas por sinônimos ou pronomes, ou, quando possível, simplesmente omita termos.</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Concordância: identifique o sujeito de cada período e observe se o verbo concorda com ele.</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Uso da vírgula: identifique o sujeito e o predicado.</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Princípios da linguagem: busque ambiguidades, imprecisões e incoerências.</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Coesão: observe se há ligação lógica entre os períodos e os parágrafos.</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Exposição de ideias: verifique se as ideias estão claras.</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Argumentos: examine se eles dão margem a contra-argumentação.</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Identifique as fragilidades e contradições. </p>
+										<p>Além dos aspectos acima, você pode complementar a revisão usando o <em>check-list</em> de revisão que vimos na aula 2. Vamos lembrar?</p>
+										<p style="vertical-align: middle;"><i class="fa fa-square-o" aria-hidden="true" style="color:red;margin-right:10px;vertical-align: middle;"></i><strong>Tamanho:</strong> O tamanho dos parágrafos está adequado ao formato do veículo de comunicação e aos leitores?</p>
+										<p><i class="fa fa-square-o" aria-hidden="true" style="color:red;margin-right:10px;vertical-align: middle;"></i><strong>Divisão:</strong> Os parágrafos estão divididos de acordo com a lógica? Há alguma ideia secundária desconectada de seu tópico frasal?</p>
+										<p><i class="fa fa-square-o" aria-hidden="true" style="color:red;margin-right:10px;vertical-align: middle;"></i><strong>Unidade:</strong> Em cada parágrafo, as ideias secundárias derivam do tópico frasal?</p>
+										<p><i class="fa fa-square-o" aria-hidden="true" style="color:red;margin-right:10px;vertical-align: middle;"></i><strong>Unidade:</strong> O tópico frasal foi corretamente desenvolvido? Todos os aspectos elencados nele foram explicitados, explicados ou exemplificados?</p>
+										<p><i class="fa fa-square-o" aria-hidden="true" style="color:red;margin-right:10px;vertical-align: middle;"></i><strong>Coerência:</strong> Foram utilizadas palavras ou expressões para ligar de forma lógica e adequada períodos e parágrafos? </p>
+										<p><i class="fa fa-square-o" aria-hidden="true" style="color:red;margin-right:10px;vertical-align: middle;"></i><strong>Coerência:</strong> a ordem cronológica está correta? Os dados foram apresentados em sequência ou estão fora de ordem? Há uma adequada correlação causal?</p>
+										<p><i class="fa fa-square-o" aria-hidden="true" style="color:red;margin-right:10px;vertical-align: middle;"></i><strong>Identificação da ideia principal e posicionamento:</strong> As ideias principais estão posicionadas no começo ou no fim dos parágrafos? Esse posicionamento atende ao propósito do texto?</p>
+										<p><i class="fa fa-square-o" aria-hidden="true" style="color:red;margin-right:10px;vertical-align: middle;"></i><strong>Revisão gramatical:</strong> Os verbos estão em concordância com o sujeito? A pontuação está correta? Todas as palavras foram acentuadas? </p>
+										<p>Após conferir esses aspectos, passe o texto a limpo e reescreva o que não estiver claro. Se possível, peça que outra pessoa leia o material. </p>
+										<p>Depois de aplicado o plano dissertativo que apresentamos acima, é possível, ainda, organizar o conteúdo de outras formas, a depender do assunto ou da intenção comunicativa do autor. Convido você a conhecer essas diversas possibilidades no próximo tópico! Vamos em frente? </p>
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->																		
+				<div class="bb-item item-02-06-formas" id="02-06-formas" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno">
+									<div class="row">
+										<h3>3.6	Formas de desenvolver o conteúdo dissertativo</h3>
+										<p>Certamente você já estudou as formas de desenvolvimento do texto dissertativo quando se preparava para alguma avaliação de redação. Mesmo não sendo uma novidade, vamos relembrar algumas delas, adaptando-as aos textos que você escreve atualmente em seu trabalho, tudo bem?</p>
+										<p>De acordo com o tipo de tema que precisamos desenvolver, podemos organizar o texto de diversas maneiras, entre elas:</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Esquema básico/genérico;</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Causa e consequência: motivos, razões, fundamentos, alicerces, os porquês/consequências, efeitos, repercussões, reflexos;</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Tempo e espaço: percurso histórico e espacial;</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Enumeração/exemplificação: indicação de fatores, funções ou elementos que esclareçam ou reforcem uma afirmação;</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Comparação: contrastes, diferenças e semelhanças, pontos positivos e negativos.</p>
+										<p>Como você deve ter notado, essas formas de organização são muito semelhantes às maneiras de desenvolver o parágrafo que vimos na aula 2. Por isso, vamos desenvolver um texto completo apenas com um tipo de esquema. </p>
+										<h3>3.6.1	Esquema básico de dissertação</h3>
+										<div class="row">
+											<div class="col l6 m6 s12">
+												<p>Proposto por Granatic (1997)<sup>1</sup> , o esquema básico é muito conhecido e útil, pois se amolda a diversos tipos de texto. </p>
+												<p>Como você já sabe, o texto dissertativo apresenta três partes: introdução, desenvolvimento e conclusão. O esquema básico de dissertação orienta como organizar os parágrafos em cada uma dessas partes. Ele está descrito no Quadro 1, a seguir:</p>
+											</div>
+											<div class="col l5 m5 s11">
+												<div class="notepad" style="">
+													<p class="notepadP">Branca Granatic é mestre em Letras (Letras Clássicas) pela Universidade de São Paulo (1988). Atualmente é Autora de livros didáticos da Editora Abril S/A e CLT do Centro Educacional Objetivo. Sua obra mais conhecida é “Técnicas básicas de redação”, da editora Scipione.</p>
+										    	</div>
+										    </div>
+										</div>
+										<div class="row">
+											<div class="col l10 m10 s12 offset-l1 offset-m1">
+												<table>
+													<tr>
+														<td colspan="2" style="background:#FFF;text-align:center"><p class="semIndent"><strong>Esquema básico de dissertação</strong></p></td>
+													</tr>
+													<tr>
+														<td class="tabelaAzulEscuro" style="margin:0px 10px 10px 0px;"><p class="semIndent"><strong>1º parágrafo:</strong> Introdução</p></td>
+														<td class="tabelaLaranjaEscuro" style="margin:0px 0px 10px 0px;"><p class="semIndent">Tema + argumento 1 + argumento 2</p></td>
+													</tr>
+													<tr>
+														<td class="tabelaAzulClaro" style="margin:0px 10px 10px 0px;"><p class="semIndent"><strong>2º parágrafo</strong></p></td>
+														<td class="tabelaLaranjaClaro" style="margin:0px 0px 10px 0px;"><p class="semIndent">Desenvolvimento do 1º argumento</p></td>
+													</tr>
+													<tr>
+														<td class="tabelaAzulEscuro" style="margin:0px 10px 10px 0px;"><p class="semIndent"><strong>3º parágrafo</strong></p></td>
+														<td class="tabelaLaranjaEscuro" style="margin:0px 0px 10px 0px;"><p class="semIndent">Desenvolvimento do 2º argumento</p></td>
+													</tr>
+													<tr>
+														<td class="tabelaAzulClaro" style="margin:0px 10px 10px 0px;"><p class="semIndent"><strong>4º parágrafo:</strong> Conclusão</p></td>
+														<td class="tabelaLaranjaClaro" style="margin:0px 0px 10px 0px;"><p class="semIndent">Expressão inicial + reafirmação da TESE + observação final.</p></td>
+													</tr>
+												</table>
+												<p class="fonteMenor" style="text-align:center">Quadro 1</p>
+											</div>
+										</div>
+										<p>Para demonstrar a aplicação desse esquema, vamos redigir um texto com base nele. Suponha que você precise desenvolver um texto sobre uma necessidade do setor em que está lotado: contratar serviços educacionais (palestras, cursos, etc.) com inexigibilidade de licitação. Esse será o nosso tema. A tese é o nosso posicionamento sobre ele. </p>
+										<p>Com o tema e a tese em mente, vamos buscar argumentos (aqui tomados em sentido genérico). Uma forma simples e eficiente de encontrar alguns é fazer o seguinte questionamento à tese: <strong>por quê?</strong> As respostas a essa pergunta já constituirão bons elementos para o desenvolvimento do texto. </p>
+										<p><a href="./include/images/porQue.png" target="_blank"><img src="./include/images/porQue.png" style="max-width:90%" alt="Por que precisamos contratar sem licitar? Por que contratar com inexigibilidade de licitação?"></a></p>
+										<p><a href="./include/images/respostas.png" target="_blank"><img src="./include/images/respostas.png" style="max-width:90%" alt="Precisamos de celeridade e de qualidade. Os serviços que contratamos são especializados e necessitados de qualidade e não de preço somente"></a></p> 
+										<p>Há vários argumentos que você pode usar para justificar a tese além desses que apresentamos acima. Como se trata de um exemplo, trabalharemos apenas com dois argumentos. A quantidade de argumentos será definida com base em nossa estratégia argumentativa, assunto que veremos nas próximas aulas.</p>
+										<p>Com base no Quadro 1, vamos, agora, redigir o primeiro parágrafo, ou seja, a introdução. Para compô-lo, basta que você contextualize o tema e a ele acrescente os dois argumentos, assim como aparecem no quadro. Veja como poderia ser:</p>
+										<div class="col s12 l10 m10 offset-l1 offset-m1 caixaAzul" style="margin-bottom: 20px;">
+											<p class="">A Coordenadoria de Capacitação realiza, ao longo do ano, inúmeros eventos destinados ao treinamento e à capacitação do pessoal. Diante disso, decidiu-se verificar com o setor responsável a possibilidade de contratar esse tipo de serviço sem licitar, pois o processo de licitação é demorado e pode resultar na contratação de profissionais que não tenham a qualidade esperada. Contratar o treinamento e o aperfeiçoamento de pessoal com a inexigibilidade de licitação traria celeridade ao processo e resultaria em mais qualidade dos serviços prestados. </p>
+										</div>
+										<p>Observe que, na introdução, os argumentos são apenas mencionados. No primeiro parágrafo, informamos o assunto de que a dissertação vai tratar. Cada um dos argumentos será convenientemente desenvolvido nos parágrafos seguintes. </p>
+										<p>Assim, no segundo parágrafo, após realizar pesquisa sobre o tema, desenvolva o primeiro argumento: a necessidade de contratar sem licitação em função da demora inerente ao processo licitatório.</p>
+										<div class="col s12 l10 m10 offset-l1 offset-m1 caixaAzul" style="margin-bottom: 20px;">
+											<p class="">O processo de contratação de palestrantes e de empresas para ministrar cursos é feito por meio de licitação, conforme preceitua a Lei 8.666/1993. Além de ser demorado, esse processo nem sempre resulta na contratação de profissionais especializados sobre o tema do evento educacional. Houve casos em que o profissional contratado foi o que apresentou o menor preço e não aquele que as pesquisas indicaram ter, além de notória especialização no assunto, o reconhecimento da comunidade acadêmica, o que certamente afetou a qualidade do evento. Ressalte-se ainda que a demora no processo muitas vezes atrasou o cronograma anual de cursos.</p>
+										</div>
+										<p>Vale acrescentar que a coesão entre os parágrafos se dá pelo conteúdo do segundo parágrafo, que retoma inteiramente a matéria do primeiro argumento exposta na introdução. Como você pode constatar, houve necessidade de usar exemplos para comprovar o argumento lançado. </p>
+										<p>No parágrafo seguinte, o segundo argumento foi assim desenvolvido: </p>
+										<div class="col s12 l10 m10 offset-l1 offset-m1 caixaAzul" style="margin-bottom: 20px;">
+											<p class="">Além disso, não é fácil estabelecer padrões para verificar a capacidade didática e o talento de conferencistas e professores. Observe-se ainda a natureza singular desse tipo de serviço. Um curso nunca é igual ao outro, mesmo que o tema seja o mesmo. Dessa forma, a situação descrita se enquadra no art. 25 da Lei 8.666/1993: inexigibilidade de licitação. A adoção dessa forma de contratação traria celeridade ao processo e resultaria em mais qualidade dos serviços prestados, na medida em que o palestrante seria selecionado por sua notória especialização e não por critérios impossíveis de determinar.</p>
+										</div>
+										<p>Note a presença da expressão “<strong>além disso</strong>” no início do parágrafo. É ela que estabelece a ligação com o parágrafo anterior. O uso desse tipo de conectivo é necessário para relacionar os parágrafos, conferindo coesão ao texto.</p>
+										<p>Para que sua dissertação fique completa, falta apenas elaborar o parágrafo de conclusão. Vamos verificar como ele é constituído?</p>
+										<p>Conforme ensina Granatic (1997), a conclusão pode ser iniciada com uma expressão que remeta ao que foi dito nos parágrafos anteriores (expressão inicial). A ela deve seguir-se a reafirmação da tese proposta no início da redação. No fim do parágrafo, é interessante incluir uma observação, algo como um comentário sobre os fatos mencionados ao longo da dissertação.</p>
+										<p>Com base nessas orientações, já podemos redigir o parágrafo final, ou seja, a conclusão do texto:</p>
+										<div class="col s12 l10 m10 offset-l1 offset-m1 caixaAzul" style="margin-bottom: 20px;">
+											<p class="">Em virtude da necessidade de qualificação e capacitação dos servidores e do grande número de eventos realizados ao longo do ano, a Coordenadoria de Capacitação decidiu verificar com o setor responsável a possibilidade de contratar esse tipo de serviço por meio da inexigibilidade de licitação. Espera-se, assim, dar celeridade ao processo e trazer profissionais de qualidade e de notória especialização.</p>
+										</div>
+										<p>&nbsp;</p>
+										<div class="row">
+											<div class="col l9 m9 offset-l1 offset-m1 s12 fundoVideoaula">
+												<p style="text-align:right;">Que tal assistir à entrevista do professor Sérgio Navega, especialista em argumentação? Ele é autor do livro <strong>"Pensamento Crítico e Argumentação Sólida"</strong>(publicado em Julho de 2005). Para assistir, acesse o link: <a href="https://www.youtube.com/watch?v=dMNDy07DkRk" target="_blank"> https://www.youtube.com/watch?v=dMNDy07DkRk</a></p>
+											</div>
+											<div class="col l2 m2 s12">
+												<img src="include/images/videoaula.png" style="max-height:200px;-ms-transform: rotate(15deg);-webkit-transform: rotate(15deg);transform: rotate(15deg);margin-left: -30px;margin-top: -20px;">
+											</div>
+										</div>
+										<p class="fonteMenor"><sup>1</sup>GRANATIC, Branca. Técnicas básicas de redação. Ed.Scipione. 1997.</p>
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->										
+				<div class="bb-item item-02-07-formasTexto" id="02-07-formasTexto" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno">
+									<div class="row">
+										<h3>3.7	Formas de desenvolver o texto argumentativo</h3>
+										<p>O esquema básico de dissertação presta-se ao desenvolvimento de qualquer tipo de dissertação, seja ela argumentativa ou expositiva. Há, no entanto, outras formas que podem ser usadas em situações mais específicas, como os esquemas que apresentaremos nos tópicos a seguir. Eles são mais apropriados ao texto argumentativo.</p>
+										<h3>3.7.1	Esquema dialético</h3>
+										<p>No esquema dialético, apresenta-se uma tese (ponto de vista sobre a questão), a antítese (ponto de vista contrário ao exposto anteriormente) e a síntese, que é a conciliação entre a tese e a antítese. Vejamos como organizar esse modo de dissertação argumentativa em parágrafos: </p>
+										<div class="row">
+											<div class="col l8 m8 s12 offset-l2 offset-m2">
+												<table>
+													<tr>
+														<td colspan="2" style="background:#FFF;text-align:center"><p class="semIndent"><strong>Esquema dialético</strong></p></td>
+													</tr>
+													<tr>
+														<td class="tabelaAzulEscuro" style="margin:0px 10px 10px 0px;"><p class="semIndent"><strong>1º parágrafo</strong></p></td>
+														<td class="tabelaLaranjaEscuro" style="margin:0px 0px 10px 0px;"><p class="semIndent"><strong>Introdução:</strong> apresenta o problema, o tema do texto.</p></td>
+													</tr>
+													<tr>
+														<td class="tabelaAzulClaro" style="margin:0px 10px 10px 0px;"><p class="semIndent"><strong>2º parágrafo:</strong> Desenvolvimento</p></td>
+														<td class="tabelaLaranjaClaro" style="margin:0px 0px 10px 0px;"><p class="semIndent"><strong>Tese:</strong> apresenta a tese e os argumentos favoráveis a ela.</p></td>
+													</tr>
+													<tr>
+														<td class="tabelaAzulEscuro" style="margin:0px 10px 10px 0px;"><p class="semIndent"><strong>3º parágrafo:</strong> Desenvolvimento</p></td>
+														<td class="tabelaLaranjaEscuro" style="margin:0px 0px 10px 0px;"><p class="semIndent"><strong>Antítese:</strong> apresenta a antítese e os argumentos favoráveis e desfavoráveis (as objeções e restrições).</p></td>
+													</tr>
+													<tr>
+														<td class="tabelaAzulClaro" style="margin:0px 10px 10px 0px;"><p class="semIndent"><strong>4º parágrafo:</strong> Conclusão</p></td>
+														<td class="tabelaLaranjaClaro" style="margin:0px 0px 10px 0px;"><p class="semIndent"><strong>Síntese:</strong> consiste na vitória da antítese ou da tese. Outra possibilidade é demonstrar que a contradição é apenas aparente, apresentando modos de superar as diferenças, buscando um meio termo.</p></td>
+													</tr>
+												</table>
+											</div>
+										</div>
+										<p>O número de parágrafos pode ser maior, a depender do assunto. A tese e seus argumentos favoráveis poderão estar em parágrafos diferentes, assim como a antítese.</p>
+										<p>Vamos redigir um documento a partir desse esquema. Usaremos para isso o parecer, que é o documento de redação oficial por meio do qual o servidor expressa opinião técnica ou jurídica sobre um assunto. O objetivo desse documento é indicar uma solução favorável ou não ao pedido apresentado, conforme a argumentação do autor do parecer.</p>
+										<p>Imagine que o secretário do STF-Med tenha solicitado à chefia do departamento médico um parecer sobre a inclusão de tratamentos de fertilização<em> in vitro</em> no plano de saúde STF-Med, conforme pedido de servidores do Tribunal. </p>
+										<p>Após pesquisar o assunto, o chefe da seção de saúde do STF planejou seu texto seguindo o esquema dialético:</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" /><strong>Tema:</strong> inclusão dos tratamentos de fertilização in vitro no plano de saúde do STF-Med.</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" /><strong>Tese:</strong> O STF-Med deve oferecer tratamento de infertilidade.</p>
+										<p><strong>Argumentos:</strong></p>
+										<ul>
+											<li><p class="no-indent">A infertilidade é considerada doença pela OMS e como tal deve ser tratada.</p></li>
+											<li><p class="no-indent">O número de casais inférteis não é alto e o impacto financeiro poderá ser suportado.</p></li>
+											<li><p class="no-indent">A inclusão desse tipo de tratamento proporcionaria mais qualidade de vida às servidoras, o que resultaria em maior produtividade no trabalho.</p></li>
+										</ul>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" /><strong>Antítese:</strong> O STF-Med não deve oferecer o tratamento.</p>
+										<p><strong>Argumentos:</strong></p>
+										<ul>
+											<li><p class="no-indent">O tratamento é de alto custo e não deve ser incluído sob pena de se desestabilizar o plano de saúde como um todo.</p></li>
+											<li><p class="no-indent">A infertilidade não impede que o casal tenha uma vida saudável e não compromete suas atividades profissionais.</p></li>
+										</ul>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" /><strong>Síntese:</strong> A conciliação das duas posições de forma a atender às necessidades das servidoras sem desestabilizar financeiramente o plano de saúde.</p>
+										<p>Vejamos como o texto poderia ser redigido: </p>
+										<p>O 1º e o 2º parágrafos apresentam o assunto, o tema sobre o qual se discorrerá:</p>
+										<div class="col s12 l10 m10 offset-l1 offset-m1 caixaAzul" style="margin-bottom: 20px;">
+											<p class="">Em atendimento ao pedido da Secretária do STF-Med, esse parecer tem como objetivo analisar solicitação de servidores do Tribunal para inclusão do tratamento de fertilização <em>in vitro</em> no Plano de saúde STF-MED. O procedimento não é financeiramente acessível, por ser de alto culto, razão pela qual a maioria dos planos de saúde não oferece essa cobertura.</p>
+											<p>A legislação que dispõe sobre os planos e seguros privados de assistência à saúde prevê a possibilidade de exclusão de cobertura a tratamentos como a inseminação artificial. No entanto, essa mesma legislação estabelece ser obrigatório o oferecimento de tratamentos e procedimentos referentes ao planejamento familiar. Portanto, a fertilização <em>in vitro</em> pode ser coberta ou não, a depender dos interesses e necessidades do plano de saúde e de seus segurados.</p>
+										</div>
+										<p>Os três parágrafos a seguir apresentaram a tese, que é favorável ao pedido: </p>
+										<div class="col s12 l10 m10 offset-l1 offset-m1 caixaAzul" style="margin-bottom: 20px;>
+											<p class="">A favor da concessão do pedido dos servidores, deve-se considerar que o Conselho Federal de Medicina e a Organização Mundial de Saúde (OMS) reconhecem a infertilidade como uma patologia que pode ter consequências psicológicas e psiquiátricas. O diagnóstico da infertilidade pode ser devastador na vida de um casal. Muitas mulheres inférteis percebem a situação como estigmatizante, causadora de sofrimento psíquico e isolamento social. Se um indivíduo adoece, é imprescindível que seja tratado. Como a infertilidade é doença, a reprodução assistida deve estar disponível a todos os que precisarem. </p>
+											<p>Dados da OMS mostram que a infertilidade é um fenômeno que afeta cerca de 15% dos casais em todo o mundo, com prevalência geral de 5% na população em idade reprodutiva.  Se aplicarmos essa estimativa ao conjunto de segurados do STF-MED, obteremos um número baixo de servidores inférteis. Entre esses, alguns poderão optar por outros tipos de procedimento que não a inseminação artificial, ou até mesmo, pela adoção. Infere-se, assim, que, caso esse tratamento venha a ser adotado, o impacto financeiro sobre o plano de saúde poderá não ser alto, visto que talvez seja ínfimo o número de segurados atendidos. </p>
+											<p>É inegável que o atendimento ao pedido dos servidores trará benefícios que repercutirão tanto na vida privada deles quanto na vida profissional. Certamente, o bem-estar social e psíquico gerados resultará em qualidade nas atividades desenvolvidas pelos servidores.</p>
+										</div>
+										<p>Nos parágrafos seguintes, o autor do parecer arrola os argumentos contrários à inclusão do procedimento no rol de cobertura do plano de saúde, ou seja, ele apresenta a antítese:</p>
+										<div class="col s12 l10 m10 offset-l1 offset-m1 caixaAzul" style="margin-bottom: 20px;>
+											<p class=""> Por outro lado, a inseminação artificial, em especial a fertilização <em>in vitro</em>, requer sofisticado aparato técnico-operacional e especialização médica. É procedimento que implica alto investimento, cujo atendimento beneficiaria uma reduzida parcela dos segurados em detrimento da maioria que necessita de atendimento em massa às doenças mais variadas.  </p>
+											<p>Segundo levantamento realizado pela seção financeira, tratamentos de reprodução assistida são dispendiosos. Se a fertilização <em>in vitro</em> for aconselhada, o casal gastará pelo menos R$ 10 mil por tentativa (fora medicamentos), com o agravante de nem sempre obter sucesso da primeira vez e o procedimento necessitar ser refeito ao mesmo custo. Assim, caso a cobertura seja aprovada, as mensalidades de todos os segurados terão aumento.</p>
+											<p>Ainda que seja considerada patologia pela OMS, a infertilidade não impede que seus portadores tenham uma vida normal, plena e saudável. Não há comprometimento de nenhuma atividade, seja ela da vida privada, seja da profissional. A frustração pode ser momentânea e, por meio de aconselhamento psicológico, o casal infértil pode voltar-se para outras opções, tais como a adoção. </p>
+										</div>
+										<p>O próximo parágrafo apresentará a síntese: a tentativa de conciliação dos pontos de vista contrários.</p>
+										<div class="col s12 l10 m10 offset-l1 offset-m1 caixaAzul" style="margin-bottom: 20px;>
+											<p class="">Diante do exposto, essa unidade aconselha que, ao se considerarem os aspectos favoráveis à concessão e os que indicam a negativa de cobertura, seja encontrado um meio termo que possa tanto atender à necessidade dos casais inférteis quanto à disponibilidade financeira do plano de saúde. Tendo em vista que a maternidade e a paternidade abrangem aspectos referentes à dignidade da pessoa humana e da própria família, entidade que, é bom lembrar, goza inclusive de plena proteção constitucional, é recomendável que o plano ofereça cobertura integral aos procedimentos iniciais menos dispendiosos e que o medicamento para a fertilização <em>in vitro</em>, cujo custo é mais alto, seja coberto apenas parcialmente. Espera-se, dessa forma, atender o pleito dos servidores sem onerar excessivamente o plano de saúde ao ponto de inviabilizar outras coberturas.</p>
+											<p>É o parecer, <em>sub censura</em>.</p>
+										</div>
+										<p>Observe que o texto acima é fictício. Ele foi criado apenas para demonstrar a aplicação do plano dialético.</p>
+										<p>No texto abaixo, Platão e Fiorin (2002)<sup>2</sup> alertam para os defeitos que devem ser evitados ao usar o plano dialético: </p>
+										<p class="">Dois defeitos devem ser evitados quando se utiliza esse tipo de desenvolvimento:</p>
+											<div class="row">
+												<div class="col m1 l1 s1">
+													<img src="include/images/letraAazul.png" alt="imagem da letra A" style="max-height:35px;margin-left:60px;" />
+												</div>
+												<div class="col m11 l11 s11">
+													<p style="margin-left:-25px;"><strong>Justaposição de ideias opostas:</strong> nesse caso, defende-se uma tese e, sem transição, passa-se a sustentar uma tese oposta. Por exemplo, isso ocorreria se, numa dissertação, depois de mostrar que a criminalidade no Brasil atingiu proporções inquietantes, o enunciador passasse, sem nenhuma transição, a mostrar que essa inquietação não tem fundamento. Para fazer isso, precisaria, por exemplo, mostrar que a estabilização da economia produzirá um novo ciclo de crescimento econômico, que levará a uma diminuição da pobreza, e que o reaparelhamento e a moralização da polícia, processos já em curso, darão uma maior eficiência ao combate à criminalidade; que a diminuição da pobreza e uma maior eficiência no combate à criminalidade permitirão atenuar as inquietações expressas pela tese.</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col m1 l1 s1">
+													<img src="include/images/letraBazul.png" alt="imagem da letra B" style="max-height:35px;margin-left:60px;" />
+												</div>
+												<div class="col m11 l11 s11">
+													<p style="margin-left:-25px;"><strong>Síntese inconsistente:</strong> é aquela que tenta conciliar o que não é conciliável. No entanto, como já mostramos, depois do exame das posições extremas expressas pela tese e pela antítese, pode-se chegar a um ponto de vista mais matizado, ultrapassando a contradição, que se revela aparente. Por exemplo, quando se defendem as teses de que a arte de um país deve ter um caráter nacional ou de que deve ela ter um caráter universal, pode-se chegar, na síntese, a uma verdade média que mostre que o universal é atingido por meio do particular. [SAVIOLI; FIORIN. Manual do Candidato: português. 2. ed. FUNAG, 2001.]</p>
+												</div>
+											</div>
+											<p class="fonteMenor"><sup>2</sup>PLATÃO, F; FIORIN, J. L. Lições de texto: leitura e redação. São Paulo: LZN, 2002.</p>
+
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+				<div class="bb-item item-02-07-formasTextoEsquema" id="02-07-formasTextoEsquema" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno">
+									<div class="row">
+										<h3>3.7.2	Esquema: problema, causas e soluções</h3>
+										<p>Nesse plano, apresentam-se um problema, suas causas e possíveis soluções.</p>
+										<div class="row">
+											<div class="col l8 m8 s12 offset-l2 offset-m2">
+												<table>
+													<tr>
+														<td colspan="2" style="background:#FFF;text-align:center"><p class="semIndent"><strong>Esquema problema, causas e soluções</strong></p></td>
+													</tr>
+													<tr>
+														<td class="tabelaAzulEscuro" style="margin:0px 10px 10px 0px;"><p class="semIndent"><strong>1º parágrafo</strong></p></td>
+														<td class="tabelaLaranjaEscuro" style="margin:0px 0px 10px 0px;"><p class="semIndent"><strong>Introdução:</strong> apresenta o problema, o tema do texto.</p></td>
+													</tr>
+													<tr>
+														<td class="tabelaAzulClaro" style="margin:0px 10px 10px 0px;"><p class="semIndent"><strong>2º parágrafo:</strong> Desenvolvimento</p></td>
+														<td class="tabelaLaranjaClaro" style="margin:0px 0px 10px 0px;"><p class="semIndent"><strong>Causas:</strong> apresentam-se as causas do problema.</p></td>
+													</tr>
+													<tr>
+														<td class="tabelaAzulEscuro" style="margin:0px 10px 10px 0px;"><p class="semIndent"><strong>3º parágrafo: </strong>Desenvolvimento</p></td>
+														<td class="tabelaLaranjaEscuro" style="margin:0px 0px 10px 0px;"><p class="semIndent"><strong>Soluções:</strong> apresentam-se as soluções propostas pelo autor. É hora de usar os argumentos para convencer o interlocutor de que a solução é adequada. Pode-se também contrapor solução oferecida por outro, apontando objeções e restrições.</p></td>
+													</tr>
+													<tr>
+														<td class="tabelaAzulClaro" style="margin:0px 10px 10px 0px;"><p class="semIndent"><strong>4º parágrafo:</strong> Conclusão</p></td>
+														<td class="tabelaLaranjaClaro" style="margin:0px 0px 10px 0px;"><p class="semIndent"><strong>Síntese:</strong> reforço dos argumentos apresentados.</p></td>
+													</tr>
+												</table>
+											</div>
+										</div>
+										<p>Vamos ver um texto em que se utilizou o plano acima. O primeiro e o segundo parágrafo apresentam o problema: a falta de assistência médica no interior do país e a solução encontrada pelo Governo:</p>
+										<div class="col s12 l10 m10 offset-l1 offset-m1 caixaAzul" style="margin-bottom: 20px;">
+											<p class="">São vários os fatores que concorrem para que a saúde brasileira seja um grande problema para sua população: falta de equipamentos médicos adequados, hospitais precários, médicos e profissionais de saúde em número insuficiente. Em municípios do interior e nas periferias das grandes cidades brasileiras, esses problemas agravam-se ainda mais em razão do pequeno número de médicos dispostos a se instalar nessas regiões. </p>
+											<p>O Governo Federal anunciou recentemente que firmou contrato com Cuba para que médicos daquele país exerçam a medicina em cidades do interior. Com a "importação" de médicos estrangeiros, o Governo pretende resolver o problema crônico de falta de assistência médica no interior do país.</p>	
+										</div>
+										<p>O terceiro parágrafo critica a proposta do Governo Federal: </p>
+										<div class="col s12 l10 m10 offset-l1 offset-m1 caixaAzul" style="margin-bottom: 20px;">
+											<p class="">Apesar de o problema ser real e necessitar de solução urgente, a proposta apresentada pelo governo, aparentemente simples, é enganosa: instalar médicos (estrangeiros ou nativos) em áreas de difícil provimento não resultará em melhor assistência para a população brasileira. É fácil prever o fracasso desse estratagema.</p>	
+										</div>
+										<p>O quarto parágrafo apresenta a solução proposta pelo autor do texto. Observe o argumento de autoridade<sup>3</sup> que ele usou para reforçar sua tese:</p>
+										<div class="col s12 l10 m10 offset-l1 offset-m1 caixaAzul" style="margin-bottom: 20px;">
+											<p class=""> A assistência de qualidade não se faz apenas com médicos com um estetoscópio no pescoço. É preciso investimento em infraestrutura, insumos, apoio de equipes multidisciplinares e profissionais estimulados por políticas que reconheçam seu valor e sua essencialidade dentro de um modelo de atenção, que míngua devido à incompetência gerencial. Descentralizar os recursos e facilitar o acesso das prefeituras das pequenas cidades é o caminho para a criação de planos de carreira para médicos que se instalarem no interior. <strong>Conforme Hermann Swartz, diretor da ONU para a saúde mundial, a descentralização dos recursos com essa finalidade trouxe avanços significativos para os países que a adotaram.</strong></p>	
+										</div>
+										<p>O quinto parágrafo traz a conclusão. O autor termina apresentando mais um reforço para sua tese: um argumento com base em fatos: o uso de dados estatísticos.</p>
+										<div class="col s12 l10 m10 offset-l1 offset-m1 caixaAzul" style="margin-bottom: 20px;">
+											<p class=""> Além disso, o Brasil precisa investir mais em seu sistema de saúde. Dados estatísticos da ONU trazem os números do investimento mundial em saúde no ano de 2010: na Inglaterra, a participação do estado no gasto nacional em saúde chega a 84%. Na Suécia, França, Alemanha e Espanha, oscila de 74% a 81%. Na Argentina, é de 66%. No Brasil, é de 44%. Os números falam por si. Não é importando médicos que conseguiremos encobrir as deficiências apontadas. [Revista Veja, 2013.]</p>	
+										</div>
+										<p class="fonteMenor"><sup>3</sup>Argumento de autoridade: Argumento baseado na citação de um especialista no assunto ou em dados de instituição de pesquisa.</p>
+									
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->	
+				<div class="bb-item item-02-08-recursos" id="02-08-recursos" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno">
+									<div class="row">
+										<h3>3.8	Recursos expositivos</h3>
+										<p>Agora que conhecemos os tipos de texto dissertativo, veremos os recursos que nos permitem desenvolvê-lo de forma a atingir nosso objetivo. Entre esses recursos, encontramos a descrição, a enumeração, a comparação e o confronto. Trataremos também do uso da impessoalidade, recomendável para qualquer tipo de dissertação.</p>
+										<p><strong>A DESCRIÇÃO</strong></p>
+										<p>Recorre-se à descrição sempre que se deseja discorrer sobre algo supostamente desconhecido do leitor. A descrição situa seres animados ou inanimados em seus traços peculiares e marcantes, captados por meio dos cinco sentidos. </p>
+										<p>Características:</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Abundância de adjetivação;</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Preferência por verbos de estado;</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Uso de linguagem denotativa para características, mas também metafórica quando se deseja ajudar o leitor a criar uma imagem mental;</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Apresentação de aspectos físicos (cores, formas, sons, gestos, odores) e psicológicos (impressões subjetivas, comportamentos).</p>
+										<p>Vejamos um exemplo:</p>
+										<div class="col s12 l10 m10 offset-l1 offset-m1 caixaAzul" style="margin-bottom: 20px;">
+											<p class="">A Rádio Justiça é uma emissora pública, de caráter institucional, administrada pelo Supremo Tribunal Federal, que pode ser sintonizada, em todo o Distrito Federal, nas transmissões em FM, na frequência 104,7 MHZ. A emissora também é sintonizada via satélite (Brasilsat C2, frequência de descida 3649 MHz, polarização vertical, symbol rate 4,399 Mbps, FEC ¾, PID de áudio 0350) e pela internet, no sítio da emissora. [Guia do Advogado. STF, p. 40.]</p>	
+										</div>
+										<p>Quando fizer uso da descrição em seus textos, procure usar linguagem clara e objetiva. Lembre-se de que o leitor precisa formar uma imagem do que é apresentado no texto. É fundamental que você não omita informações, julgando que o receptor já saiba do que se trata. O objetivo será atingido se o texto puder recriar, para qualquer pessoa que o leia, o que foi observado e descrito por você.</p>
+										<p><strong>A ENUMERAÇÃO</strong></p>
+										<p>Trata-se de identificar e dispor sequencialmente informações sobre aquilo que se descreve. Naturalmente, o trecho enumerativo não pode ser longo nem deve estar presente em todo o texto. Deve-se tê-lo como um recurso expositivo útil apenas quando é preciso elencar ou identificar fatores e características. Após a enumeração, o texto prossegue com a explicitação do significado do que foi enumerado. Confira:</p>
+										<div class="col s12 l10 m10 offset-l1 offset-m1 caixaAzul" style="margin-bottom: 20px;">
+											<p class="">A OAB disponibiliza sala de apoio no prédio do STF para atender necessidades profissionais urgentes de advogados, relacionadas à pesquisa doutrinária, de legislação e de jurisprudência; à elaboração de petições; à digitalização de peças processuais; à consulta a andamentos processuais; à impressão de documentos; e ao peticionamento eletrônico por meio do Portal do Processo Eletrônico. [<em>Guia do Advogado</em>. STF, p. 42 – Com adaptações.]</p>	
+										</div>
+										<p>&nbsp;</p>
+										<p><strong>A COMPARAÇÃO</strong></p>
+										<p>O recurso da comparação é mais uma ferramenta para garantir que o leitor compreenda bem a mensagem. É muito útil quando se percebe que uma simples explicação não será o bastante para a compreensão do texto. A comparação permite evocar alguma imagem forte, que ajude o receptor a visualizar o que o emissor tenta transmitir. Veja o exemplo a seguir:</p>
+										<div class="col s12 l10 m10 offset-l1 offset-m1 caixaAzul" style="margin-bottom: 20px;">
+											<p class="">O Holocausto é dos capítulos mais vergonhosos e abomináveis da história da humanidade. Simboliza o racismo extremo institucionalizado e adaptado à política megalomaníaca de líder insano. Sete décadas depois de Auschwitz, vivemos o nosso próprio “Holocausto”, uma comparação com as devidas proporções guardadas. Quem depende da saúde pública no Brasil está fadado a também enfrentar a humilhação e, talvez a morte. (...)</p>	
+											<p class=""> O número de mortes e o dano psicológico às vítimas do sistema de saúde e da violência no Brasil são tão grandes quanto o Holocausto. [Rodrigo Craveiro. <em>O nosso Holocausto</em>. Correio Braziliense, 28.1.2015.] </p>
+										</div>
+										<p>&nbsp;</p>
+										<p><strong>O CONTRASTE</strong></p>
+										<p>Esse recurso expositivo é utilizado para abordar uma dada questão sob diversos ângulos. No texto expositivo, o contraste evidencia posições que, justamente por serem divergentes a respeito do tema, devem ser consideradas na discussão. Confira:</p>
+										<div class="col s12 l10 m10 offset-l1 offset-m1 caixaAzul" style="margin-bottom: 20px;">
+											<p class="">Os defensores da redução da maioridade penal acreditam que os adolescentes infratores não recebem a punição devida. Para eles, o Estatuto da Criança e do Adolescente é muito tolerante com os infratores e não intimida os que pretendem transgredir a lei. Por outro lado, aqueles que combatem as mudanças na legislação para reduzir a maioridade penal acreditam que ela não traria resultados na diminuição da violência e só acentuaria a exclusão de parte da população. [Revista <em>Veja</em>. A redução da maioridade penal. Com adaptações.]</p>
+										</div>
+										<p>&nbsp;</p>
+										<p><strong>A IMPESSOALIDADE</strong></p>
+										<p>Tanto a pessoalidade quanto a impessoalidade podem estar presentes em qualquer gênero textual. O texto é considerado pessoal quando o autor expõe suas ideias de forma evidente, assumindo posição subjetiva. Isso é facilmente percebido pelo uso da primeira pessoa do singular. No texto impessoal, ao contrário, o autor distancia-se do assunto abordado, tratando os fatos de forma objetiva. A marca textual da impessoalidade é o uso de verbos na terceira pessoa.</p>
+										<p>Observe que textos institucionais, científicos, didáticos e argumentativos quase sempre são escritos com impessoalidade. Naturalmente, cabe questionar: se o texto é argumentativo e expõe o ponto de vista do autor, por que primar pela impessoalidade? Eis a resposta: porque a impessoalidade confere credibilidade ao texto. A opinião do autor é apresentada como verdade universal e indiscutível. O texto com marcas de pessoalidade, ao contrário, tende a ser considerado subjetivo e, portanto, menos confiável quanto ao ponto de vista que defende.</p>
+										<p>Leia o texto argumentativo a seguir:</p>
+										<div class="col s12 l10 m10 offset-l1 offset-m1 caixaAzul" style="margin-bottom: 20px;">
+											<p class="">Sempre <strong>defendi</strong> a ideia de que nossos alunos não devem usar uniforme. <strong>Acho que</strong>, se a sociedade em que vivemos é marcada pelas diferenças, é natural, pelo menos do <strong>meu ponto de vista</strong>, que na escola essas diferenças apareçam nas roupas, nos penteado. <strong>No meu modo de ver</strong>, a democracia está nas pequenas coisas do dia a dia: nas discussões que tenho com <strong>meus</strong> filhos em casa, nas decisões que <strong>eu</strong> tenho que tomar com <strong>minha</strong> mulher, e está também na liberdade de escolha de <strong>meus</strong> filhos quanto à roupa que eles vão usar para ir à escola.</p>
+										</div>
+										<p>Nesse trecho, há várias marcas de pessoalidade do discurso. Repare o uso da primeira pessoa de verbos e pronomes (<em>defendi, nossos, vivemos, meus, eu, tenho, minha</em>), bem como o das expressões como <em>acho que, do meu ponto de vista, no meu modo de ver</em>. Você pode perceber com facilidade a presença do autor e a perspectiva adotada por ele. Trata-se, portanto, de visão subjetiva do assunto, o que confere ao texto pessoalidade e, de certa forma, enfraquece a argumentação.</p>
+										<p>Compare agora o texto lido com este outro, sobre o mesmo assunto: </p>
+										<div class="col s12 l10 m10 offset-l1 offset-m1 caixaAzul" style="margin-bottom: 20px;">
+											<p class="">Até a década de sessenta, os <em>nossos alunos</em> usavam uniforme. Nessa época a escola passou por grandes alterações. Novos métodos de ensino foram implementados. Conceitos como consciência crítica e social, criatividade e respeito a valores comunitários tornaram-se vivos na prática da escola. Optou-se, também, pela não obrigatoriedade do uniforme. A prática pedagógica da escola tem sido construída ao longo do tempo: educandos e educadores são os principais agentes dessa construção. Regras e normas são elaboradas e devem refletir a necessidade do grupo, ou seja, estar a serviço desse mesmo grupo. A obrigatoriedade do uniforme deveria proporcionar benefícios significativos à comunidade escolar. [SILVA, Eduardo Roberto da. <em>Pais & Teens</em>. 1997 – Extraído de Português: Linguagens. William Cereja e Thereza Cochar. Ed. Atual, 2003.]</p>
+										</div>
+										<p>No segundo trecho, perceba como o autor distancia-se do tema. Sua presença é sentida mais diretamente apenas no emprego da expressão <em>nossos</em> alunos. No restante do texto, há uma série de mecanismos linguísticos que tornam a linguagem impessoal. O autor adotou o tom genérico, impessoal como uma estratégia discursiva. Ao torná-lo objetivo, as ideias defendidas ganham maior credibilidade junto ao leitor. </p>
+										<p>A impessoalização do texto é uma estratégia argumentativa. Por meio dela, busca-se mostrar ao leitor que a visão apresentada não é particular, mas sim uma noção partilhada por várias pessoas. Espera-se, como isso, apoiar o discurso na força da maioria. </p>
+										<p>Como podemos impessoalizar o texto? Há quatro formas: generalização do sujeito, usar como agente um ser inanimado, indeterminar o sujeito ou usar a voz passiva sintética. Vamos ver cada uma delas em detalhes?</p>
+										<p><strong>FORMAS DE IMPESSOALIZAR O TEXTO</strong></p>
+										<div class="row">
+											<div class="col m1 l1 s1">
+												<img src="include/images/letraAazul.png" alt="imagem da letra A" style="max-height:35px;margin-left:35px;" />
+											</div>
+											<div class="col m11 l11 s11">
+												<p style="margin-left:-25px;"><strong>Generalizar o sujeito</strong></p>
+											</div>
+										</div>
+										<p>Para tornar o texto impessoal e objetivo, podemos substituir expressões como <em>eu penso, eu acredito, no meu modo de ver, do meu ponto de vista</em>, etc. por outras, <em>como convém observar, é bom lembrar, é preciso considerar, não se pode esquecer, é indispensável, é importante</em>, etc. Pode-se, ainda, usar a primeira pessoa do plural no lugar da primeira pessoa do singular. Troque <em>eu proponho</em> por <em>propomos</em>.</p>
+										<div class="row">
+											<div class="col m1 l1 s1">
+												<img src="include/images/letraBazul.png" alt="imagem da letra B" style="max-height:35px;margin-left:35px;" />
+											</div>
+											<div class="col m11 l11 s11">
+												<p style="margin-left:-25px;"><strong>Inserir um agente inanimado</strong></p>
+											</div>
+										</div>
+										<p>Também é possível tornar o texto impessoal ao inserir, como agente, um ser inanimado, um fenômeno, uma instituição ou uma organização. Repare como, em frases como <em>O Tribunal decidiu..., A Secretaria ordenou..., O Senado promulgou...,</em> a responsabilidade em relação à ação torna-se diluída. </p>
+										<div class="row">
+											<div class="col m1 l1 s1">
+												<img src="include/images/letraCazul.png" alt="imagem da letra C" style="max-height:35px;margin-left:35px;" />
+											</div>
+											<div class="col m11 l11 s11">
+												<p style="margin-left:-25px;"><strong>Indeterminar o sujeito</strong></p>
+											</div>
+										</div>
+										<p>Outra forma de impessoalizar a linguagem é recorrer ao sujeito indeterminado. Para isso existem duas possibilidades: </p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Suprimir o sujeito e colocar o verbo na terceira pessoa do plural;</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Empregar o verbo intransitivo, transitivo indireto ou de ligação + o pronome se.</p>
+										<p>Veja os exemplos:</p>
+										<div class="row">
+										<div class="col l10 m10 s12 offset-l1 offset-m1">
+											<table>
+												<tr>
+													<td style="background-color:rgb(213,220,227);"><p style="text-indent:0em;">O presidente da associação já redigiu o documento.</p></td>
+													<td style="background-color:rgb(213,220,227);"><p style="text-indent:0em;">Já redigiram o documento. (verbo na terceira pessoa do plural)</p></td>
+												</tr>
+												<tr>
+													<td style="background-color:rgb(213,220,227);"><p style="text-indent:0em;">Os diretores da escola e os professores optaram pela utilização do uniforme.</p></td>
+													<td style="background-color:rgb(213,220,227);"><p style="text-indent:0em;">Optou-se pela não utilização do uniforme. (VTI + se)</p></td>
+												</tr>
+											</table>
+										</div>
+										</div>
+										<div class="row">
+											<div class="col m1 l1 s1">
+												<img src="include/images/letraDazul.png" alt="imagem da letra D" style="max-height:35px;margin-left:35px;" />
+											</div>
+											<div class="col m11 l11 s11">
+												<p style="margin-left:-25px;"><strong>Usar a voz passiva</strong></p>
+											</div>
+										</div>
+										<p>Usar a passiva sem esclarecer o agente é mais um recurso gramatical que torna a linguagem do texto impessoal. Isso se explica porque, na voz passiva, ao contrário do que ocorre na voz ativa, existe a possibilidade de suprimir o agente. Isso pode ser feito de duas maneiras:</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Retirar o agente da passiva no caso de voz passiva analítica. </p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Usar a voz passiva sintética (com o pronome se). </p>
+										<p>Veja os exemplos:</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Uma candidata chamou o fiscal da prova. (voz ativa)</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />O fiscal da prova foi chamado. (voz passiva analítica com verbo ser e sem o agente da passiva – quem chamou o fiscal?)</p>
+										<p><img src="include/images/quadradoVermelho.png" alt="" style="max-width:10px;margin-right:20px;" />Chamou-se o fiscal da prova. (voz passiva sintética ou pronominal com pronome apassivador se – quem chamou o fiscal?)</p>
+										<p>Agora chegou a hora de colocar em prática os recursos expositivos que vimos nesta aula. Vamos aos exercícios!</p>										
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->								
+				
+				<div class="bb-item item-02-09-exercicios" id="02-09-exercicios" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno">
+									<div class="row">
+										<p></p>
+										<div class="row">
+										<div class="col l8 m8 s12 offset-l2 offset-m2" style="margin-top:0px !important;padding-top:0px !important;">
+												<div class="caixaExercitar" style="margin-top:30px;">
+												<img src="include/images/hora-de-Exercitar.png" style="margin-left:-7px;margin-top:-30px !important;max-width:105%" />	
+													<p><strong>1.</strong> Como vimos, a impessoalização é um recurso argumentativo. Sabendo disso, impessoalize as frases abaixo de duas formas:</p>
+													<div class="row">
+														<div class="col m1 l1 s1">
+															<img src="include/images/letraAVerdeAmarelo.png" alt="imagem da letra A" style="max-height:35px;margin-left:50px;" />
+														</div>
+														<div class="col m11 l11 s11">
+															<p style="margin-left:-25px;">coloque o verbo na 3ª pessoa do plural;</p>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col m1 l1 s1">
+															<img src="include/images/letraBVerdeAmarelo.png" alt="imagem da letra B" style="max-height:35px;margin-left:50px;" />
+														</div>
+														<div class="col m11 l11 s11">
+															<p style="margin-left:-25px;">coloque o verbo na 3ª pessoa do singular + o índice de indeterminação do sujeito.</p>
+														</div>
+													</div>
+													<p>Observe o modelo: </p>
+													<div class="col s12 l10 m10 offset-l1 offset-m1 caixaAzul">
+														<p class="" style="text-indent:0em;">O policial duvidou do motorista.</p>
+														<p style="text-indent:0em;">Verbo na 3ª p. do plural:  <strong>Duvidaram</strong> do motorista.</p>
+														<p style="text-indent:0em;">Verbo na 3ª p. do singular + índice de ind. do sujeito:<br />  <strong>Duvidou-se</strong> do motorista.</p>
+													</div>
+													<p>&nbsp;</p>
+													<div class="row">
+														<div class="col m1 l1 s1">
+															<img src="include/images/letraAVerdeAmarelo.png" alt="imagem da letra A" style="max-height:35px;margin-left:50px;" />
+														</div>
+														<div class="col m11 l11 s11">
+															<p style="margin-left:-25px;">As pessoas carentes nunca precisaram tanto de ajuda como agora.</p>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col m1 l1 s1">
+															<img src="include/images/letraBVerdeAmarelo.png" alt="imagem da letra B" style="max-height:35px;margin-left:50px;" />
+														</div>
+														<div class="col m11 l11 s11">
+															<p style="margin-left:-25px;">Os advogados reclamaram na Central do Cidadão sobre o comportamento do guarda.</p>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col m1 l1 s1">
+															<img src="include/images/letraCVerdeAmarelo.png" alt="imagem da letra C" style="max-height:35px;margin-left:50px;" />
+														</div>
+														<div class="col m11 l11 s11">
+															<p style="margin-left:-25px;">O médico perguntou de você na enfermaria.</p>
+														</div>
+													</div>
+													<p><strong>2.</strong> Pode-se impessoalizar o sujeito passando as orações da voz ativa para a voz passiva e suprimindo o agente da passiva. </p>
+													<p>Observe o modelo:</p>
+													<p style="text-indent:0em;text-align:center;"><img src="./include/images/exercicio_exemplo1.png" style="max-width:100%" /></p>
+													<p style="text-indent:0em;text-align:center;"><img src="./include/images/exercicio_exemplo2.png" style="max-width:100%" /></p>
+													<p style="text-indent:0em;text-align:center;"><img src="./include/images/exercicio_exemplo3.png" style="max-width:100%" /></p>
+													<p>Faça o mesmo com as frases a seguir (escreva as duas possibilidades):</p>
+													<div class="row">
+														<div class="col m1 l1 s1">
+															<img src="include/images/letraAVerdeAmarelo.png" alt="imagem da letra A" style="max-height:35px;margin-left:50px;" />
+														</div>
+														<div class="col m11 l11 s11">
+															<p style="margin-left:-25px;">A diretora nunca exigiu o uso do uniforme.</p>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col m1 l1 s1">
+															<img src="include/images/letraBVerdeAmarelo.png" alt="imagem da letra B" style="max-height:35px;margin-left:50px;" />
+														</div>
+														<div class="col m11 l11 s11">
+															<p style="margin-left:-25px;">Os médicos iniciaram a campanha de vacinação.</p>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col m1 l1 s1">
+															<img src="include/images/letraCVerdeAmarelo.png" alt="imagem da letra C" style="max-height:35px;margin-left:50px;" />
+														</div>
+														<div class="col m11 l11 s11">
+															<p style="margin-left:-25px;">Vários juristas contestaram os argumentos do advogado.</p>
+														</div>
+													</div>
+													<p>Vamos conferir as respostas?</p>
+													<p><strong>1. a)</strong>	As pessoas carentes nunca precisaram tanto de ajuda como agora.<br /><span style="margin-left: 2.5em;">Nunca precisaram tanto de ajuda como agora.</span><br /><span style="margin-left: 2.5em;">Nunca se precisou tanto de ajuda como agora.</span></p>
+													<p><strong>b)</strong>	Os advogados reclamaram na Central do Cidadão sobre o comportamento do guarda.<br /><span style="margin-left: 2.5em;">Reclamaram na Central do Cidadão sobre o comportamento do guarda.</span><br /><span style="margin-left: 2.5em;">Reclamou-se na Central do Cidadão sobre o comportamento do guarda.</span></p>
+													<p><strong>c)</strong>	O médico perguntou de você na enfermaria.<br /><span style="margin-left: 2.5em;">Perguntaram de você na enfermaria.</span><br /><span style="margin-left: 2.5em;">Perguntou-se de você na enfermaria.</span></p>
+													<p><strong>2. a)</strong>	A diretora nunca exigiu o uso do uniforme.<br /><span style="margin-left: 2.5em;">O uniforme nunca foi exigido.</span><br /><span style="margin-left: 2.5em;">Nunca se exigiu o uniforme.</span></p>
+													<p><strong>b)</strong>	Os médicos iniciaram a campanha de vacinação.<br /><span style="margin-left: 2.5em;">A campanha de vacinação foi iniciada.</span><br /><span style="margin-left: 2.5em;">Iniciou-se a campanha de vacinação.</span></p>
+													<p><strong>c)</strong>	Vários juristas contestaram os argumentos do advogado.<br /><span style="margin-left: 2.5em;">Os argumentos do advogado foram contestados.</span><br /><span style="margin-left: 2.5em;">Contestaram-se os argumentos do advogado. </span></p>
+												 </div>
+											 </div>
+										 </div>
+										 <p>E, então, foi fácil, não é mesmo? Quando você estiver redigindo seus textos lembre-se de verificar se a impessoalização pode contribuir para aumentar a força argumentativa das frases. Teste as possibilidades e verifique a mais adequada ao seu propósito comunicativo. </p>
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+				<div class="bb-item item-03-00-conclusao" id="03-00-conclusao" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno">
+									<div class="row">
+										<h3>Conclusão</h3>
+										<p>Nesta aula, vimos as características do texto dissertativo e aprendemos a desenvolvê-lo com base em esquemas. Além disso, aprendemos a fazer uso dos recursos expositivos, tais como a impessoalização, a descrição e a comparação. Em nossa próxima aula, aprofundaremos nossos estudos sobre a argumentação: suas características, seus eixos e a argumentação retórica e a demonstrativa. Os assuntos são bem interessantes. Confira na aula 4.</p>
+										<p><strong><em>Até lá.</em></strong></p>
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+							<!-- página 25 - 04-00-bibliografia -->
+				<div class="bb-item item-04-00-bibliografia" id="04-00-bibliografia" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno">
+									<div class="row off">
+											<h3>Bibliografia</h3>
+											<ul class="bibliografia">
+												<li>CEREJA, W. R.; MAGALHÃES, T. C. <em>Português:</em> linguagens. São Paulo: Atual Editora, 2003.</li>
+												<li>EMEDIATO, W. <em>A fórmula do texto:</em> redação, argumentação e leitura. São Paulo: Ed. Geração Editorial, 2010.</li>
+												<li>GRANATIC, Branca. <em>Técnicas Básicas de Redação.</em> São Paulo: Ed. Scipione. 1997.</li>
+												<li>KOCH, Ingedore G. Villaca. <em>Argumentação e linguagem.</em> 7 ed. São Paulo: Cortez, 2002.</li>
+												<li>LEITÃO, Luiz Ricardo (org.). <em>Redação de textos dissertativos.</em> Ed. Ferreira. 2013.</li>
+												<li>PEREIRA, Gil Carlos. <em>A palavra:</em> expressão e criatividade. São Paulo: Ed. Moderna, 1997.</li>
+												<li>PLATÃO, F.; FIORIN, J. L. <em>Lições de texto:</em> leitura e redação. São Paulo: Ática, 2006.</li>
+												<li>RODRIGUEZ, V. G. <em>Argumentação jurídica.</em> São Paulo: LZN, 2002.</li>
+											</ul>
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+			</div>
+		</div>
+	</main>
+	
+ 		<!--<footer class="page-footer" >
+		<div class="container">
+			<div class="center-align">
+				<img class="img-responsive" src="include/images/ead_logo.png" style="max-height:60px;" />
+				<h1 style="float:right;"><span class="bignoodle">Redação</span> <span class="nick">Argumentativa</span></h1>
+			</div>
+		</div>
+	</footer> -->
+	
+	<script src="include/js/jquery.bookblock.js"></script>
+	
+	<script src="include/js/page.js"></script>
+	<script src="include/js/functions.js" type="text/javascript"></script>
+		
+
+</div><div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><span class="ui-icon-loading"></span><h1>loading</h1></div><div class="material-tooltip" id="3bce847c-380c-63fc-f105-bdcf620f1f03"><span>Página anterior</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="dae2237b-244d-0e80-8229-e7cf6808abaa"><span>Próxima página</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="dfdae80e-c4c2-5b56-6a1f-a3dcda8f4feb"><span>Diminuir fonte</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="1ce2b460-34f9-7698-374a-7a82e177afe2"><span>Retomar tamanho padrão da fonte</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="ba6a33b3-c1ae-a4eb-9706-00f06f248a24"><span>Aumentar fonte</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="hiddendiv common"></div><div class="material-tooltip" id="acbd782c-fba5-927f-6e88-83b253853abf"><span>Página anterior</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="5020c8e3-3c0c-2bca-f36d-94e72c082594"><span>Próxima página</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="e9820861-feb1-9e78-4a23-c767e2bc6643"><span>Diminuir fonte</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="defa175e-2118-0699-3fde-a7b6880fe102"><span>Retomar tamanho padrão da fonte</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="a92f2a81-9a17-0569-6a06-ed3723861db2"><span>Aumentar fonte</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="drag-target" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div><div id="window-resizer-tooltip"><a href="index.html#" title="Edit settings"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth"></span> x <span class="tooltipHeight" id="winHeight"></span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth"></span> x <span class="tooltipHeight" id="vpHeight"></span></div></body></html>
