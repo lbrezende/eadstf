@@ -873,6 +873,16 @@ div.margin p{
   margin: -55px;
   float: left
 }
+.ficaadica {
+  margin: -121px -10px 0px 0px;
+  float: right;
+
+}
+.ficaadicabox {
+  margin: 20px;
+  padding: 20px;
+  font-size:1.4em;
+}
 
 /***************
 Estilos Aula 1
