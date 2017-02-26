@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR" class="js no-touch cssanimations csstransforms csstransforms3d csstransitions ui-mobile">
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Aula X - Caminhos da pontuação | Nome da aula</title>
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0"> 
+
+	<link href="../include/css/icon.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../include/css/bookblock.css">
+	<link rel="stylesheet" type="text/css" href="../include/css/materialize.css">
+	<link rel="stylesheet" href="../include/fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../include/css/style.css">	<link rel="stylesheet" type="text/css" href="../include/css/aula1.css">
+	
+	<script src="../include/js/modernizr.custom.79639.js"></script>
+	<script src="../include/js/jquery-2.1.1.min.js"></script>
+	<script src="../include/js/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="../include/js/materialize.min.js"></script>
+
+</head>
+
+<body class="ui-mobile-viewport ui-overlay-a" cz-shortcut-listen="true"><div data-role="page" data-url="" tabindex="0" class="ui-page ui-page-theme-a ui-page-active" style="min-height: 815px;">
+	<header class="page-header">
+		<nav aria-label="Menu principal">
+			<div class="brand-logo hide-on-med-and-down">
+			<img src="../include/images/ead_setas.png" style="max-height:60px;margin-right:10px;" class="hide-on-med-and-down" /><img class="" src="../include/images/ead_logo.png" style="max-height:60px;" />&nbsp; <h1 style="float:right;" class="deslocaTitulo"><span class="nick hide-on-med-and-down">Nome da aula</span></h1>
+			<!--<img src="../include/images/logo.png" style="max-height:60px;" class="" />&nbsp; <h1 style="float:right;" class="deslocaTitulo"><span class="bignoodle">Redação</span> <span class="nick">Argumentativa</span></h1>-->
+			</div>
+
+				<ul class="navegacao right">
+					<li id="bb-nav-prev" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Página anterior" data-tooltip-id="acbd782c-fba5-927f-6e88-83b253853abf">
+						<a class="waves-effect waves-light ui-link">
+							<span class="material-icons">chevron_left</span>
+							<span class="screen-reader-text">Página anterior</span>
+						</a>
+					</li>
+					<li id="bb-nav-next" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Próxima página" data-tooltip-id="5020c8e3-3c0c-2bca-f36d-94e72c082594">
+						<a class="waves-effect waves-light ui-link">
+							<span class="material-icons">chevron_right</span>
+							<span class="screen-reader-text">Próxima página</span>
+						</a>
+					</li>
+				</ul>
+			
+				<div class="pages right" role="status">
+					<span class="screen-reader-text">Página atual: </span>
+					<span class="page page-atual">2</span>
+					<span class="screen-reader-text"> de </span>
+					<span class="separa" aria-hidden="true">/</span>
+					<span class="page page-total">25</span>
+				</div>
+
+				<ul class="font-config right" aria-hidden="true">
+					<li>
+						<a class="tooltipped a-menos ui-link" data-position="bottom" data-delay="50" data-tooltip="Diminuir fonte" data-action="-1" data-tooltip-id="e9820861-feb1-9e78-4a23-c767e2bc6643">
+							A-
+						</a>
+					</li>
+					<li>
+						<a class="tooltipped a-zero ui-link" data-position="bottom" data-delay="50" data-tooltip="Retomar tamanho padrão da fonte" data-action="0" data-tooltip-id="defa175e-2118-0699-3fde-a7b6880fe102">
+							A
+						</a>
+					</li>
+					<li>
+						<a class="tooltipped a-mais ui-link" data-position="bottom" data-delay="50" data-tooltip="Aumentar fonte" data-action="+1" data-tooltip-id="a92f2a81-9a17-0569-6a06-ed3723861db2">
+							A+
+						</a>
+					</li>
+					<li class="separador">
+					</li>
+				</ul>
+				<script>
+				$(document).ready(function()
+				{
+					$('.font-config').on('click','a',null,function(e)
+					{
+						var action = $(this).data('action');
+						if ($(this).hasClass('disabled'))
+						{
+							e.preventDefault();
+							e.stopPropagation();
+							return false;
+						}
+						var padrao = ($('article').parent().css('font-size'));
+						var atual = ($('article').css('font-size'));
+						padrao = Number(padrao.replace('px',''));
+						atual = Number(atual.replace('px',''));
+				
+						var size = Number(atual/padrao);
+						switch (action.toString()) {
+							case '+1':
+								size *= 1.2;
+								break;
+							case '-1':
+								size *= 0.9;
+								break;
+							case '0':
+							default:
+								size = 1;
+								break;
+						}
+						console.log(size);
+				
+						if (size < .7)
+						{
+							size = 0.7;
+							$('.font-config a-menos').addClass('disabled');
+						}
+						else if (size > 2)
+						{
+							size = 2.0;
+							$('.font-config a-mais').addClass('disabled');
+						}
+						else
+						{
+							$('.font-config a-menos').removeClass('disabled');
+							$('.font-config a-mais').removeClass('disabled');
+						}
+						
+						$('article').css('font-size',size+'em');
+					});
+				})
+				</script>
+				<ul id="mainMenu" class="side-nav" role="menu" style="width: 320px; transform: translateX(-100%);">
+					<li class="header" aria-hidden="true">
+						<a class="close ui-link" style="color:#EC620D; background:none">
+							<span class="material-icons">close</span>
+						</a>
+						<img src="../include/images/logoponto.png" alt="Sumário" title="Sumário" role="presentation" style="max-width:225px" />
+					</li>
+					
+										
+					<li>
+						<a href="index.html#01-introducao" data-target="01-introducao" data-aula="" role="menuitem" class="ui-link">
+							CAPA							
+						</a>
+					</li>
+
+					<li>
+						<a href="index.html#01-00-paginaAzul" data-target="01-00-paginaAzul" data-aula="Orçamento Público" role="menuitem" class="ui-link">
+							<span class="numero">1&nbsp;</span>
+							Página azul					
+						</a>
+					</li>			
+				
+					<li>
+						<a href="index.html#01-01-primeiraAula" data-target="01-01-primeiraAula" data-aula="Orçamento Público" role="menuitem" class="ui-link">
+							<span class="numero">1&nbsp;</span>
+							Primeira aula					
+						</a>
+					</li>
+
+					<li>
+						<a href="index.html#01-02-segundaAula" data-target="01-02-segundaAula" data-aula="Orçamento Público" role="menuitem" class="ui-link">
+							<span class="numero">2&nbsp;</span>
+							Segunda aula					
+						</a>
+					</li>
+
+					<li>
+						<a href="index.html#01-03-terceiraAula" data-target="01-03-terceiraAula" data-aula="Orçamento Público" role="menuitem" class="ui-link">
+							<span class="numero">3&nbsp;</span>
+							Tercerira aula					
+						</a>
+					</li>
+
+					<li>
+						<a href="index.html#01-04-quartaAula" data-target="01-04-quartaAula" data-aula="Orçamento Público" role="menuitem" class="ui-link">
+							<span class="numero">4&nbsp;</span>
+							Quarta aula					
+						</a>
+					</li>
+
+					<li>
+						<a href="index.html#01-05-quintaAula" data-target="01-05-quintaAula" data-aula="Orçamento Público" role="menuitem" class="ui-link">
+							<span class="numero">5&nbsp;</span>
+							Quinta aula					
+						</a>
+					</li>
+
+					<li>
+						<a href="index.html#01-06-sextaAula" data-target="01-06-sextaAula" data-aula="Orçamento Público" role="menuitem" class="ui-link">
+							<span class="numero">6&nbsp;</span>
+							Sexta aula					
+						</a>
+					</li>
+				</ul>
+
+
+				<a href="index.html#" data-activates="mainMenu" id="tblcontents" class="btn waves-effect waves-light button-collapse show-on-large ui-link" aria-hidden="true" style="box-shadow:none;"><span class="material-icons">menu</span></a>
+
+			</nav>
+			<script>
+			$(document).ready(function(){
+				$('.tooltipped').tooltip({delay: 50});
+			});
+			</script>		
+			<div id="titulo_aula" class="active "><h2><img src="../include/images/newlogo.png" style=" margin-right:30px; "  class="hide-on-large-only" /><span style=" display: -webkit-box;margin-top: -27px;margin-left: 104px;">Aula X - NOME DA AULA</span></h2></div>
+	</header>
+	
+	<main>
+		<div class="bb-custom-wrapper">
+			<div id="bb-bookblock" class="bb-bookblock" style="perspective: 2000px;" role="main">
+				<!-- página 1 - 01-introducao -->
+				<div class="bb-item item-01-introducao" id="01-introducao" style="display: block;">
+					<div class="content">
+						<div class="scroller">
+							<article class="" id="intro">
+								<div class="container">
+									<div class="row text-center">
+										<center><img src="../include/images/capa.png" class="full back-home" aria-hidden="true" alt="Imagem do título do curso de Pontuação" role="presentation" style="max-width:600px;"></center>
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+
+				
+				<div class="bb-item item-01-00-paginaAzul" id="01-00-paginaAzul" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" style="background:#E5F6F9">
+									<div class="row">
+										<p class="titulo-sem-titulo"><strong>Página com fundo azul</strong></p>
+										<p>Hoje daremos início a uma viagem de retorno à sua adolescência para relembrar assuntos mal resolvidos que possam ter gerado traumas profundos em sua psiquê. Para isso, peço que responda às seguintes perguntas:</p>
+										
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+				
+				<div class="bb-item item-01-01-primeiraAula aula1" id="01-01-primeiraAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" >
+									<div class="row">
+										<h3 class="">1.1 Primeira aula</h3>
+										<p class="titulo-sem-titulo" ><strong>Título com negrito</strong></p>
+										<p>Conteúdo</p>
+										<ol class="type_n1">
+											<li>item 1 <span class="highlight bold">item 1 negrito hightlight bold</span> item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1 </li>
+											<li>item 2</li>
+											<li>item 3</li>
+										</ol>
+										<p><img src="../include/images/principio.jpg"></p>
+										<div class="row">
+											<div class="col l8 m12 s12 offset-l2">
+												<div class="blocos-autor">
+													<center>Centralizado</center>
+													<p> Exemplo de responsividade </p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+	
+				<div class="bb-item item-01-02-segundaAula aula2" id="01-02-segundaAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno">
+									<div class="row">
+										<h3 class="">Segunda aula</h3>
+										<p>conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo </p>
+										<ol class="type_n1">
+											<li>item 1 <span class="highlight bold">item 1 negrito hightlight bold</span> item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1 </li>
+											<li>item 2</li>
+											<li>item 3</li>
+										</ol>
+										<div class="row">
+											<div class="col l8 m12 s12 offset-l2">
+												<div class="blocos-autor">
+													<center>Centralizado</center>
+													<p> Exemplo de responsividade </p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+
+				<div class="bb-item item-01-03-terceiraAula aula3" id="01-03-terceiraAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno">
+									<div class="row">
+										<h3>Terceira aula</h3>
+										<p>conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo </p>
+										<ol class="type_n1">
+											<li>item 1 <span class="highlight bold">item 1 negrito hightlight bold</span> item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1 </li>
+											<li>item 2</li>
+											<li>item 3</li>
+										</ol>
+										<div class="row">
+											<div class="col l8 m12 s12 offset-l2">
+												<div class="blocos-autor">
+													<center>Centralizado</center>
+													<p> Exemplo de responsividade </p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+	
+				<div class="bb-item item-01-04-quartaAula aula4" id="01-04-quartaAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno">
+									<div class="row">
+										<h3>Quarta aula</h3>
+										<p>conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo </p>
+										<ol class="type_n1">
+											<li>item 1 <span class="highlight bold">item 1 negrito hightlight bold</span> item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1 </li>
+											<li>item 2</li>
+											<li>item 3</li>
+										</ol>
+										<div class="row">
+											<div class="col l8 m12 s12 offset-l2">
+												<div class="blocos-autor">
+													<center>Centralizado</center>
+													<p> Exemplo de responsividade </p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+
+				<div class="bb-item item-01-05-quintaAula aula5" id="01-05-quintaAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno">
+									<div class="row">
+										<h3>Quinta aula</h3>
+										<p>conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo </p>
+										<ol class="type_n1">
+											<li>item 1 <span class="highlight bold">item 1 negrito hightlight bold</span> item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1 </li>
+											<li>item 2</li>
+											<li>item 3</li>
+										</ol>
+										<div class="row">
+											<div class="col l8 m12 s12 offset-l2">
+												<div class="blocos-autor">
+													<center>Centralizado</center>
+													<p> Exemplo de responsividade </p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+	
+				<div class="bb-item item-01-06-sextaAula aula6" id="01-06-sextaAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno">
+									<div class="row">
+										<h3>Sexta aula</h3>
+										<p>conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo </p>
+										<ol class="type_n1">
+											<li>item 1 <span class="highlight bold">item 1 negrito hightlight bold</span> item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1 </li>
+											<li>item 2</li>
+											<li>item 3</li>
+										</ol>
+
+										<div class="row">
+											<div class="col l8 m12 s12 offset-l2">
+												<div class="blocos-autor">
+													<center>Centralizado</center>
+													<p> Exemplo de responsividade </p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+
+			</div>
+		</div>
+	</main>
+	
+ 		<!--<footer class="page-footer" >
+		<div class="container">
+			<div class="center-align">
+				<img class="img-responsive" src="../include/images/ead_logo.png" style="max-height:60px;" />
+				<h1 style="float:right;"><span class="bignoodle">Redação</span> <span class="nick">Argumentativa</span></h1>
+			</div>
+		</div>
+	</footer> -->
+	
+	<script src="../include/js/jquery.bookblock.js"></script>
+	
+	<script src="../include/js/page.js"></script>
+	<script src="../include/js/functions.js" type="text/javascript"></script>
+		
+
+</div><div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><span class="ui-icon-loading"></span><h1>loading</h1></div><div class="material-tooltip" id="3bce847c-380c-63fc-f105-bdcf620f1f03"><span>Página anterior</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="dae2237b-244d-0e80-8229-e7cf6808abaa"><span>Próxima página</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="dfdae80e-c4c2-5b56-6a1f-a3dcda8f4feb"><span>Diminuir fonte</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="1ce2b460-34f9-7698-374a-7a82e177afe2"><span>Retomar tamanho padrão da fonte</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="ba6a33b3-c1ae-a4eb-9706-00f06f248a24"><span>Aumentar fonte</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="hiddendiv common"></div><div class="material-tooltip" id="acbd782c-fba5-927f-6e88-83b253853abf"><span>Página anterior</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="5020c8e3-3c0c-2bca-f36d-94e72c082594"><span>Próxima página</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="e9820861-feb1-9e78-4a23-c767e2bc6643"><span>Diminuir fonte</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="defa175e-2118-0699-3fde-a7b6880fe102"><span>Retomar tamanho padrão da fonte</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="a92f2a81-9a17-0569-6a06-ed3723861db2"><span>Aumentar fonte</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="drag-target" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div><div id="window-resizer-tooltip"><a href="index.html#" title="Edit settings"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth"></span> x <span class="tooltipHeight" id="winHeight"></span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth"></span> x <span class="tooltipHeight" id="vpHeight"></span></div></body></html>
