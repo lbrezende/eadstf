@@ -468,18 +468,7 @@ article {
       list-style: none;
       margin-bottom: 1.5em;
       text-align: justify; }
-  article ol.type_a1 {
-    counter-reset: list;
-    font-size: 1.2em; }
-    article ol.type_a1 > li {
-      margin-bottom: 0.5em;
-      list-style: none;
-      position: relative; }
-    article ol.type_a1 > li:before {
-      counter-increment: list;
-      content: counter(list,lower-alpha) ") ";
-      position: absolute;
-      left: -1.4em; }
+
   article ol.type_a2 {
     counter-reset: list;
     font-size: 1.2em; }
@@ -753,6 +742,32 @@ h3 {
       font-weight: bold;
           top: -5px;
        }
+
+  article ol.type_a1 {
+    counter-reset: list;
+    font-size: 1.2em;
+    margin-left: 2.5em; 
+    margin-right: 2.5em; }
+    article ol.type_a1 > li {
+      margin-bottom: 0.5em;
+      list-style: none;
+      position: relative;  padding-left:20px; margin-bottom:15px;}
+    article ol.type_a1 > li:before {
+      counter-increment: list;
+      content: counter(list,lower-alpha) " ";
+      position: absolute;
+      left: -1.4em; 
+      padding: 1px 9px;
+      border-radius: 100px;
+      font-weight: bold;
+          top: -5px;
+        }
+              /*content: counter(list,lower-alpha) ") ";*/
+
+.seta-aula4{
+    margin: 0px 15px -10px -12px;
+}
+
 .highlight{
    
 }
@@ -810,6 +825,13 @@ table tr {
 table td {
   border: 2px solid white;
 }
+
+table.soborda td {
+  border-right: 2px solid #F4805C;
+  border-left: 2px solid #F4805C;
+  text-align: center;
+}
+
 tr th {
   text-align:center;
   font-weight: bold;
@@ -862,7 +884,13 @@ Estilos Aula 1
   color:#555257; 
 }
 
+.aula1 article ol.type_a1 > li:before {
+  background:#00747A;
+  color:#fff; 
+}
+
 .aula1 .highlight{
+
    color:#00747A;
 }
 
@@ -905,6 +933,12 @@ Estilos Aula 2
   background:#EAF2D6;
   color:#555257; 
 }
+
+.aula2 article ol.type_a1 > li:before {
+  background:#64B666;
+  color:#fff; 
+}
+
 .aula2 .highlight{
    color:#64B666;
 }
@@ -941,6 +975,12 @@ Estilos Aula 3
   background:#F8D495;
   color:#555257; 
 }
+
+.aula3 article ol.type_a1 > li:before {
+  background:#C58D1E;
+  color:#fff; 
+}
+
 .aula3 .highlight{
    color:#C58D1E;
 }
@@ -977,6 +1017,11 @@ Estilos Aula 4
   background:#FBCDB6;
   color:#555257; 
 }
+.aula4 article ol.type_a1 > li:before {
+  background:#F18E4F;
+  color:#fff; 
+}
+
 .aula4 .highlight{
    color:#F18E4F;
 }
@@ -1012,6 +1057,11 @@ Estilos Aula 5
 .aula5 article ol.type_n1 > li:before {
   background:#FBDAE0;
   color:#555257; 
+}
+
+.aula5 article ol.type_a1 > li:before {
+  background:#C2211E;
+  color:#fff; 
 }
 
 .aula5 .highlight{
@@ -1050,6 +1100,12 @@ Estilos Aula 6
   background:#E3B6D6;
   color:#555257; 
 }
+
+.aula6 article ol.type_a1 > li:before {
+  background:#863487;
+  color:#fff; 
+}
+
 
 .aula6 .highlight{
    color:#863487;
