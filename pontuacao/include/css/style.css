@@ -183,6 +183,18 @@ strong {
     line-height: 40px;
     margin: 12px auto;
     background-color: #048f9c;  }
+      #tblcontents .material-icons.aula1 {
+        background-color: #048f9c;  }
+      #tblcontents .material-icons.aula2 {
+        background-color: #709128;  }
+      #tblcontents .material-icons.aula3 {
+        background-color: #B27C16;  }
+      #tblcontents .material-icons.aula4 {
+        background-color: #C85F1E;  }
+      #tblcontents .material-icons.aula5 {
+        background-color: #A11C1C;  }
+      #tblcontents .material-icons.aula6 {
+        background-color: #74195D;  }
 
 #mainMenu.aula1 {
   background-image: url(../img/modelas.png);
@@ -229,7 +241,7 @@ strong {
   background-image: url(../img/modelas.png);
   background-repeat: no-repeat;
   background-position: 160px center;
-  background-color: #087079; }
+  background-color: #709128; }
   #mainMenu.aula2 .header {
     width: 100%;
     text-align: center; 
@@ -245,16 +257,16 @@ strong {
     font-size: 1.6rem;
     line-height: 2.0em;
     font-family: "Bignoodletitling", sans-serif;
-    background: #EC620D;
+    background: #84AB2E;
     margin: 1px auto;
     padding: 0px 20px;
     color: #FFF;
     /*text-shadow: -2px 2px 2px rgba(0,0,0,1.00);*/ }
   #mainMenu.aula2 li a:hover {
-    background-color: #087079;
+    background-color: #709128;
     color: #FFF; }
   #mainMenu.aula2 li a.active {
-    background-color: #087079;
+    background-color: #709128;
     color: #FFF; }
   #mainMenu.aula2 li .numero {
     display: inline-block;
@@ -270,7 +282,7 @@ strong {
   background-image: url(../img/modelas.png);
   background-repeat: no-repeat;
   background-position: 160px center;
-  background-color: #087079; }
+  background-color: #B27C16; }
   #mainMenu.aula3 .header {
     width: 100%;
     text-align: center; 
@@ -286,16 +298,16 @@ strong {
     font-size: 1.6rem;
     line-height: 2.0em;
     font-family: "Bignoodletitling", sans-serif;
-    background: #EC620D;
+    background: #DB991C;
     margin: 1px auto;
     padding: 0px 20px;
     color: #FFF;
     /*text-shadow: -2px 2px 2px rgba(0,0,0,1.00);*/ }
   #mainMenu.aula3 li a:hover {
-    background-color: #087079;
+    background-color: #B27C16;
     color: #FFF; }
   #mainMenu.aula3 li a.active {
-    background-color: #087079;
+    background-color: #B27C16;
     color: #FFF; }
   #mainMenu.aula3 li .numero {
     display: inline-block;
@@ -311,7 +323,7 @@ strong {
   background-image: url(../img/modelas.png);
   background-repeat: no-repeat;
   background-position: 160px center;
-  background-color: #087079; }
+  background-color: #C85F1E; }
   #mainMenu.aula4 .header {
     width: 100%;
     text-align: center; 
@@ -327,16 +339,16 @@ strong {
     font-size: 1.6rem;
     line-height: 2.0em;
     font-family: "Bignoodletitling", sans-serif;
-    background: #EC620D;
+    background: #DE6A24;
     margin: 1px auto;
     padding: 0px 20px;
     color: #FFF;
     /*text-shadow: -2px 2px 2px rgba(0,0,0,1.00);*/ }
   #mainMenu.aula4 li a:hover {
-    background-color: #087079;
+    background-color: #C85F1E;
     color: #FFF; }
   #mainMenu.aula4 li a.active {
-    background-color: #087079;
+    background-color: #C85F1E;
     color: #FFF; }
   #mainMenu.aula4 li .numero {
     display: inline-block;
@@ -353,7 +365,7 @@ strong {
   background-image: url(../img/modelas.png);
   background-repeat: no-repeat;
   background-position: 160px center;
-  background-color: #087079; }
+  background-color: #A11C1C; }
   #mainMenu.aula5 .header {
     width: 100%;
     text-align: center; 
@@ -369,16 +381,16 @@ strong {
     font-size: 1.6rem;
     line-height: 2.0em;
     font-family: "Bignoodletitling", sans-serif;
-    background: #EC620D;
+    background: #BB2524;
     margin: 1px auto;
     padding: 0px 20px;
     color: #FFF;
     /*text-shadow: -2px 2px 2px rgba(0,0,0,1.00);*/ }
   #mainMenu.aula5 li a:hover {
-    background-color: #087079;
+    background-color: #A11C1C;
     color: #FFF; }
   #mainMenu.aula5 li a.active {
-    background-color: #087079;
+    background-color: #A11C1C;
     color: #FFF; }
   #mainMenu.aula5 li .numero {
     display: inline-block;
@@ -394,7 +406,7 @@ strong {
   background-image: url(../img/modelas.png);
   background-repeat: no-repeat;
   background-position: 160px center;
-  background-color: #087079; }
+  background-color: #74195D; }
   #mainMenu.aula6 .header {
     width: 100%;
     text-align: center; 
@@ -410,16 +422,16 @@ strong {
     font-size: 1.6rem;
     line-height: 2.0em;
     font-family: "Bignoodletitling", sans-serif;
-    background: #EC620D;
+    background: #8E1E72;
     margin: 1px auto;
     padding: 0px 20px;
     color: #FFF;
     /*text-shadow: -2px 2px 2px rgba(0,0,0,1.00);*/ }
   #mainMenu.aula6 li a:hover {
-    background-color: #087079;
+    background-color: #74195D;
     color: #FFF; }
   #mainMenu.aula6 li a.active {
-    background-color: #087079;
+    background-color: #74195D;
     color: #FFF; }
   #mainMenu.aula6 li .numero {
     display: inline-block;
@@ -513,10 +525,30 @@ header.page-header {
   left: 0;
   right: 0;
   z-index: 999999999; }
-  header.page-header nav {
+  header.page-header nav.aula1 {
     position: relative;
     z-index: 2;
     background: #09B2C2; }
+  header.page-header nav.aula2 {
+    position: relative;
+    z-index: 2;
+    background: #9DCA3C; }
+  header.page-header nav.aula3 {
+    position: relative;
+    z-index: 2;
+    background: #F0A820; }
+  header.page-header nav.aula4 {
+    position: relative;
+    z-index: 2;
+    background: #EE7124; }
+  header.page-header nav.aula5 {
+    position: relative;
+    z-index: 2;
+    background: #DE2726; }
+  header.page-header nav.aula6 {
+    position: relative;
+    z-index: 2;
+    background: #B22C90; }
   header.page-header #titulo_aula {
     color:white;
     position: absolute;
@@ -531,6 +563,24 @@ header.page-header {
     opacity: 0;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 5px; }
+    header.page-header #titulo_aula.aula1 {
+      background:#048f9c;
+      }
+    header.page-header #titulo_aula.aula2 {
+      background:#709128;
+      }
+    header.page-header #titulo_aula.aula3 {
+      background:#B27C16;
+      }
+    header.page-header #titulo_aula.aula4 {
+      background:#C85F1E;
+      }
+    header.page-header #titulo_aula.aula5 {
+      background:#A11C1C;
+      }
+    header.page-header #titulo_aula.aula6 {
+      background:#74195D;
+      }
     header.page-header #titulo_aula h2 {
       font: inherit;
       color: inherit;
@@ -554,6 +604,18 @@ header.page-header {
     color: #FFF;
     font-size: 1.2rem;
     padding: 0px 10px; }
+  header.page-header .pages.aula1 {
+    background: #00c1d4; }
+  header.page-header .pages.aula2 {
+    background: #B0E246; }
+  header.page-header .pages.aula3 {
+    background: #FFBB39; }
+  header.page-header .pages.aula4 {
+    background: #FF7E2E; }
+  header.page-header .pages.aula5 {
+    background: #FF3B3A; }
+  header.page-header .pages.aula6 {
+    background: #D43AAD; }
   header.page-header .navegacao li {
     height: 63px;
     position: relative; }

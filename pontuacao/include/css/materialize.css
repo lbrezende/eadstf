@@ -3752,6 +3752,20 @@ small {
   .btn:hover, .btn-large:hover {
     background-color: #048f9c !important; }
 
+.btn.aula1, .btn-large.aula1, .btn:hover.aula1, .btn-large:hover.aula1 {
+    background-color: #048f9c !important; }
+.btn.aula2, .btn-large.aula2, .btn:hover.aula2, .btn-large:hover.aula2 {
+    background-color: #709128 !important; }
+.btn.aula3, .btn-large.aula3, .btn:hover.aula3, .btn-large:hover.aula3 {
+    background-color: #B27C16 !important; }
+.btn.aula4, .btn-large.aula4, .btn:hover.aula4, .btn-large:hover.aula4 {
+    background-color: #C85F1E !important; }
+.btn.aula5, .btn-large.aula5, .btn:hover.aula5, .btn-large:hover.aula5 {
+    background-color: #A11C1C !important; }
+.btn.aula6, .btn-large.aula6, .btn:hover.aula6, .btn-large:hover.aula6 {
+    background-color: #74195D !important; }
+
+
 .btn-floating {
   display: inline-block;
   color: #fff;
