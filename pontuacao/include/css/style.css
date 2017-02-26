@@ -705,71 +705,7 @@ p.no-indent {
 
 /* Boxes } */
 /* Quadros { */
-table {
-  border-collapse: separate;
-  border-spacing: 5px;
-  width: 100%;
-  margin-bottom: 1.0rem; }
-  table th, table td, table .quadro3 th, .quadro3 table th {
-    padding: 5px 10px; }
-  table th {
-    background-color: #319380; }
-  table td, table .quadro3 th, .quadro3 table th {
-    background-color: #8bc9ac; }
-    table td p, table .quadro3 th p, .quadro3 table th p {
-      text-align: left; }
-  table th.right,
-  table td.right,
-  table .quadro3 th.right,
-  .quadro3 table th.right {
-    float: none !important;
-    text-align: right; }
 
-.table-small {
-  font-size: 0.9rem;
-  border-spacing: 2px; }
-  .table-small th {
-    padding: 3px 5px; }
-  .table-small td p, .table-small .quadro3 th p, .quadro3 .table-small th p {
-    font-size: 0.9rem !important; }
-
-table.white {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  border: 1px solid #000; }
-  table.white th, table.white td, table.white .quadro3 th, .quadro3 table.white th {
-    border: 1px solid #000; }
-  table.white th {
-    background-color: #fff; }
-  table.white td, table.white .quadro3 th, .quadro3 table.white th {
-    background-color: #fff;
-    border-top: none;
-    border-bottom: none; }
-  table.white tbody > tr:first-child > td, table.white .quadro3 tbody > tr:first-child > th, .quadro3 table.white tbody > tr:first-child > th {
-    border-top: 1px solid; }
-  table.white tbody > tr:last-child > td, table.white .quadro3 tbody > tr:last-child > th, .quadro3 table.white tbody > tr:last-child > th {
-    border-bottom: 1px solid #000; }
-  table.white td.filled, table.white .quadro3 th.filled, .quadro3 table.white th.filled {
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000; }
-
-td.transp, .quadro3 th.transp {
-  border-color: transparent !important;
-  background-color: transparent !important; }
-
-table.meses th {
-  width: 8.33%; }
-table.meses td, table.meses .quadro3 th, .quadro3 table.meses th {
-  vertical-align: top; }
-table.meses p {
-  text-indent: 0;
-  font-size: inherit;
-  padding: 0;
-  margin: 0; }
-
-.table-responsive {
-  overflow: auto; }
 
 
 /***************
@@ -820,13 +756,88 @@ h3 {
 .highlight{
    
 }
-.highlight.bold{
+.bold{
    font-weight: bold;
 }
-.highlight.border{
+.border{
    border:2px solid;
    border-radius: 10px;
    padding: 1px 5px;
+}
+.filled{
+   border-radius: 10px;
+   padding: 1px 5px;
+}
+.underline{
+   text-decoration: underline;
+}
+
+.center {
+  text-align:center;
+}
+
+.no-indent {text-indent:none;}
+
+.recuo-50 {
+    margin-left: 30%;
+    line-height: 21px;
+    font-size: 1.3em;
+}
+
+.box-clean{ 
+  border-radius:25px;
+  padding: 10px;
+  margin: 10px 20px; }
+
+.evenodd {
+
+}
+
+.table-title{
+  background:none !important;
+  text-align: center !important;
+  font-weight: bold !important;
+}
+
+table .no-color {
+ background: #e8e8e8; 
+}
+
+table tr {
+  border: 2px solid white;
+}
+
+table td {
+  border: 2px solid white;
+}
+tr th {
+  text-align:center;
+  font-weight: bold;
+  font-size:1.5em;
+}
+
+div.margin{
+      margin: 46px;
+    padding: 30px;
+
+}
+
+div.margin p{
+  margin: 0 auto 0em;
+}
+
+.saibamais {
+  background: white;
+  padding: 10px;
+  margin: -56px auto 0px;
+  display: table;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.imgsaibamais {
+  margin: -55px;
+  float: left
 }
 
 /***************
@@ -838,6 +849,14 @@ Estilos Aula 1
   border-bottom:3px solid #96DBE3;
 }
 
+.aula1 .box-clean {
+  background: #96DBE3; 
+}
+
+.aula1 table .color {
+ background: #96DBE3; 
+}
+
 .aula1 article ol.type_n1 > li:before {
   background:#7FD4DE;
   color:#555257; 
@@ -847,10 +866,24 @@ Estilos Aula 1
    color:#00747A;
 }
 
-.aula1 .highlight.border{
+.aula1 .border{
    border-color:#00747A;
 }
 
+.aula1 .saibamais {
+  color: #00747A;
+}
+
+.aula1 .filled {
+  background:#7FD4DE;
+}
+
+.segura {
+  color:#757473;
+  text-transform: capitalize;
+  text-align:left;
+  font-size:1.8em;
+}
 /***************
 Estilos Aula 2
 ***************/
@@ -858,6 +891,14 @@ Estilos Aula 2
 
 .aula2 h3 {
   border-bottom:3px solid #D5E7AD;
+}
+
+.aula2 .box-clean {
+  background: #D5E7AD; 
+}
+
+.aula2 table .color {
+ background: #D5E7AD; 
 }
 
 .aula2 article ol.type_n1 > li:before {
@@ -868,10 +909,17 @@ Estilos Aula 2
    color:#64B666;
 }
 
-.aula2 .highlight.border{
+.aula2 .border{
    border-color:#64B666;
 }
 
+.aula2 .saibamais {
+  color: #64B666;
+}
+
+.aula2 .filled {
+  background:#EAF2D6;
+}
 /***************
 Estilos Aula 3
 ***************/
@@ -879,6 +927,14 @@ Estilos Aula 3
 
 .aula3 h3 {
   border-bottom:3px solid #F9D89D;
+}
+
+.aula3 .box-clean {
+  background: #F9D89D; 
+}
+
+.aula3 table .color {
+ background: #F9D89D; 
 }
 
 .aula3 article ol.type_n1 > li:before {
@@ -889,10 +945,17 @@ Estilos Aula 3
    color:#C58D1E;
 }
 
-.aula3 .highlight.border{
+.aula3 .border{
    border-color:#C58D1E;
 }
 
+.aula3 .saibamais {
+  color: #C58D1E;
+}
+
+.aula3 .filled {
+  background:#F8D495;
+}
 /***************
 Estilos Aula 4
 ***************/
@@ -900,6 +963,14 @@ Estilos Aula 4
 
 .aula4 h3 {
   border-bottom:3px solid #F7C5A8;
+}
+
+.aula4 .box-clean {
+  background: #F7C5A8; 
+}
+
+.aula4 table .color {
+ background: #F7C5A8; 
 }
 
 .aula4 article ol.type_n1 > li:before {
@@ -910,10 +981,17 @@ Estilos Aula 4
    color:#F18E4F;
 }
 
-.aula4 .highlight.border{
+.aula4 .border{
    border-color:#F18E4F;
 }
 
+.aula4 .saibamais {
+  color: #F18E4F;
+}
+
+.aula4 .filled {
+  background:#FBCDB6;
+}
 /***************
 Estilos Aula 5
 ***************/
@@ -921,6 +999,14 @@ Estilos Aula 5
 
 .aula5 h3 {
   border-bottom:3px solid #F7B5C2;
+}
+
+.aula5 .box-clean {
+  background: #F7B5C2; 
+}
+
+.aula5 table .color {
+ background: #F7B5C2; 
 }
 
 .aula5 article ol.type_n1 > li:before {
@@ -932,10 +1018,17 @@ Estilos Aula 5
    color:#C2211E;
 }
 
-.aula5 .highlight.border{
+.aula5 .border{
    border-color:#C2211E;
 }
 
+.aula5 .saibamais {
+  color: #C2211E;
+}
+
+.aula5 .filled {
+  background:#FBDAE0;
+}
 /***************
 Estilos Aula 6
 ***************/
@@ -943,6 +1036,14 @@ Estilos Aula 6
 
 .aula6 h3 {
   border-bottom:3px solid #D794C7;
+}
+
+.aula6 .box-clean {
+  background: #D794C7; 
+}
+
+.aula6 table .color {
+ background: #D794C7; 
 }
 
 .aula6 article ol.type_n1 > li:before {
@@ -954,10 +1055,17 @@ Estilos Aula 6
    color:#863487;
 }
 
-.aula6 .highlight.border{
+.aula6 .border{
    border-color:#863487;
 }
 
+.aula6 .saibamais {
+  color: #863487;
+}
+
+.aula6 .filled {
+  background:#E3B6D6;
+}
 
 /* Quadros } */
 /* Responsividade { */
