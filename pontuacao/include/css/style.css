@@ -823,6 +823,12 @@ h3 {
 .highlight.bold{
    font-weight: bold;
 }
+.highlight.border{
+   border:2px solid;
+   border-radius: 10px;
+   padding: 1px 5px;
+}
+
 /***************
 Estilos Aula 1
 ***************/
@@ -839,6 +845,10 @@ Estilos Aula 1
 
 .aula1 .highlight{
    color:#00747A;
+}
+
+.aula1 .highlight.border{
+   border-color:#00747A;
 }
 
 /***************
@@ -858,6 +868,10 @@ Estilos Aula 2
    color:#64B666;
 }
 
+.aula2 .highlight.border{
+   border-color:#64B666;
+}
+
 /***************
 Estilos Aula 3
 ***************/
@@ -875,6 +889,10 @@ Estilos Aula 3
    color:#C58D1E;
 }
 
+.aula3 .highlight.border{
+   border-color:#C58D1E;
+}
+
 /***************
 Estilos Aula 4
 ***************/
@@ -890,6 +908,10 @@ Estilos Aula 4
 }
 .aula4 .highlight{
    color:#F18E4F;
+}
+
+.aula4 .highlight.border{
+   border-color:#F18E4F;
 }
 
 /***************
@@ -910,6 +932,10 @@ Estilos Aula 5
    color:#C2211E;
 }
 
+.aula5 .highlight.border{
+   border-color:#C2211E;
+}
+
 /***************
 Estilos Aula 6
 ***************/
@@ -926,6 +952,10 @@ Estilos Aula 6
 
 .aula6 .highlight{
    color:#863487;
+}
+
+.aula6 .highlight.border{
+   border-color:#863487;
 }
 
 
