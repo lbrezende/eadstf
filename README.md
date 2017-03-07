@@ -17,13 +17,13 @@ git clone https://github.com/lbrezende/eadstf.git
 
 git checkout gh-pages
 
-git pull
+git pull origin gh-pages
 ```
 
 Depois de rodar isso uma vez, sempre que quiser baixar as alterações basta:
 
 ```bash
-git pull
+git pull origin gh-pages
 ```
 
 
