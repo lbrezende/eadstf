@@ -992,7 +992,11 @@ h3 {
   margin-right: 1.5rem;
   text-transform: uppercase; 
 
+
+
 }
+
+
 
   article ol.type_n1 {
     counter-reset: list;
@@ -1005,6 +1009,28 @@ h3 {
       list-style: none;
       position: relative; padding-left:20px; margin-bottom:15px;}
     article ol.type_n1 > li:before {
+      counter-increment: list 0;
+      content: counter(list,decimal) ". ";
+
+      position: absolute;
+      left: -1.4em;
+      padding: 5px 10px;
+      border-radius: 100px;
+      font-weight: bold;
+          top: -5px;
+       }
+
+  article ol.type_n2 {
+    counter-reset: list;
+    font-size: 1.2em;
+    margin-left: 2.5em; 
+    margin-right: 2.5em;
+    }
+    article ol.type_n2 > li {
+      margin-bottom: 0.5em;
+      list-style: none;
+      position: relative; padding-left:20px; margin-bottom:15px;}
+    article ol.type_n2 > li:before {
       counter-increment: list;
       content: counter(list,decimal) ". ";
       position: absolute;
@@ -1183,6 +1209,12 @@ Estilos Aula 1
   background:#7FD4DE;
   color:#555257; 
 }
+
+.aula1 article ol.type_n2 > li:before {
+  background:#7FD4DE;
+  color:#555257; 
+}
+
 
 .aula1 article ol.type_a1 > li:before {
   background:#00747A;

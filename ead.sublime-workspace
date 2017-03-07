@@ -1,0 +1,448 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"back",
+				"background"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao"
+	],
+	"file_history":
+	[
+		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/include/css/style.css",
+		"/Users/leandrorezende/Pictures/Danos Apartamento 2013/reclamacao.txt",
+		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/include/css/materialize.css",
+		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/styleguide/index.html",
+		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/aula6/index.html",
+		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/aula5/index.html",
+		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/aula4/index.html",
+		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/aula1/index.html",
+		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/aula2/index.html",
+		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/aula3/index.html",
+		"/Applications/MAMP/htdocs/stfaula/eadstf/README.md",
+		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/aula1/styleguide.html",
+		"/Applications/MAMP/htdocs/stfaula/pontuacao/aula3/index.html",
+		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/documentos/aula3.zip",
+		"/Users/leandrorezende/Desktop/-- phpMyAdmin SQL Dump",
+		"/Users/leandrorezende/Desktop/kamon/wp-config.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-config2.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-config_final.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-config.php",
+		"/Users/leandrorezende/Desktop/-- phpMyAdmin SQL Dump new",
+		"/Applications/MAMP/htdocs/kamon/kamon_dump_before_migrate.sql",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/themes/grandphotography/style.css",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/themes/grandphotography/404.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/themes/grandphotography/search.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/themes/grandphotography/single-post-f.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/themes/grandphotography/index.php",
+		"/Users/leandrorezende/Desktop/dump_new_kamon",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-includes/script-loader.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-includes/js/jquery/jquery.js",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/themes/grandphotography/functions.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/themes/grandphotography/footer.php",
+		"/Users/leandrorezende/Desktop/wp-config.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/themes/grandphotography/header.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/plugins/grandphotography-custom-post/tg-ajax.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/themes/grandphotography/single-post-l.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/themes/grandphotography/single-post-r.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/themes/grandphotography/blog_split.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/themes/grandphotography/blog_r.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/themes/grandphotography/blog_l.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/themes/grandphotography/blog_gs.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/themes/grandphotography/blog_f.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/themes/grandphotography/blog_fg.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/themes/grandphotography/blog_fgl.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/themes/grandphotography/blog_fgr.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/themes/grandphotography/blog_gls.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/themes/grandphotography/blog_g.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-admin/edit-comments.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/plugins/grandphotography-custom-post/tg-contentbuilder.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/themes/grandphotography/comments.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-includes/comment-template.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/themes/grandphotography/lib/theme.filter.lib.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/themes/grandphotography/templates/template-post-share.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/plugins/revslider/includes/operations.class.php",
+		"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/themes/grandphotography/page.php",
+		"/Users/leandrorezende/Desktop/RES Utilização do sistema de Diárias e Passagens do CNJ pelo STF_RespostaMarceloCNJ_TI.msg",
+		"/Users/leandrorezende/Desktop/redacao/index.html",
+		"/Applications/MAMP/htdocs/iel/formulario/entrega/inovacaoiel/public/css/relatorio.css",
+		"/Applications/MAMP/htdocs/iel/formulario/entrega/inovacaoiel/public/index.php",
+		"/Applications/MAMP/htdocs/iel/formulario/entrega/inovacaoiel/public/css/demo.css",
+		"/Applications/MAMP/htdocs/iel/formulario/entrega/inovacaoiel/templates/relatorio.phtml",
+		"/Applications/MAMP/htdocs/iel/formulario/entrega/inovacaoiel/templates/index.phtml",
+		"/Users/leandrorezende/Projects/STF/produto/stfdigital/plataforma/ui/node_modules/protractor/node_modules/selenium-webdriver/test/lib/logging_test.js",
+		"/Users/leandrorezende/Desktop/index.html",
+		"/Users/leandrorezende/Projects/bxblue/bxbank_simulator/app/views/application/_landing_preciso.html.erb",
+		"/Users/leandrorezende/Projects/bxblue/bxbank_simulator/app/views/application/_simulator.html.erb",
+		"/Users/leandrorezende/Projects/bxblue/bxbank_simulator/app/views/application/landing/preciso.html.erb",
+		"/Users/leandrorezende/Projects/bxblue/bxbank_simulator/app/assets/stylesheets/partials/_hacks.scss",
+		"/Users/leandrorezende/Projects/bxblue/bxbank_simulator/app/assets/stylesheets/partials/_generic.scss",
+		"/Users/leandrorezende/Projects/bxblue/bxbank_simulator/app/views/application/_contact.html.erb",
+		"/Users/leandrorezende/Projects/bxblue/bxbank_simulator/app/views/application/_home_cta.html.erb",
+		"/Users/leandrorezende/Projects/bxblue/bxbank_simulator/app/assets/stylesheets/partials/_settings.scss",
+		"/Users/leandrorezende/Projects/bxblue/bxbank_simulator/app/views/application/simulator.html.erb",
+		"/Users/leandrorezende/Projects/bxblue/bxbank_simulator/app/views/application/_landing_preciso_contact.html.erb",
+		"/Users/leandrorezende/Projects/bxblue/bxbank_simulator/app/views/layouts/_topbar.html.erb",
+		"/Users/leandrorezende/Projects/bxblue/bxbank_simulator/app/views/application/index.html.erb",
+		"/Users/leandrorezende/Projects/bxblue/bxbank_simulator/app/views/application/_workings.html.erb",
+		"/Users/leandrorezende/Projects/bxblue/bxbank_simulator/app/controllers/application_controller.rb",
+		"/Users/leandrorezende/Projects/bxblue/bxbank_simulator/config/routes.rb",
+		"/Users/leandrorezende/Projects/bxblue/bxbank_simulator/app/views/application/landing/preciso_agora.html.erb",
+		"/Users/leandrorezende/Projects/bxblue/bxbank_simulator/app/views/application/preciso_agora.html.erb",
+		"/Users/leandrorezende/Projects/bxblue/bxbank_simulator/app/assets/stylesheets/partials/components/_simulator-form.scss",
+		"/Users/leandrorezende/Projects/bxblue/bxbank_simulator/app/assets/stylesheets/application.css",
+		"/Users/leandrorezende/Desktop/teste.xml",
+		"/Applications/MAMP/htdocs/iel/formulario/inovacaoiel/mapabrasil/assets/js/brazil.js",
+		"/Applications/MAMP/htdocs/bxblue/code/bxbank_simulator/app/assets/stylesheets/partials/_settings.scss",
+		"/Applications/MAMP/htdocs/iel/formulario/inovacaoiel/mapabrasil/index.html",
+		"/Applications/MAMP/htdocs/iel/iel-form/css/component.css",
+		"/Applications/MAMP/htdocs/iel/formulario/inovacaoiel/index.html",
+		"/Applications/MAMP/htdocs/iel/formulario/inovacaoiel/README.md",
+		"/Applications/MAMP/htdocs/iel/formulario/inovacaoiel/js/fullscreenForm.js",
+		"/Users/leandrorezende/Projects/iel.sublime-project",
+		"/Applications/MAMP/htdocs/iel/iel-form/js/fullscreenForm.js",
+		"/Applications/MAMP/htdocs/iel/iel-form/css/demo.css",
+		"/Applications/MAMP/htdocs/iel/iel-form/index.html",
+		"/Users/leandrorezende/Projects/northshield/you-strive-styleguide/src/index.html",
+		"/Users/leandrorezende/Projects/northshield/you-strive-styleguide/src/scss/partials/_hacks.scss",
+		"/Users/leandrorezende/Projects/northshield/you-strive-styleguide/src/scss/partials/_components.scss",
+		"/Users/leandrorezende/Projects/northshield/you-strive-styleguide/src/student-create-account.html",
+		"/Users/leandrorezende/Projects/northshield/you-strive-styleguide/src/student-home.html",
+		"/Users/leandrorezende/Projects/northshield/you-strive-styleguide/src/scss/partials/_generic.scss",
+		"/Users/leandrorezende/Projects/northshield/you-strive-styleguide/src/student-login.html",
+		"/Users/leandrorezende/Projects/northshield/you-strive-styleguide/src/teacher-create-account.html",
+		"/Users/leandrorezende/Projects/northshield/you-strive-styleguide/dist/teacher-create-account.html",
+		"/Users/leandrorezende/Desktop/cursocss/ex16_animacao3d.html",
+		"/Users/leandrorezende/Projects/youstrive/.gitignore"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Applications/MAMP/htdocs/nutricoaching/wordpress",
+			"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao",
+			"/Applications/MAMP/htdocs/kamon/wordpress",
+			"/Applications/MAMP/htdocs/kamon/wordpress/wp-content/themes/grandphotography",
+			"/Applications/MAMP/htdocs/iel/formulario/entrega/inovacaoiel",
+			"/Users/leandrorezende/Projects/bxblue/bxbank_simulator/",
+			"/Users/leandrorezende/Projects/bxblue/bxbank_simulator/app",
+			"/Users/leandrorezende/Projects/bxblue/bxbank_simulator/app/assets/stylesheets/partials",
+			"/Users/leandrorezende/Projects/bxblue/bxbank_simulator",
+			"/Users/leandrorezende/Projects/bxblue/bxbank_simulator/app",
+			"/Applications/MAMP/htdocs/bxblue/code/bxbank_simulator",
+			"/Applications/MAMP/htdocs/iel/formulario/inovacaoiel",
+			"/Applications/MAMP/htdocs/iel/iel-form",
+			"/Users/leandrorezende/Projects/northshield/you-strive-styleguide/src",
+			"/Users/leandrorezende/Projects/northshield/you-strive-styleguide",
+			"/Users/leandrorezende/Projects/northshield/you-strive-styleguide/src/scss"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"yellow",
+			"superar medos",
+			".png\" style=\" margin-right:30px; \"  class=\"hide-on-large-only\"",
+			"only",
+			"aula1",
+			"btn",
+			".btn, .btn-large",
+			"material-icons",
+			"#tblcontents .material-icons",
+			"titulo_aula",
+			"header.page-header #titulo_aula",
+			".btn:hover, .btn-large:hover",
+			"pages",
+			"close",
+			"nav",
+			"09B2C2",
+			"087079",
+			"#087079",
+			"mainmenu",
+			"aula4",
+			"#mainMenu.aula4 {\n  background-image: url(../img/modelas.png);\n  background-repeat: no-repeat;\n  background-position: 160px center;\n  background-color: #087079; }\n  #mainMenu.aula4 .header {\n    width: 100%;\n    text-align: center; \n    background: #FFF;\n    }\n    #mainMenu.aula4 .header img {\n      width: 80%;\n      max-width: 225px;\n      height: auto;\n      margin: 10px auto -24px; }\n  #mainMenu.aula4 li a {\n    height: auto;\n    font-size: 1.6rem;\n    line-height: 2.0em;\n    font-family: \"Bignoodletitling\", sans-serif;\n    background: #EC620D;\n    margin: 1px auto;\n    padding: 0px 20px;\n    color: #FFF;\n    /*text-shadow: -2px 2px 2px rgba(0,0,0,1.00);*/ }\n  #mainMenu.aula4 li a:hover {\n    background-color: #087079;\n    color: #FFF; }\n  #mainMenu.aula4 li a.active {\n    background-color: #087079;\n    color: #FFF; }\n  #mainMenu.aula4 li .numero {\n    display: inline-block;\n    width: 0.8em;\n    text-align: right;\n    margin-right: 0.2em; }\n  #mainMenu.aula4 li ul > li a {\n    padding: 0px 20px 0px 40px; }\n  #mainMenu.aula4 > li:last-child {\n    margin-bottom: 3.0rem; }",
+			"aula3",
+			"aula2",
+			"EC620D",
+			"mainMenu",
+			"mainmenu",
+			"#mainMenu",
+			"EE7124",
+			"modelas.png",
+			"paginaLaranja",
+			"01-01-primeiraAula",
+			"paginaLaranja",
+			"01-00-paginaAzul",
+			"01-01-primeiraAula",
+			"paginaAzul",
+			"Aula 1",
+			"ORAÇÃO NÃO É SÓ NA IGREJA",
+			"Aula 1",
+			"FRASE, PERÍODO E ORAÇÃO",
+			"Aula 1",
+			"capa",
+			"paginaAzul",
+			"poeta",
+			"esquema10",
+			"aula5",
+			"aula4",
+			"article ol.type_a1",
+			"border{\n   border-color:",
+			"article ol.type_n1 > li:before {\n  background:",
+			"article ol.type_n1 > li:before {\n  background",
+			"article ol.type_n1 > li:before {\n  background:",
+			"esquema8",
+			"aula3",
+			"celular",
+			"desafio-",
+			"emoji-happy",
+			"sad",
+			"esquema4",
+			"aula2",
+			"aula1",
+			"<div class=\"row\">\n											<div class=\"col l8 m12 s12 offset-l2\">\n												<div class=\"blocos-autor\">\n													<center>Centralizado</center>\n													<p> Exemplo de responsividade </p>\n												</div>\n											</div>\n										</div>",
+			"26px",
+			"border{\n   border-color",
+			"<img src=\"../include/images/esquema",
+			"img",
+			"<div class=\"row\">\n											<div class=\"col l8 m12 s12 offset-l2\">\n												<div class=\"blocos-autor\">\n													<center>Centr",
+			"nados).”<sup>4</sup></p>\n										</div>",
+			"										<div class=\"box-clean\">\n											<p class=\"bold center \">Mas o que é uma oração?</p><p>“Uma estrutura sintático-semântica cujo termo central, fundamental, que é o verbo (regente, subordinante), conecta os demais termos (regidos, subordinados).”<sup>4</sup></p>\n										</div>",
+			".box-clean {\n  backgrou",
+			".box-clean {\n  backgroun",
+			"td",
+			"										<p class=\"border filled\" style=\"text-align:center\">Casa de ferreiro, <span class=\"underline highlight\">espeto de pau.</span> (Em casa de ferreiro, o espeto é de pau.)</p>",
+			"segunda aula",
+			"e ol.ty",
+			"filled {\n  background",
+			".filled",
+			".border{\n   border-co",
+			"<p class=\"border\" style=\"text-align:center\">Casa de ferreiro, <span class=\"underline highlight\">espeto de pau.</span> (Em casa de ferreiro, o espeto é de pau.)</p>",
+			"<p class=\"bold\">",
+			".box-clean {\n  background:",
+			"h3 {\n  border-bottom:3px s",
+			"<p class=\"border\" style=\"text-align:center\">Casa de ferreiro, <span class=\"underline highlight\">espeto de pau.</span> (Em casa de ferreiro, o espeto é de pau.)</p>",
+			"espeto de pau.",
+			"<p><span class=\"border\">Casa de ferreiro, espeto de pau. (Em casa de ferreiro, o espeto é de pau.)</span></p>",
+			"i>item 3</li>\n										</ol>",
+			".highlight.border",
+			"er\"><img ",
+			"bold bordered",
+			"pan> item 1 item 1 item 1 item 1 ",
+			".highlight{",
+			".highlight{\n   color:#64B666;\n}",
+			".aula2 .highlight{\n   color:#64B666;\n}",
+			"<p>conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo </p>",
+			"light bold\">item 1</",
+			"class=\"highlight\"",
+			"item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1",
+			"2",
+			"h3",
+			"body",
+			"article",
+			"01-primeiraAula",
+			"primeiraAula",
+			"01-01-primeiraAula",
+			"ol",
+			"ident",
+			"Primeira aula",
+			"article p",
+			"article p, article ul",
+			"conteúdo ",
+			"1.6-sextaAula",
+			"1.5-quintaAula",
+			"1.4-quartaAula",
+			"1.1-primeiraAula",
+			"1.3-terceiraAula",
+			"1.2-segundaAula",
+			"1-primeiraAula",
+			"primeiraAula",
+			"1.1-primeiraAula",
+			"1.1-nomeitem",
+			"redação argumentativa",
+			"pontuação",
+			"fundocaderno",
+			"page-background",
+			"<article class=\"\">\n								<div class=\"container\">",
+			"<div class=\"container",
+			"fundoCaderno",
+			"page-background",
+			"fundoCaderno"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			".png\" style=\" margin-right:30px; \"  class=\"\"",
+			"#048f9c",
+			"\"../include/",
+			"../include/images",
+			"Continue lendo', 'grandphotography",
+			"progress from the "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ead.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"header",
+				"wp-content/themes/grandphotography/header.php"
+			],
+			[
+				"search",
+				"searchreplacedb2.php"
+			],
+			[
+				"wp-config",
+				"wp-config.php"
+			],
+			[
+				"footer",
+				"wp-content/themes/grandphotography/footer.php"
+			],
+			[
+				"partials",
+				"app/assets/stylesheets/partials/_settings.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 280.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
