@@ -11,6 +11,88 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "pontuacao/aula1/index.html",
+			"settings":
+			{
+				"buffer_size": 41383,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pontuacao/include/js/page.js",
+			"settings":
+			{
+				"buffer_size": 5579,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pontuacao/aula2/index.html",
+			"settings":
+			{
+				"buffer_size": 21011,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pontuacao/include/css/style.css",
+			"settings":
+			{
+				"buffer_size": 36178,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 252 files for \"type_n1\"\n\n/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/aula1/index.html:\n  206  										<p class=\"titulo-sem-titulo\"><strong><em>Olá, caríssimo aluno!</em></strong></p>\n  207  										<p>Hoje daremos início a uma viagem de retorno à sua adolescência para relembrar assuntos mal resolvidos que possam ter gerado traumas profundos em sua psiquê. Para isso, peço que responda às seguintes perguntas:</p>\n  208: 										<ol class=\"type_n1\">\n  209  											<li>Você já saiu de uma aula sem entender exatamente por que entrou nela? </li>\n  210  											<li>Por acaso, alguma aula que teve a ver com língua portuguesa? </li>\n  ...\n  261  										<p class=\"border\" style=\"\"><span class=\"underline highlight bold\">Há</span> esperança em que o leitor <span class=\"underline highlight bold\">atente</span> para os detalhes daqui para a frente.</p>\n  262  										<p><em>Vamos separar as orações?</em></p>\n  263: 										<ol class=\"type_n1\">\n  264  											<li><span class=\"underline highlight bold\">Há</span> esperança</li>\n  265  											<li>em que o leitor<span class=\"underline highlight bold\"> atente</span> para os detalhes daqui para a frente.</li>\n  ...\n  296  										<div class=\"border box-teste\" style=\"text-align:center\"><p class=\"filled\" style=\"text-align:center;font-weight: bold;\">O relógio da rua marcava 40º, mas eu tirintava de frio.</p><p>Vamos analisar passo a passo:</p>\n  297  											<p>&nbsp;</p>\n  298: 											<ol class=\"type_n1\" start=\"1\">\n  299  												<li>Marcar os verbos presentes no período:</li>\n  300  											</ol>\n  301  											<p class=\"filled\" style=\"text-align:center\">O relógio da rua <span class=\"underline highlight bold\">marcava</span> 40 ºC, mas eu <span class=\"underline highlight bold\">tirintava</span> de frio.</p>\n  302: 											<ol class=\"type_n1\" start=\"2\">\n  303  												<li>Separar as orações:</li>\n  304  											</ol>\n  305  											<p class=\"filled\" style=\"text-align:center\">1ª - O relógio da rua <span class=\"underline highlight bold\">marcava</span> 40 ºC</p>\n  306  											<p class=\"filled\" style=\"text-align:center\">2ª - mas eu <span class=\"underline highlight bold\">tirintava </span>e frio</p>\n  307: 											<ol class=\"type_n1\" start=\"3\">\n  308  												<li>Conferir se as orações estão completas sintaticamente. Para isso, faça perguntas usando os elementos da própria oração. Se você obtiver as respostas com elementos que também estão presentes na mesma oração, o resultado é positivo:</li>\n  309  											</ol>\n  ...\n  326  											<p>&nbsp;</p>\n  327  											<p><em>Precisa de mais alguma pergunta? Não.</em> Então a oração está completa sintaticamente.</p>\n  328: 											<ol class=\"type_n1\" start=\"4\">\n  329  												<li>Classificar as orações quanto à coordenação e/ou subordinação:</li>\n  330  											</ol>\n  ...\n  411  												<p>Vamos analisar os períodos abaixo:</p>\n  412  												<p class=\"filled\" style=\"text-align:center;font-weight: bold;\">I - Ele não respondeu minha mensagem, nem retornou minha ligação.</p>\n  413: 												<ol class=\"type_n1\">\n  414  													<li>Destacar os verbos:</li>\n  415  												</ol>\n  ...\n  420  												<p>1ª Ele não <span class=\"highlight bold underline\">respondeu</span> minha mensagem </p>\n  421  												<p>2ª nem <span class=\"highlight bold underline\">retornou</span> minha ligação.</p>\n  422: 												<ol class=\"type_n1\" start=\"3\">\n  423  													<li>Fazer perguntas para ver se falta alguma função sintática nas orações:</li>\n  424  												</ol>\n  ...\n  436  												<p><span class=\"bold highlight\">Pergunta:</span> Não retornou o quê? </p>\n  437  												<p><span class=\"highlight\">Resposta:</span> Minha ligação. </p>\n  438: 												<ol class=\"type_n1\" start=\"4\">\n  439  													<li>Verificar se alguma oração exerce função sintática necessária à outra:</li>\n  440  												</ol>\n  441  												<p>Não exerce</p>\n  442: 												<ol class=\"type_n1\" start=\"5\">\n  443  													<li>Classificar o período quanto à coordenação ou subordinação:</li>\n  444  												</ol>\n  445  												<p>Se as duas orações são independentes sintaticamente, o período é composto por uma coordenação.</p>\n  446: 												<ol class=\"type_n1\" start=\"6\">\n  447  													<li>Classificar os tipos de oração:</li>\n  448  												</ol>\n  ...\n  471  											<div class=\"col l10 offset-l1 m10 offset-m1 border\">\n  472  												<p class=\"filled\" style=\"text-align:center;font-weight: bold;\">II - Era óbvio que ele faltaria ao evento.</p>\n  473: 												<ol class=\"type_n1\">\n  474  													<li>Destacar os verbos:</li>\n  475  												</ol>\n  476  												<p><span class=\"highlight bold underline\">Era</span> óbvio que ele <span class=\"highlight bold underline\">faltaria</span> ao evento.respondeu</span></p>\n  477: 												<ol class=\"type_n1\" start=\"2\">\n  478  													<li>Separar as orações:</li>\n  479  												</ol>\n  480  												<p>1ª <span class=\"highlight bold underline\">Era</span> óbvio</p>\n  481  												<p>2ª que ele <span class=\"highlight bold underline\">faltaria</span> ao evento.</p>\n  482: 												<ol class=\"type_n1\" start=\"3\">\n  483  													<li>Fazer perguntas para ver se falta alguma função sintática nas orações:</li>\n  484  												</ol>\n  ...\n  496  												<p><span class=\"bold highlight\">Pergunta:</span> Faltaria a quê?</p>\n  497  												<p><span class=\"highlight\">Resposta:</span> Ao evento.</p>\n  498: 												<ol class=\"type_n1\" start=\"4\">\n  499  													<li>Verificar se alguma oração exerce função sintática necessária à outra:</li>\n  500  												</ol>\n  501  												<p>Sim, exerce. A 2ª oração toda é o sujeito da primeira.</p>\n  502: 												<ol class=\"type_n1\" start=\"5\">\n  503  													<li>Classificar o período quanto à coordenação ou subordinação:</li>\n  504  												</ol>\n  505  												<p>Se a 2ª oração é dependente sintaticamente da primeira, o período é composto por uma subordinação.</p>\n  506: 												<ol class=\"type_n1\" start=\"6\">\n  507  													<li>Classificar os tipos de oração:</li>\n  508  												</ol>\n\n/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/aula2/index.html:\n  231  										<div class=\"row\">\n  232  											<div class=\"col l6 m6 s12\">\n  233: 												<ol class=\"type_n1\">\n  234  													<li>Núcleo do sujeito</li>\n  235  													<li>Núcleo do predicado</li>\n  ...\n  260  										<div class=\"row\">\n  261  											<div class=\"col l6 m6 s12\">\n  262: 												<ol class=\"type_n1\">\n  263  													<li>Verbo</li>\n  264  													<li>Substantivo</li>\n  ...\n  309  										<p class=\"titulo-sem-titulo\" ><strong>Título com negrito</strong></p>\n  310  										<p>conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo </p>\n  311: 										<ol class=\"type_n1\">\n  312  											<li>item 1 <span class=\"highlight bold\">item 1 negrito hightlight bold</span> item 1 item 1 item 1 <span class=\"highlight bold border\">item 1</span> item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1 </li>\n  313  											<li>item 2</li>\n\n/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/aula3/index.html:\n  211  										<p class=\"titulo-sem-titulo\" ><strong>Título com negrito</strong></p>\n  212  										<p>conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo </p>\n  213: 										<ol class=\"type_n1\">\n  214  											<li>item 1 <span class=\"highlight bold\">item 1 negrito hightlight bold</span> item 1 item 1 item 1 <span class=\"highlight bold border\">item 1</span> item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1 </li>\n  215  											<li>item 2</li>\n\n/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/aula4/index.html:\n  211  										<p class=\"titulo-sem-titulo\" ><strong>Título com negrito</strong></p>\n  212  										<p>conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo </p>\n  213: 										<ol class=\"type_n1\">\n  214  											<li>item 1 <span class=\"highlight bold\">item 1 negrito hightlight bold</span> item 1 item 1 item 1 <span class=\"highlight bold border\">item 1</span> item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1 </li>\n  215  											<li>item 2</li>\n\n/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/aula5/index.html:\n  211  										<p class=\"titulo-sem-titulo\" ><strong>Título com negrito</strong></p>\n  212  										<p>conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo </p>\n  213: 										<ol class=\"type_n1\">\n  214  											<li>item 1 <span class=\"highlight bold\">item 1 negrito hightlight bold</span> item 1 item 1 item 1 <span class=\"highlight bold border\">item 1</span> item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1 </li>\n  215  											<li>item 2</li>\n\n/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/aula6/index.html:\n  211  										<p class=\"titulo-sem-titulo\" ><strong>Título com negrito</strong></p>\n  212  										<p>conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo </p>\n  213: 										<ol class=\"type_n1\">\n  214  											<li>item 1 <span class=\"highlight bold\">item 1 negrito hightlight bold</span> item 1 item 1 item 1 <span class=\"highlight bold border\">item 1</span> item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1 </li>\n  215  											<li>item 2</li>\n\n/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/include/css/style.css:\n  995  }\n  996  \n  997:   article ol.type_n1 {\n  998      counter-reset: list;\n  999      font-size: 1.2em;\n ....\n 1001      margin-right: 2.5em;\n 1002      }\n 1003:     article ol.type_n1 > li {\n 1004        margin-bottom: 0.5em;\n 1005        list-style: none;\n 1006        position: relative; padding-left:20px; margin-bottom:15px;}\n 1007:     article ol.type_n1 > li:before {\n 1008        counter-increment: list;\n 1009        content: counter(list,decimal) \". \";\n ....\n 1201  }\n 1202  \n 1203: .aula1 article ol.type_n1 > li:before {\n 1204    background:#7FD4DE;\n 1205    color:#555257; \n ....\n 1257  }\n 1258  \n 1259: .aula2 article ol.type_n1 > li:before {\n 1260    background:#EAF2D6;\n 1261    color:#555257; \n ....\n 1299  }\n 1300  \n 1301: .aula3 article ol.type_n1 > li:before {\n 1302    background:#F8D495;\n 1303    color:#555257; \n ....\n 1341  }\n 1342  \n 1343: .aula4 article ol.type_n1 > li:before {\n 1344    background:#FBCDB6;\n 1345    color:#555257; \n ....\n 1382  }\n 1383  \n 1384: .aula5 article ol.type_n1 > li:before {\n 1385    background:#FBDAE0;\n 1386    color:#555257; \n ....\n 1424  }\n 1425  \n 1426: .aula6 article ol.type_n1 > li:before {\n 1427    background:#E3B6D6;\n 1428    color:#555257; \n\n/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/styleguide/index.html:\n  246  										<p class=\"titulo-sem-titulo\" ><strong>Título com negrito</strong></p>\n  247  										<p>conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo </p>\n  248: 										<ol class=\"type_n1\">\n  249  											<li>item 1 <span class=\"highlight bold\">item 1 negrito hightlight bold</span> item 1 item 1 item 1 <span class=\"highlight bold border\">item 1</span> item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1 </li>\n  250  											<li>item 2</li>\n  ...\n  317  										<p class=\"titulo-sem-titulo\" ><strong>Título com negrito</strong></p>\n  318  										<p>conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo </p>\n  319: 										<ol class=\"type_n1\">\n  320  											<li>item 1 <span class=\"highlight bold\">item 1 negrito hightlight bold</span> item 1 item 1 item 1 <span class=\"highlight bold border\">item 1</span> item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1 </li>\n  321  											<li>item 2</li>\n  ...\n  386  										<p class=\"titulo-sem-titulo\" ><strong>Título com negrito</strong></p>\n  387  										<p>conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo </p>\n  388: 										<ol class=\"type_n1\">\n  389  											<li>item 1 <span class=\"highlight bold\">item 1 negrito hightlight bold</span> item 1 item 1 item 1 <span class=\"highlight bold border\">item 1</span> item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1 </li>\n  390  											<li>item 2</li>\n  ...\n  453  										<p class=\"titulo-sem-titulo\" ><strong>Título com negrito</strong></p>\n  454  										<p>conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo </p>\n  455: 										<ol class=\"type_n1\">\n  456  											<li>item 1 <span class=\"highlight bold\">item 1 negrito hightlight bold</span> item 1 item 1 item 1 <span class=\"highlight bold border\">item 1</span> item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1 </li>\n  457  											<li>item 2</li>\n  ...\n  553  										<p class=\"titulo-sem-titulo\" ><strong>Título com negrito</strong></p>\n  554  										<p>conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo </p>\n  555: 										<ol class=\"type_n1\">\n  556  											<li>item 1 <span class=\"highlight bold\">item 1 negrito hightlight bold</span> item 1 item 1 item 1 <span class=\"highlight bold border\">item 1</span> item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1 </li>\n  557  											<li>item 2</li>\n  ...\n  653  										<p class=\"titulo-sem-titulo\" ><strong>Título com negrito</strong></p>\n  654  										<p>conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo conteúdo </p>\n  655: 										<ol class=\"type_n1\">\n  656  											<li>item 1 <span class=\"highlight bold\">item 1 negrito hightlight bold</span> item 1 item 1 item 1 <span class=\"highlight bold border\">item 1</span> item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1  item 1 item 1 item 1 item 1 item 1 </li>\n  657  											<li>item 2</li>\n\n39 matches across 8 files\n",
+			"settings":
+			{
+				"buffer_size": 17390,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "pontuacao/aula3/index.html",
+			"settings":
+			{
+				"buffer_size": 16579,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pontuacao/aula4/index.html",
+			"settings":
+			{
+				"buffer_size": 18122,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pontuacao/aula5/index.html",
+			"settings":
+			{
+				"buffer_size": 17668,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pontuacao/aula6/index.html",
+			"settings":
+			{
+				"buffer_size": 17909,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pontuacao/styleguide/index.html",
+			"settings":
+			{
+				"buffer_size": 47876,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -45,7 +127,13 @@
 	},
 	"expanded_folders":
 	[
-		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao"
+		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao",
+		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/aula1",
+		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/aula2",
+		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/include",
+		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/include/css",
+		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/include/js",
+		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/styleguide"
 	],
 	"file_history":
 	[
@@ -157,13 +245,14 @@
 	],
 	"find":
 	{
-		"height": 22.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
 		"height": 93.0,
 		"where_history":
 		[
+			"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao",
 			"/Applications/MAMP/htdocs/nutricoaching/wordpress",
 			"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao",
 			"/Applications/MAMP/htdocs/kamon/wordpress",
@@ -187,6 +276,28 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"1.4em",
+			"article p",
+			"sup",
+			"biblio-",
+			"biblio-3",
+			"abrir-biblio-3",
+			"referencia-1",
+			"abrir-referencia-1",
+			"counter-increment",
+			"nter-inc",
+			"counter-increment",
+			"counter-increment: list 1\"",
+			"counter-increment",
+			"counter-increment: list 0;",
+			"<ol class=\"type_n1\">",
+			"start=\"",
+			"type_n1",
+			"teste",
+			"margin-top: -27px;margin-left: 104px;",
+			"margin-top: -27px",
+			"<img src=\"../include/images/newlogo.png\" style=\" margin-right:30px; \"  class=\"\" />",
+			"type_n1",
 			"yellow",
 			"superar medos",
 			".png\" style=\" margin-right:30px; \"  class=\"hide-on-large-only\"",
@@ -292,29 +403,7 @@
 			"01-01-primeiraAula",
 			"ol",
 			"ident",
-			"Primeira aula",
-			"article p",
-			"article p, article ul",
-			"conteúdo ",
-			"1.6-sextaAula",
-			"1.5-quintaAula",
-			"1.4-quartaAula",
-			"1.1-primeiraAula",
-			"1.3-terceiraAula",
-			"1.2-segundaAula",
-			"1-primeiraAula",
-			"primeiraAula",
-			"1.1-primeiraAula",
-			"1.1-nomeitem",
-			"redação argumentativa",
-			"pontuação",
-			"fundocaderno",
-			"page-background",
-			"<article class=\"\">\n								<div class=\"container\">",
-			"<div class=\"container",
-			"fundoCaderno",
-			"page-background",
-			"fundoCaderno"
+			"Primeira aula"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -322,6 +411,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"",
 			".png\" style=\" margin-right:30px; \"  class=\"\"",
 			"#048f9c",
 			"\"../include/",
@@ -338,8 +428,485 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "pontuacao/aula1/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 41383,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15884,
+								15913
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3681.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "pontuacao/include/js/page.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5579,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5546,
+								5546
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3274.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "pontuacao/aula2/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21011,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10042,
+								10042
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3417.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "pontuacao/include/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 36178,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18317,
+								18317
+							],
+							[
+								24223,
+								24223
+							],
+							[
+								24763,
+								24763
+							],
+							[
+								25303,
+								25303
+							],
+							[
+								27090,
+								27090
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 16295.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17390,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										470,
+										477
+									],
+									[
+										974,
+										981
+									],
+									[
+										1503,
+										1510
+									],
+									[
+										1859,
+										1866
+									],
+									[
+										2269,
+										2276
+									],
+									[
+										2756,
+										2763
+									],
+									[
+										3140,
+										3147
+									],
+									[
+										3472,
+										3479
+									],
+									[
+										3829,
+										3836
+									],
+									[
+										4041,
+										4048
+									],
+									[
+										4326,
+										4333
+									],
+									[
+										4668,
+										4675
+									],
+									[
+										4954,
+										4961
+									],
+									[
+										5266,
+										5273
+									],
+									[
+										5613,
+										5620
+									],
+									[
+										5869,
+										5876
+									],
+									[
+										6158,
+										6165
+									],
+									[
+										6445,
+										6452
+									],
+									[
+										6668,
+										6675
+									],
+									[
+										7098,
+										7105
+									],
+									[
+										7980,
+										7987
+									],
+									[
+										8862,
+										8869
+									],
+									[
+										9744,
+										9751
+									],
+									[
+										10626,
+										10633
+									],
+									[
+										11212,
+										11219
+									],
+									[
+										11356,
+										11363
+									],
+									[
+										11532,
+										11539
+									],
+									[
+										11690,
+										11697
+									],
+									[
+										11814,
+										11821
+									],
+									[
+										11938,
+										11945
+									],
+									[
+										12062,
+										12069
+									],
+									[
+										12186,
+										12193
+									],
+									[
+										12310,
+										12317
+									],
+									[
+										12799,
+										12806
+									],
+									[
+										13617,
+										13624
+									],
+									[
+										14435,
+										14442
+									],
+									[
+										15253,
+										15260
+									],
+									[
+										16071,
+										16078
+									],
+									[
+										16889,
+										16896
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ 	].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "pontuacao/aula3/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16579,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "pontuacao/aula4/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18122,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "pontuacao/aula5/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17668,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "pontuacao/aula6/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17909,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "pontuacao/styleguide/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 47876,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1135,
+								1135
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
 			]
 		}
 	],

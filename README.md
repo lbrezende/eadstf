@@ -15,7 +15,7 @@ git init
 
 git clone https://github.com/lbrezende/eadstf.git
 
-git branch gh-pages
+git checkout gh-pages
 
 git pull
 ```
