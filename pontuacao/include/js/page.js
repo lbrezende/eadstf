@@ -274,6 +274,8 @@ var Page = (function()
 		setHash(target);
 	} );
 
+
+
 	return { init : init };
 
 })();
