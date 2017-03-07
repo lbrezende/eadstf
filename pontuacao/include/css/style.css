@@ -113,7 +113,11 @@
   @font-face {
   font-family: 'Utsaah';
   src: url("../fonts/utsaah.ttf") format("opentype");
-  font-weight: normal; }  
+  font-weight: normal; }
+  @font-face {
+  font-family: 'Opensans';
+  src: url("../fonts/OpenSans-Regular.ttf") format("opentype");
+  font-weight: normal; }    
 /* Variables { */
 /* Variables } */
 /* Reset { */
@@ -144,7 +148,7 @@ iframe {
 /* Reset } */
 /* Main CSS  { */
 body {
-  font: 100% "Roboto+Slab", sans-serif;
+  font: 100% "Opensans", sans-serif !important;
   color: #565659;
   height: 100%;
   display: flex;
@@ -686,7 +690,7 @@ main {
 article {
   padding-top: 30px;
   padding-bottom: 20px;
-  font-family: "Utsaah", sans-serif;
+  font-family: "Opensans", sans-serif;
   font-size: 1.2rem;
   position: relative;
   background: #f7f7f7; }
@@ -1002,7 +1006,7 @@ h3 {
       position: relative; padding-left:20px; margin-bottom:15px;}
     article ol.type_n1 > li:before {
       counter-increment: list;
-      content: counter(list,decimal) ") ";
+      content: counter(list,decimal) ". ";
       position: absolute;
       left: -1.4em;
       padding: 5px 10px;
@@ -1072,8 +1076,6 @@ h3 {
   padding: 10px;
   margin: 10px 20px; }
 
-
-
 .evenodd {
 
 }
@@ -1126,14 +1128,15 @@ div.margin{
 
 }
 
-.box-teste {  
-  margin: 0px 20px;
-    padding: 20px 0px; 
-    font-size: 16px;}
-
 div.margin p{
   margin: 0 auto 0em;
 }
+
+.box-teste {  
+  margin: 0px 20px;
+    padding: 20px 0px; 
+    font-size: 16px;
+  }
 
 .saibamais {
   background: white;
