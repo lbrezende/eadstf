@@ -1009,7 +1009,7 @@ h3 {
       list-style: none;
       position: relative; padding-left:20px; margin-bottom:15px;}
     article ol.type_n1 > li:before {
-      counter-increment: list 0;
+      counter-increment: list;
       content: counter(list,decimal) ". ";
 
       position: absolute;
