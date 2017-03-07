@@ -702,7 +702,7 @@ article {
     margin-left: 20px;
      }
   article p {
-    font-size: 1.4em;
+    font-size: 1.1em;
     text-indent: 2.5em; }
   article p.center {
     text-indent: 0; }
@@ -712,7 +712,7 @@ article {
       list-style: disc outside; }
   article ol {
     padding-left: 2.5em;
-    font-size: 1.4em;
+    font-size: 1.1em;
     margin: 0.5rem auto 1.5rem; }
   article ul.checks li {
     list-style: none;
@@ -1013,7 +1013,7 @@ h3 {
       content: counter(list,decimal) ". ";
 
       position: absolute;
-      left: -1.4em;
+      left: -1.1em;
       padding: 5px 10px;
       border-radius: 100px;
       font-weight: bold;
@@ -1034,7 +1034,7 @@ h3 {
       counter-increment: list;
       content: counter(list,decimal) ". ";
       position: absolute;
-      left: -1.4em;
+      left: -1.1em;
       padding: 5px 10px;
       border-radius: 100px;
       font-weight: bold;
@@ -1054,7 +1054,7 @@ h3 {
       counter-increment: list;
       content: counter(list,lower-alpha) " ";
       position: absolute;
-      left: -1.4em; 
+      left: -1.1em; 
       padding: 1px 9px;
       border-radius: 100px;
       font-weight: bold;
@@ -1185,7 +1185,7 @@ div.margin p{
 .ficaadicabox {
   margin: 20px;
   padding: 20px;
-  font-size:1.4em;
+  font-size:1.1em;
 }
 
 /***************
