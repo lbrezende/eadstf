@@ -1085,6 +1085,7 @@ h3 {
 .filled{
    border-radius: 10px;
    padding: 1px 5px;
+   text-indent: 0em;
 }
 
 .filled-central{
