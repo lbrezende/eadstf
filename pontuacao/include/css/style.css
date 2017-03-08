@@ -1007,7 +1007,7 @@ h3 {
     article ol.type_n1 > li {
       margin-bottom: 0.5em;
       list-style: none;
-      position: relative; padding-left:20px; margin-bottom:15px;}
+      position: relative; padding-left:35px; margin-bottom:15px;}
     article ol.type_n1 > li:before {
       counter-increment: list;
       content: counter(list,decimal) ". ";
