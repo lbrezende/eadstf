@@ -709,7 +709,7 @@ article {
   article ul {
     padding-left: 2.5em; }
     article ul li {
-      list-style: disc outside; }
+      list-style: disc outside; margin-bottom:20px;}
   article ol {
     padding-left: 2.5em;
     font-size: 1.1em;
