@@ -15,7 +15,7 @@
 			"file": "pontuacao/aula1/index.html",
 			"settings":
 			{
-				"buffer_size": 41383,
+				"buffer_size": 44396,
 				"line_ending": "Unix"
 			}
 		},
@@ -31,7 +31,7 @@
 			"file": "pontuacao/aula2/index.html",
 			"settings":
 			{
-				"buffer_size": 21011,
+				"buffer_size": 41864,
 				"line_ending": "Unix"
 			}
 		},
@@ -39,7 +39,7 @@
 			"file": "pontuacao/include/css/style.css",
 			"settings":
 			{
-				"buffer_size": 36178,
+				"buffer_size": 36424,
 				"line_ending": "Windows"
 			}
 		},
@@ -57,15 +57,15 @@
 			"file": "pontuacao/aula3/index.html",
 			"settings":
 			{
-				"buffer_size": 16579,
-				"line_ending": "Unix"
+				"buffer_size": 45097,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "pontuacao/aula4/index.html",
 			"settings":
 			{
-				"buffer_size": 18122,
+				"buffer_size": 57390,
 				"line_ending": "Unix"
 			}
 		},
@@ -73,7 +73,7 @@
 			"file": "pontuacao/aula5/index.html",
 			"settings":
 			{
-				"buffer_size": 17668,
+				"buffer_size": 47966,
 				"line_ending": "Unix"
 			}
 		},
@@ -81,7 +81,7 @@
 			"file": "pontuacao/aula6/index.html",
 			"settings":
 			{
-				"buffer_size": 17909,
+				"buffer_size": 21333,
 				"line_ending": "Unix"
 			}
 		},
@@ -130,13 +130,17 @@
 		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao",
 		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/aula1",
 		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/aula2",
-		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/include",
+		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/aula3",
+		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/aula4",
+		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/aula5",
+		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/aula6",
 		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/include/css",
 		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/include/js",
 		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/styleguide"
 	],
 	"file_history":
 	[
+		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/aula2/AULA 2_Uma orac_a_o de qualidade FINAL pdf_.pdf",
 		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/include/css/style.css",
 		"/Users/leandrorezende/Pictures/Danos Apartamento 2013/reclamacao.txt",
 		"/Applications/MAMP/htdocs/stfaula/eadstf/pontuacao/include/css/materialize.css",
@@ -276,6 +280,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"seção do complemento nominal",
+			"adjunto ad",
 			"1.4em",
 			"article p",
 			"sup",
@@ -401,9 +407,7 @@
 			"01-primeiraAula",
 			"primeiraAula",
 			"01-01-primeiraAula",
-			"ol",
-			"ident",
-			"Primeira aula"
+			"ol"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -428,7 +432,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -437,15 +441,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 41383,
+						"buffer_size": 44396,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15884,
-								15913
+								32526,
+								32379
 							]
 						],
 						"settings":
@@ -454,7 +458,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3681.0,
+						"translation.y": 9127.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -486,7 +490,7 @@
 						"translation.y": 3274.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -495,15 +499,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 21011,
+						"buffer_size": 41864,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10042,
-								10042
+								27626,
+								27626
 							]
 						],
 						"settings":
@@ -512,10 +516,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3417.0,
+						"translation.y": 8538.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -524,31 +528,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 36178,
+						"buffer_size": 36424,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								18317,
-								18317
-							],
-							[
-								24223,
-								24223
-							],
-							[
-								24763,
-								24763
-							],
-							[
-								25303,
-								25303
-							],
-							[
-								27090,
-								27090
+								0,
+								0
 							]
 						],
 						"settings":
@@ -561,7 +549,7 @@
 						"translation.y": 16295.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -759,7 +747,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -768,15 +756,102 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 16579,
+						"buffer_size": 45097,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1890,
+								1890
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "pontuacao/aula4/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 57390,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1901,
+								1901
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "pontuacao/aula5/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 47966,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1910,
+								1910
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "pontuacao/aula6/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21333,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1901,
+								1901
 							]
 						],
 						"settings":
@@ -789,93 +864,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "pontuacao/aula4/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 18122,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "pontuacao/aula5/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 17668,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "pontuacao/aula6/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 17909,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -904,7 +892,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 9,
 					"type": "text"
 				}
 			]
