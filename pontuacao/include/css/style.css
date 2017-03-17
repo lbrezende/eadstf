@@ -963,6 +963,13 @@ ol.ordinal {
 p.no-indent {
   text-indent: 0; }
 
+.small-font-paragraph {
+    font-size: 0.9em;
+}
+
+.left-4em {
+    margin-left:4em;
+}
 
 /* Boxes } */
 /* Quadros { */
