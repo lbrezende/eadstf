@@ -173,6 +173,8 @@ footer.page-footer {
 strong {
   font-weight: bold; }
 
+  .btn {font-size:0.7em;}
+
 /* Main CSS  } */
 /* Menu { */
 .nick{font-family: 'Nickainley';}
