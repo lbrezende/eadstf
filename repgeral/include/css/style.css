@@ -224,30 +224,27 @@ strong {
   background-image: url(../img/modelas.png);
   background-repeat: no-repeat;
   background-position: 160px center;
-  background-color: #087079; }
+  background-color: #AF452F; }
   #mainMenu.aula1 .header {
     width: 100%;
     text-align: center; 
-    background: #FFF;
+    background: #AF452F;
     }
     #mainMenu.aula1 .header img {
-      width: 80%;
-      max-width: 225px;
-      height: auto;
-      margin: 10px auto -24px; }
+      width:100%; }
   #mainMenu.aula1 li a {
     height: auto;
     font-size: 1.6rem;
     line-height: 2.0em;
     font-family: "Bignoodletitling", sans-serif;
-    background: #0694a0;
+    background: #AF452F;
     margin: 1px auto;
     padding: 0px 20px;
-    color: #FFF;
+    color: #B7AB9F;
     /*text-shadow: -2px 2px 2px rgba(0,0,0,1.00);*/ }
   #mainMenu.aula1 li a:hover {
-    background-color: #087079;
-    color: #FFF; }
+    background-color: #FFF;
+    color: #000; }
   #mainMenu.aula1 li a.active {
     background-color: #087079;
     color: #FFF; }
