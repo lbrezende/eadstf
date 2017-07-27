@@ -3753,7 +3753,11 @@ small {
     background-color: #B3462F !important; }
 
 .btn.aula1, .btn-large.aula1, .btn:hover.aula1, .btn-large:hover.aula1 {
-    background-color: #B3462F !important; }
+    background-color: #B3462F !important; 
+    border-radius: 100%;
+    border: 8px solid #B8AB9E;
+    padding: 0px !important;
+  }
 .btn.aula2, .btn-large.aula2, .btn:hover.aula2, .btn-large:hover.aula2 {
     background-color: #709128 !important; }
 .btn.aula3, .btn-large.aula3, .btn:hover.aula3, .btn-large:hover.aula3 {

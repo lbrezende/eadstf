@@ -201,14 +201,15 @@ strong {
   padding-left: 1.0rem;
   padding-right: 1.0rem; }
   #tblcontents .material-icons {
-    border: 1px solid;
+    /*border: 1px solid;*/
     height: 40px;
     width: 50px;
     line-height: 40px;
     margin: 12px auto;
     background-color: #B3462F;  }
       #tblcontents .material-icons.aula1 {
-        background-color: #B3462F;  }
+        background-color: #B3462F;
+            line-height: 10px;  }
       #tblcontents .material-icons.aula2 {
         background-color: #709128;  }
       #tblcontents .material-icons.aula3 {
@@ -625,12 +626,13 @@ header.page-header {
     background: #B3462F;
     color: #FFF;
     font-size: 1.2rem;
-    padding: 0px 20px;
+    padding: 0px 11px;
+    line-height: 48px;
     display: table; }
   header.page-header .pages.aula1 {
     background: #B3462F;
-    border-right: 5px solid #D4CCC5;
-    border-left: 5px solid #D4CCC5;
+    border: 8px solid #B8AB9E;
+    border-radius:100%;
      }
   header.page-header .pages.aula2 {
     background: #B0E246; }
@@ -1944,6 +1946,19 @@ article p i {
   #intro img{
     padding-top:200px;
   }
+  header.page-header .pages {
 
+    padding: 0px 7px;
+    line-height: 41px;
+}
+
+#tblcontents .material-icons {
+  width:40px;
+}
+
+#tblcontents .material-icons.aula1 {
+    background-color: #B3462F;
+    line-height: 19px;
+}
    
 }
