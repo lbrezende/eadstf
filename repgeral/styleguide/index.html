@@ -8,17 +8,19 @@
 	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 	<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0"> 
-
+	<link href="../include/css/introjs.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../include/css/bookblock.css">
 	<link rel="stylesheet" type="text/css" href="../include/css/materialize.css">
 	<link rel="stylesheet" href="../include/fonts/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="../include/css/style.css">	<link rel="stylesheet" type="text/css" href="../include/css/aula1.css">
+	<link rel="stylesheet" type="text/css" href="../include/css/style.css">	
+	<link rel="stylesheet" type="text/css" href="../include/css/aula1.css">
 	
 	<script src="../include/js/modernizr.custom.79639.js"></script>
 	<script src="../include/js/jquery-2.1.1.min.js"></script>
 	<script src="../include/js/jquery.mobile-1.4.5.min.js"></script>
 	<script type="text/javascript" src="../include/js/materialize.min.js"></script>
+
 
 
 
@@ -36,13 +38,13 @@
 			</div>
 
 				<ul class="navegacao right">
-					<li id="bb-nav-prev" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Página anterior" data-tooltip-id="acbd782c-fba5-927f-6e88-83b253853abf">
+					<li id="bb-nav-prev"  data-position="bottom" data-delay="50" >
 						<a class="waves-effect waves-light ui-link">
 							<span class="material-icons">chevron_left</span>
 							<span class="screen-reader-text">Página anterior</span>
 						</a>
 					</li>
-					<li id="bb-nav-next" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Próxima página" data-tooltip-id="5020c8e3-3c0c-2bca-f36d-94e72c082594">
+					<li id="bb-nav-next"  data-position="bottom" data-delay="50"  >
 						<a class="waves-effect waves-light ui-link">
 							<span class="material-icons">chevron_right</span>
 							<span class="screen-reader-text">Próxima página</span>
@@ -206,11 +208,18 @@
 									<div class="row">
 										<p class="titulo-sem-titulo"><strong><em>Introdução</em></strong></p>
 										<p>Olá!</p>
-										<p>Na apresentação do curso, expusemos a proposta do nosso estudo, os passos que pretendemos seguir e a bibliografia indicada para enriquecer as lições, está lembrado?</p>
-										<p>Nesta primeira aula, em abordagem ainda introdutória, iniciaremos o conteúdo do curso propriamente dito. Para tanto, nosso objetivo principal é introduzir o tema da repercussão geral, tratando de temas adicionais que lhe dizem respeito, tais como os casos de competência originária e recursal do Supremo Tribunal Federal (STF), bem como as distinções entre os sistemas de <em>common law</em> e de <em>civil law</em>. </p>
-										<p>Como se sabe, a repercussão geral é instituto jurídico dos mais importantes à atuação do  STF, já que o julgamento de recursos extraordinários sob a sistemática de tal instituto é atribuição das mais relevantes dessa Corte, apesar de, claro, não ser a única. Como mencionado na apresentação do curso, sobreleva-se a importância do tema, tendo em vista a recente entrada em vigor do Novo Código de Processo Civil (Lei nº 13.105/2015). Nesse sentido, mostra-se essencial que você, servidor do STF, tenha profundo conhecimento desse instituto jurídico, desde as suas origens históricas até sua aplicação prática neste Tribunal, passando também pela evolução do tratamento legislativo da questão.</p>
+										<p>Na apresentação do curso, expusemos a proposta do nosso estudo, os passos que pretendemos seguir e a bibliografia indicada para enriquecer as lições, está lembrado? </p>
+										<p class="no-indent text-center"><a id="startButton" class="btn btn-large btn-success" onclick="javascript:introJs().setOption('showProgress', true).start();">Ver tutorial</a></p>
+										
+										<p data-step="1" data-intro="Primeira dica" data-position='top'>Nesta primeira aula, em abordagem ainda introdutória, iniciaremos o conteúdo do curso propriamente dito. Para tanto, nosso objetivo principal é introduzir o tema da repercussão geral, tratando de temas adicionais que lhe dizem respeito, tais como os casos de competência originária e recursal do Supremo Tribunal Federal (STF), bem como as distinções entre os sistemas de <em>common law</em> e de <em>civil law</em>. </p>
+
+										<p data-step="2" data-intro="Segunda e última dica."  data-position='top'>Como se sabe, a repercussão geral é instituto jurídico dos mais importantes à atuação do  STF, já que o julgamento de recursos extraordinários sob a sistemática de tal instituto é atribuição das mais relevantes dessa Corte, apesar de, claro, não ser a única. Como mencionado na apresentação do curso, sobreleva-se a importância do tema, tendo em vista a recente entrada em vigor do Novo Código de Processo Civil (Lei nº 13.105/2015). Nesse sentido, mostra-se essencial que você, servidor do STF, tenha profundo conhecimento desse instituto jurídico, desde as suas origens históricas até sua aplicação prática neste Tribunal, passando também pela evolução do tratamento legislativo da questão.</p>
+
 										<p>Para tanto, abordaremos a seguir dois aspectos introdutórios mais gerais que nos ajudam a apreender a colocação da repercussão em nosso ordenamento jurídico. Inicialmente, propor-se-á uma análise geral sobre as competências constitucionais do Supremo Tribunal Federal. Na sequência, apresentar-se-á a problematização entre <em>civil law</em> – tradição jurídica à qual o Brasil historicamente se filia – e <em>common law</em> – da qual originariamente derivada a ideia de respeito aos precedentes. Essa distinção se faz importante no contexto de análise sobre em que medida a vinculatividade da jurisprudência e dos precedentes prevista pelo Novo Código de Processo Civil representa ou não um afastamento da tradição do <em>civil law</em>.</p>
 										<p>Antes, porém, para uma visão rápida sobre a importância da repercussão geral e alguns pontos de reformas propostas, veja a seguinte entrevista dos Ministros Gilmar Mendes e Roberto Barroso: <https://www.youtube.com/watch?v=DxwjYmDNH_8>.</https:>
+
+
+
 										
 										
 									</div>
@@ -289,13 +298,29 @@
 					<div class="content">
 						<div class="scroller">
 							<article class="">
-								<div class="container fundoCaderno" >
+								<div class="container fundoCaderno" style="margin-top:50px" >
 									<div class="row">
-										<h3 class="">Título conteúdo 3</h3>
-										<p>conteúdo</p>						
+										<div class="col s12 m6 l6">
+											<h3 class="" >3. Introdução</h3>
+											<img src="../include/images/ponto2.png" style="    width: 120%;    margin-top: -30px;    margin-left: -106px;">
+											<p>As informações que enfatizaremos neste tópico são de seu total domínio, com certeza. A intenção é rememorar as características peculiares e as competências desta Suprema Corte. Vamos juntos?</p>
+											<p>O Supremo Tribunal Federal é um dos órgãos integrantes do Poder Judiciário (art. 92, I, da Constituição de 1988), possuindo seu desenho institucional fixado no texto constitucional (art. 101 e seguintes). O Tribunal é composto de 11 Ministros, escolhidos dentre cidadãos com mais de 35 e menos de 65 anos de idade, de notável saber jurídico e reputação ilibada. Os Ministros são nomeados pelo Presidente da República, depois de aprovada a escolha pela maioria absoluta do Senado Federal.</p>
+											<p>Suas competências jurisdicionais são previstas no art. 102 da Constituição Federal. Vamos analisar esse dispositivo? Ele é assim disposto:</p>
+										</div>		
+										<div class="col s12 m6 l6">
+											<p>Art. 102. Compete ao Supremo Tribunal Federal, precipuamente, a guarda da Constituição, cabendo-lhe:</p>
+											<p>I – processar e julgar, originariamente:</p>
+											<p>a) a ação direta de inconstitucionalidade de lei ou ato normativo federal ou estadual e a ação declaratória de constitucionalidade de lei ou ato normativo federal; (Redação dada pela Emenda Constitucional nº 3, de 1993)</p>
+											<iframe width="560" height="315" src="https://www.youtube.com/embed/DxwjYmDNH_8" frameborder="0" allowfullscreen></iframe>
+
+
+
+										</div>			
 									</div>
+
 								</div>
 							</article>
+
 						</div> <!-- fecha scroller -->
 					</div> <!-- fecha content -->
 				</div> <!-- fecha bb-item -->				
@@ -305,11 +330,27 @@
 					<div class="content">
 						<div class="scroller">
 							<article class="">
-								<div class="container fundoCaderno" >
+								<div class="container fundoCaderno" style="margin-top:50px" >
 									<div class="row">
-										<h3 class="">Título conteúdo 4</h3>
-										<p>conteúdo</p>						
+										<div class="col s12 m6 l6">
+											<h3 class="" >4. Introdução</h3>
+											<img src="../include/images/ponto2.png" style="    width: 120%;    margin-top: -30px;    margin-left: -106px;">
+											<p>As informações que enfatizaremos neste tópico são de seu total domínio, com certeza. A intenção é rememorar as características peculiares e as competências desta Suprema Corte. Vamos juntos?</p>
+											<p>O Supremo Tribunal Federal é um dos órgãos integrantes do Poder Judiciário (art. 92, I, da Constituição de 1988), possuindo seu desenho institucional fixado no texto constitucional (art. 101 e seguintes). O Tribunal é composto de 11 Ministros, escolhidos dentre cidadãos com mais de 35 e menos de 65 anos de idade, de notável saber jurídico e reputação ilibada. Os Ministros são nomeados pelo Presidente da República, depois de aprovada a escolha pela maioria absoluta do Senado Federal.</p>
+											<p>Suas competências jurisdicionais são previstas no art. 102 da Constituição Federal. Vamos analisar esse dispositivo? Ele é assim disposto:</p>
+										</div>		
+										<div class="col s12 m6 l6">
+											<p>Art. 102. Compete ao Supremo Tribunal Federal, precipuamente, a guarda da Constituição, cabendo-lhe:</p>
+											<p>I – processar e julgar, originariamente:</p>
+											<p>a) a ação direta de inconstitucionalidade de lei ou ato normativo federal ou estadual e a ação declaratória de constitucionalidade de lei ou ato normativo federal; (Redação dada pela Emenda Constitucional nº 3, de 1993)</p>
+											<iframe width="560" height="315" src="https://www.youtube.com/embed/DxwjYmDNH_8" frameborder="0" allowfullscreen></iframe>
+
+
+
+										</div>		
+
 									</div>
+
 								</div>
 							</article>
 						</div> <!-- fecha scroller -->
@@ -333,6 +374,13 @@
 	
 	<script src="../include/js/page.js"></script>
 	<script src="../include/js/functions.js" type="text/javascript"></script>
+	<script type="text/javascript" src="../include/js/intro.min.js"></script>
 		
 
-</div><div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><span class="ui-icon-loading"></span><h1>loading</h1></div><div class="material-tooltip" id="3bce847c-380c-63fc-f105-bdcf620f1f03"><span>Página anterior</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="dae2237b-244d-0e80-8229-e7cf6808abaa"><span>Próxima página</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="dfdae80e-c4c2-5b56-6a1f-a3dcda8f4feb"><span>Diminuir fonte</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="1ce2b460-34f9-7698-374a-7a82e177afe2"><span>Retomar tamanho padrão da fonte</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="ba6a33b3-c1ae-a4eb-9706-00f06f248a24"><span>Aumentar fonte</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="hiddendiv common"></div><div class="material-tooltip" id="acbd782c-fba5-927f-6e88-83b253853abf"><span>Página anterior</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="5020c8e3-3c0c-2bca-f36d-94e72c082594"><span>Próxima página</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="e9820861-feb1-9e78-4a23-c767e2bc6643"><span>Diminuir fonte</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="defa175e-2118-0699-3fde-a7b6880fe102"><span>Retomar tamanho padrão da fonte</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="a92f2a81-9a17-0569-6a06-ed3723861db2"><span>Aumentar fonte</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="drag-target" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div><div id="window-resizer-tooltip"><a href="index.html#" title="Edit settings"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth"></span> x <span class="tooltipHeight" id="winHeight"></span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth"></span> x <span class="tooltipHeight" id="vpHeight"></span></div></body></html>
+</div>
+
+
+    
+
+
+</body></html>
