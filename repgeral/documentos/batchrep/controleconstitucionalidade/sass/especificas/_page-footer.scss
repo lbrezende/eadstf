@@ -1,0 +1,19 @@
+footer.page-footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 909;
+    padding: 10px 0 10px;
+    margin: 0;
+	background-color: $footer-fundo-cor;
+	background-image: url('../img/ead_setas.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: contain;
+    .logo {
+        height: 75px;
+        margin: -10px auto;
+        width: auto;
+    }
+}

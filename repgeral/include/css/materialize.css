@@ -83,10 +83,10 @@
   color: #BAE9E7 !important; }
 
 .custom1.lighten-1 {
-  background-color: #048f9c !important; }
+  background-color: #B3462F !important; }
 
 .custom1-text.text-lighten-1 {
-  color: #048f9c !important; }
+  color: #B3462F !important; }
 
 .custom1.darken-1 {
   background-color: #6FC8B9 !important; }
@@ -3744,16 +3744,16 @@ small {
 .btn, .btn-large {
   text-decoration: none;
   color: #fff;
-  background-color: #048f9c !important;
+  background-color: #B3462F !important;
   text-align: center;
   letter-spacing: .5px;
   transition: .2s ease-out;
   cursor: pointer; }
   .btn:hover, .btn-large:hover {
-    background-color: #048f9c !important; }
+    background-color: #B3462F !important; }
 
 .btn.aula1, .btn-large.aula1, .btn:hover.aula1, .btn-large:hover.aula1 {
-    background-color: #048f9c !important; }
+    background-color: #B3462F !important; }
 .btn.aula2, .btn-large.aula2, .btn:hover.aula2, .btn-large:hover.aula2 {
     background-color: #709128 !important; }
 .btn.aula3, .btn-large.aula3, .btn:hover.aula3, .btn-large:hover.aula3 {

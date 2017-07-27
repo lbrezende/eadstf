@@ -1,0 +1,81 @@
+#intro.capa {
+	/*background-color: rgb(22,104,53);
+	/*background-image: url('../img/capa2.jpg');
+	background-position: bottom center;
+	background-size: contain;
+	background-repeat: no-repeat; /* */
+	text-align: center;
+	padding: 0px;
+	
+	hgroup {
+		padding: 1.0em 0.0em 1.0em 0em;
+		background-color: #fff;
+		background-image: url('../img/brasao2.png');
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+	}
+	
+	h1 {
+		background: none;
+		color: rgb(35,31,84);
+		font-family: 'Nexa Rust Shadow';
+		font-size: 33pt;
+		text-align: center;
+		font-weight: normal;
+		margin: 0px;
+		/*padding: 0.5em 0em 0.5em;*/
+		padding: 0.5em 0em 0.1em;;
+		border: none;
+		max-width: none;
+	}
+	h2 {
+		display: none;
+		background: none;
+		color: rgb(33,46,68);
+		text-transform: uppercase;
+		font-size: 20pt;
+		margin-top: 2.0em;
+		font-family: 'Nexa Rust Black', sans-serif;
+	}
+	.autor {
+		text-align: right;
+		font-family: 'Nexa Script', cursive;
+		font-size: 20pt;
+		font-weight: normal;
+		color: rgb(25,23,70);
+		padding-right: 3.2em;
+	}
+	@include responsive("only screen and (max-width : 1280px)")
+	{
+		h1 { font-size: 23pt; }
+		.autor { font-size: 16pt; }
+	}
+	@include responsive($medium-and-down)
+	{
+		h1 { font-size: 18pt; }
+		.autor { font-size: 14pt; }
+	}
+	
+	@include responsive($small-and-down)
+	{
+		h1 { font-size: 16pt; }
+		h2 { font-size: 1.4em; }
+		.autor { font-size: 13pt; padding-right: 0px; text-align: center; }
+	}
+	
+	figure.intro_capa {
+		background-color: rgb(22,104,53);
+		width: 100%;
+		padding: 2.0em 0 0;
+		margin: 0;
+		
+		img {
+			max-width: 1180px;
+			width: 100%;
+			height: auto;
+			clear: both;
+			margin: 0 auto -4px;
+		}
+	}
+}

@@ -10,9 +10,12 @@
 }
 
 .top-title{
-  font-family: 'Multicolore', sans-serif;
-  font-size: 0.6em !important;
+  font-family: 'Bignoodletitling', sans-serif;
+  font-size: 0.8em !important;
+  color:#D4CCC5;
 }
+
+
 
 /* Colors { */
 
@@ -199,9 +202,9 @@ strong {
     width: 50px;
     line-height: 40px;
     margin: 12px auto;
-    background-color: #048f9c;  }
+    background-color: #B3462F;  }
       #tblcontents .material-icons.aula1 {
-        background-color: #048f9c;  }
+        background-color: #B3462F;  }
       #tblcontents .material-icons.aula2 {
         background-color: #709128;  }
       #tblcontents .material-icons.aula3 {
@@ -493,7 +496,8 @@ strong {
     .bb-item .scroller article {
       height: 100%;
       position: relative;
-      overflow: auto; }
+      overflow: auto;
+      background: #FAF7F5; }
 
 .flex-cols {
   display: flex;
@@ -545,7 +549,7 @@ header.page-header {
   header.page-header nav.aula1 {
     position: relative;
     z-index: 2;
-    background: #09B2C2; }
+    background: #5E5F5F; }
   header.page-header nav.aula2 {
     position: relative;
     z-index: 2;
@@ -572,16 +576,16 @@ header.page-header {
     top: -100%;
     left: 0px;
     /*background: #D2565C;*/
-    background:#048f9c;
+    background:#B3462F;
     font-family: "Bignoodletitling", sans-serif;
-    font-size: 1.8rem;
-    padding: 10px 35px;
+    font-size: 1.5rem;
+    padding: 15px 35px 10px 35px;
     transition: all 0.25s ease-in-out;
     opacity: 0;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 5px; }
     header.page-header #titulo_aula.aula1 {
-      background:#048f9c;
+      background:#B3462F;
       }
     header.page-header #titulo_aula.aula2 {
       background:#709128;
@@ -617,12 +621,16 @@ header.page-header {
     background: none; }
   header.page-header .pages {
     height: 100%;
-    background: #00c1d4;
+    background: #B3462F;
     color: #FFF;
     font-size: 1.2rem;
-    padding: 0px 10px; }
+    padding: 0px 20px;
+    display: table; }
   header.page-header .pages.aula1 {
-    background: #00c1d4; }
+    background: #B3462F;
+    border-right: 5px solid #D4CCC5;
+    border-left: 5px solid #D4CCC5;
+     }
   header.page-header .pages.aula2 {
     background: #B0E246; }
   header.page-header .pages.aula3 {
@@ -648,7 +656,8 @@ header.page-header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%; }
+    height: 100%;
+    color: #D4CCC5; }
   header.page-header .font-config .material-icons {
     font-size: 1.5rem; }
   header.page-header .font-config .separador {
@@ -703,7 +712,7 @@ main {
 article {
   padding-top: 30px;
   padding-bottom: 20px;
-  font-family: "Opensans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   position: relative;
   background: #f7f7f7; }
@@ -715,7 +724,7 @@ article {
     margin-left: 20px;
      }
   article p {
-    font-size: 1.1em;
+    font-size: 1.0em;
     text-indent: 2.5em; }
   article p.center {
     text-indent: 0; }
@@ -998,8 +1007,8 @@ Estilos Genericos
 
 .fundoCaderno{
   border: 1px;
-  padding-left:10px;padding-right:10px;background-color:#FFF;margin-top:30px;
-      box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+  padding-left:10px;padding-right:10px;margin-top:30px;
+      /*box-shadow: 0px 2px 3px rgba(0,0,0,0.2);*/
 
 }
 
@@ -1020,7 +1029,7 @@ h3 {
 
   article ol.type_n1 {
     counter-reset: list;
-    font-size: 1.2em;
+    font-size: 1.0em;
     margin-left: 2.5em; 
     margin-right: 2.5em;
     }
@@ -1584,7 +1593,7 @@ Estilos Aula 6
     transform: none;
     align-content: center;
     justify-content: center;
-    background: #048f9c;
+    background: #B3462F;
     z-index: 0;
     line-height: 2.0; }
     .logoPequena{
@@ -1805,17 +1814,20 @@ article p i {
 /*Hacks*/
 .back-home {
     max-width: 600px;
-    max-height: 85vh;
+   /* max-height: 85vh;*/
 }
 
 #intro {
-  background: #FFF;
+  background: #b0452e;
 }
 
  @media only screen and (min-width: 993px) {
 
 }
  @media only screen and (max-width: 992px) {
+  #intro img{
+    padding-top:200px;
+  }
 
    
 }

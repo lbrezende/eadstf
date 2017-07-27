@@ -1,0 +1,126 @@
+body {
+	font: 100% $font-stack;
+	color: $text-color;
+	/*height: 100%;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;*/
+	position: absolute;
+	top: 64px;
+	bottom: 78px;
+	left: 0;
+	width: 100%;
+	
+	@include responsive($medium-and-down)
+	{
+		top: 96px;
+	}
+	@include responsive($small-and-down)
+	{
+		top: 55px;
+		bottom: 0px;
+	}
+}
+.ui-loader {
+	visibility: hidden;
+	display: none;
+}
+.ui-page {
+	min-height: auto !important;
+}
+a {
+	text-decoration: none;
+	outline: none;
+}
+main {
+	position: relative;
+	left: 0px;
+	transition: left 0.3s ease-in-out;
+	padding: 0px;
+    height: 100%;
+}
+footer.page-footer {
+	margin-top: 0px;
+	padding-bottom: 20px;
+	
+	@include responsive($small-and-down)
+	{
+		display: none;
+	}
+}
+strong {
+	font-weight: bold;
+}
+
+/* Genéricas { */
+.full {
+	width: 100%;
+	height: auto;
+}
+
+.bb-page {
+	padding: 0px;
+    height: 100%;
+	margin-top: 0px;
+    * {
+        height: 100%;
+    }
+}
+.bb-item {
+	height: 100%;
+	.content {
+		height: 100%;
+	}
+	.scroller {
+		height: 100%;
+		article {
+			height: 100%;
+			position: relative;
+			overflow: auto;
+		}
+	}
+}
+.flex-cols {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	position: relative;
+	height: 100%;
+}
+.flex-wrap {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+
+	position: relative;
+	height: 100%;
+	align-self: stretch;
+	.flex-item {
+		align-self: center;
+	}
+}
+
+.fig {
+    padding: 0;
+	width: 100%;
+	text-align: center;
+	margin: 1.0em 0px;
+    img {
+        width: 100%;
+        height: auto;
+		margin: 0px auto;
+    }
+}
+.fig-half {
+    width: 50%;
+	margin-left: auto;
+	margin-right: auto; 
+}
+.fig-third {
+	width: 33%;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Genéricas } */

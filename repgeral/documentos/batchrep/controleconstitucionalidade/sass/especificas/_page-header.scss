@@ -1,0 +1,368 @@
+
+
+header.page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+	
+	.close {
+		@include responsive($medium-and-up)
+		{
+			display: none;
+		}
+		@include responsive($small-and-down)
+		{
+			display: block;
+			position:  absolute;
+			top: 5px;
+			right: 5px;
+			text-align: center;
+			
+			i {
+				margin: 0px !important;
+			}
+		}
+	}
+	
+	nav {
+		position: relative;
+		z-index: 2;
+		background: $nav-fundo-color;
+		color: $nav-font-color;
+		
+		.brand-logo {
+			color: $nav-font-color;
+			font-family: $font-title3;
+			left: 60px;
+			
+			@include responsive($medium-and-down)
+			{
+				display: flex;
+				font-size: 1.5rem;
+				position:  fixed;
+				top: 4.0rem;
+				left: 0;
+				right: 0;
+				transform: none;
+				align-content: center;
+				justify-content: center;
+				background-color: $nav-font-color;
+				color: $nav-fundo-color;
+				z-index: 0;
+				line-height: 2.0;
+			}
+			@include responsive($small-and-down)
+			{
+				display: none;
+				/*
+				font-family: $font-title;
+				top: 56px;
+				line-height: 40px;
+				font-size: 1.8rem;
+				*/
+			}
+			
+			h1 {
+				background: none;
+				border: none;
+				max-width: 100%;
+				font-size: 1.6rem;
+				
+				@include responsive("only screen and (max-width : 1050px)")
+				{
+					/*font-family: $font-title5;
+					font-weight: bold;
+					text-transform: uppercase;*/
+					font-size: 1.4rem;
+				}
+			}
+		}
+		a {
+			color: inherit;
+		}
+		
+		$bt_menu: auto;
+		
+		#tblcontents {
+			background-color: $pages-fundo-color;
+			color: $pages-font-color;
+			padding: 0px 1.0em;
+			margin-left: 0;
+			i {
+				font-size: 1.7rem;
+			}
+			
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: $bt_menu;
+			line-height: $bt_menu;
+			
+			i {
+				height: $bt_menu;
+				line-height: $bt_menu;
+			}
+			
+			@include responsive($medium-and-up)
+			{
+				
+			}
+		}
+	}
+	#titulo_aula {
+		position: absolute;
+		left: 0px;
+		top: 60px;
+		opacity: 1;
+		background-color: $titulo-fundo-color;
+		color: $titulo-font-color;
+		font-family: $font-accent;
+		font-size: 1.2rem;
+		font-weight: bold;
+		padding: 10px 35px;
+		transition: all 0.25s ease-in-out;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 5px;
+		
+		@include responsive($medium-and-down)
+		{
+			display: none;
+			/*
+			top: 98px;
+			left: 0;
+			width: auto;
+			border-bottom-right-radius: 0;
+			text-align: center;
+			font-size: 1.0rem;
+			padding: 0.2em 1.0em;
+			*/
+		}
+		@include responsive($small-and-down)
+		{
+			display: none;
+		}
+		
+		h2 {
+			background: none;
+			font: inherit;
+			color: inherit;
+			border: none;
+			margin: 0;
+			padding:0;
+			display: inherit;
+		}
+		h2::before {
+			content: '';
+			display: none;
+		}
+	}
+	#titulo_aula.active {
+		top: 60px;
+		opacity: 1;
+	}
+	.disabled {
+		opacity: 0.5;
+	}
+	.disabled:hover {
+		background: none;
+	}
+	.pages {
+		height: 100%;
+		background: $pages-fundo-color;
+		color: $pages-font-color;
+		font-size: 1.2rem;
+		padding: 0px 10px;
+	}
+	.navegacao {
+		li {
+			height: 63px;
+			position: relative;
+		}
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+		}
+	}
+	.font-config {
+		li {
+			height: 63px;
+			position: relative;
+		}
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+		}
+		.material-icons {
+			font-size: 1.5rem;
+		}
+		.separador {
+			width: 30px;
+		}
+	}
+	@include responsive($small-and-down)
+	{
+		.navegacao {
+			li {
+				height: 56px;
+				width: 42px;
+			}
+		}
+		.font-config {
+			li {
+				height: 56px;
+				width: 42px;
+			}
+			.material-icons {
+				font-size: 1.5rem;
+			}
+			.separador {
+				width: 1px;
+			}
+		}
+	}
+	
+	#mainMenu {
+		background-image: url("../img/menu-fundo.png");
+		background-position: 0px calc(100% - 60px);
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		
+		background-color: #fff;
+		font-family: $font-menu;
+		
+		li.item {
+			position: relative;
+			z-index: 9;
+			background-color: rgba(255,255,255,0.8);
+			
+			a {
+				font-size: 1.2rem;
+				line-height: 1.5em;
+				height: auto;
+				padding: 0.5em 2.0rem;
+				
+				&.active {
+					/*font-family: $font-title2;*/
+					text-decoration: underline;
+					font-weight: bold;
+					color: rgb(22,103,53);
+				}
+				
+				&.ui-link i {
+					display: inline;
+					float: none;
+					height: auto;
+					line-height: inherit;
+					margin: 0;
+					width: auto;
+					color: inherit;
+					font-size: 0.9em;
+					font-family: cursive;
+				}
+			}
+			
+		}
+		li.fim {
+			height: 180px;
+			background-color: transparent;
+		}
+		
+		.header {
+			height: 80px;
+			position: relative;
+			
+			.titulo {
+				font-family: $font-title;
+				font-size: 2.0rem;
+				position: relative;
+				text-align: center;
+				padding: 0.0em 1.0em 1.0em;
+				z-index: 1;
+			}
+			
+			img {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 0;
+			}
+		}
+		
+		.el {
+			position: fixed;
+			width: 150px;
+			height: 150px;
+			background-image: url('../img/sumario/ELEMENTO-SUMARIO-1.png');
+			background-position: top right;
+			background-repeat: no-repeat;
+			background-color: transparent;
+			
+			&.el1 {
+				background-image: url('../img/sumario/ELEMENTO-SUMARIO-3.png');
+				background-size: 60px auto;
+				width: 30px;
+				height: 60px;
+				left: 0px;
+				top: 20px;
+			}
+			&.el2 {
+				background-image: url('../img/sumario/ELEMENTO-SUMARIO-2.png');
+				background-size: 200px auto;
+				width: 200px;
+				height: 200px;
+				right: 10px;
+				top: 150px;
+			}
+			&.el3 {
+				background-image: url('../img/sumario/ELEMENTO-SUMARIO-1.png');
+				background-size: 140px auto;
+				width: 140px;
+				height: 140px;
+				right: 100px;
+				top: 450px;
+			}/*
+			&.el4 {
+				background-image: url('../img/sumario/ELEMENTO-SUMARIO-5.png');
+				background-size: 150px auto;
+				width: 150px;
+				height: 65px;
+				right: 40px;
+				bottom: calc(60px + 0px);
+			}
+			
+			&.el5 {
+				background-image: url('../img/sumario/ELEMENTO-SUMARIO-6.png');
+				background-size: 150px auto;
+				background-position: bottom right;
+				width: 150px;
+				height: 150px;
+				right: 0px;
+				bottom: calc(60px + 0px);
+			}
+			&.el6, &.el7 {
+				display: none;
+			}
+			/* */
+		}
+	}
+}
+
+nav .brand-logo {
+    left: 100px;
+	h1 {
+		font-size: inherit;
+		padding: 0px;
+		margin:0px;
+		display: inline;
+		color: inherit;
+		font:inherit;
+	}
+}

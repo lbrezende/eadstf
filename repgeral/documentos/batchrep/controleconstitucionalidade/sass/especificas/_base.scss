@@ -1,0 +1,126 @@
+
+h1, h2, h3, h4, h5 {
+	i {
+		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	}
+	&.simples {
+		font-family: $font-stack;
+		font-weight: bold;
+	}
+}
+
+h1 {
+	font-family: $font-title2;
+	font-weight: normal;
+	color: rgb(0,0,0);
+	text-align: center;
+	font-size: 2.0em;
+	padding: 0.25em 0 0.25em;
+	margin: 0px auto 1.5em;
+	background: none;
+	border: 3px solid rgb(251,175,23);
+	border-left: none;
+	border-right: none;
+	max-width: 17.0em;
+}
+h2 {
+	font-family: $font-title4;
+	font-size: 1.2em;
+	margin: 1.0em auto 1.0em;
+}
+h3 {
+    font-family: $font-title2;
+	font-weight: normal;
+    color:  #000;
+    margin:  0.5em auto 0.0em -1.0em;
+    font-size: 1.8em;
+    padding: .5em 1.0em 1.0em 1.0em;
+    position:  relative;
+	z-index: 1;
+	background: url('../img/titulo-bg.png') no-repeat top left;
+	background-size: 5.0em 100%;
+	text-align: left;
+	
+	i {
+		font-family: cursive;
+		font-weight: bold;
+	}
+}
+h4 {
+	font-family: $font-title2;
+	font-weight: normal;
+    color:  #000;
+	font-size: 1.6em;
+}
+h5 {
+	font-family: $font-stack;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 2.0em auto 1.0em;
+}
+h6 {
+	font-family: $font-stack;
+	font-size: 1.05em;
+	font-weight: bold;
+	margin: 1.0em auto 1.5em;
+	text-align: justify;
+}
+
+/*
+h2:before {
+    content: "";
+	background: url('../img/triangulo01.1.svg') no-repeat top left;
+	background-size: 100% 100%;
+    position: absolute;
+	width: 80px;
+	height: 80px;
+    left:  -10px;
+    bottom: -0.22em;
+	z-index: 0;
+}
+// */
+
+p {
+	text-align: justify;
+	
+	a {
+		font-weight: 600;
+		color: color('custom3','accent-1');
+	}
+}
+.big {
+	font-size: 150%;
+}
+.big.assinatura {
+	font-size: 200%;
+}
+.assinatura {
+    font-family: $font-assinatura;
+}
+
+blockquote {
+	border-left: none;
+}
+
+.justify {
+	text-align: justify;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.bold,.strong {
+	font-weight: bold;
+}
+.underline {
+	text-decoration: underline;
+}
+p.no-indent {
+	text-indent: 0;
+}
+
+.saudacao {
+	font-family: "Nexa Script Light", cursive;
+	font-size: 1.4em;
+	text-indent: 0;
+}
+

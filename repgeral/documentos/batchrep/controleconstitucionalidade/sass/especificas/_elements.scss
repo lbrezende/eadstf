@@ -1,0 +1,108 @@
+.collapsible-content {
+	position: relative;
+	overflow: hidden;
+	max-height: 0px;
+	transition: all 0.35s ease-in-out;
+}
+.collapsible-content.active {
+	max-height: 500px;
+}
+
+a.ui-link, span.ui-link {
+	color: color('custom3', 'accent-1');
+	font-weight: bold;
+}
+a.link-video {
+	position:  relative;
+	
+	&::before {
+		content: '';
+		background: url('../img/video.png') no-repeat center;
+		background-size: contain;
+		width: 5.0em;
+		height: 5.0em;
+		position: absolute;
+		top: -2.0em;
+		left: -5.8em;
+	}
+}
+a.glossario, span.glossario {
+	color: $glossario-font-cor;
+	font-weight: bold;
+}
+a.legis, span.legis {
+	color: rgb(0,0,180);
+	font-weight: inherit;
+	text-decoration: underline;
+}
+dl.glossario {
+	margin: 0px;
+	padding: 0px;
+	font-size: inherit;
+	
+	div.item {
+		margin: 0em auto 1.0em;
+		font-size: inherit;
+	}
+	
+	dt.termo {
+		font-size: 1.2em;
+		color: $glossario-font-cor;
+		font-weight: bold;
+		font-family: $font-accent;
+	}
+	dd.definicao {
+		font-size: 1.0em;
+	}
+}
+.modal-content {
+	p {
+		font-size: 1.5em;
+	}
+}
+.modal-glossario {
+	background-color: rgb(75,122,94);
+	padding: 2.0em 2.0em 3.0em;
+	h4 {
+		font-family: $font-title4;
+		color: #000;
+	}
+}
+.modal-legis {
+	padding: 2.0em 2.0em 3.0em;
+	
+	.modal-content {
+		font-size: 0.7em;
+	}
+	
+	h4 {
+		font-family: $font-title4;
+		color: #000;
+	}
+	p {
+		margin-bottom: 0.6em;
+	}
+}
+
+figure.capa {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	
+	img {
+		width: 100%;
+		height: auto;
+	}
+	figcaption {
+		font-weight: bold;
+		font-size: 0.8em;
+		margin: 0.0em auto 0.5em;
+	}
+}
+figure.fig {
+	figcaption {
+		font-weight: bold;
+		font-size: 0.8em;
+		margin: 0.0em auto 0.5em;
+	}
+}

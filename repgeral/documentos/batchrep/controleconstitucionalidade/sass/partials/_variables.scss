@@ -1,0 +1,36 @@
+$primary-color: 	color("custom1", "base");
+$bar-up-color: 		#00FF00;
+$bar-dw-color: 		#00FF00;
+$accent-color: 		#00FF00;
+$text-color: 		#000;
+$text-negative:		#fff;
+
+$titulo-font-color: color("custom1", "darken-1");
+$titulo-fundo-color: color('custom2','accent-1');
+$nav-fundo-color: color("custom2", "base");
+$nav-font-color: color("custom3", "base");
+$pages-fundo-color: color("custom1", "base");
+$pages-font-color: color("custom2", "base");
+$destaque-cor: color("custom1", "lighten-3");
+$footer-fundo-cor: color("custom1", "lighten-1");
+
+$glossario-font-cor: color('custom1','accent-1');
+
+$font-stack: 	'Open Sans', sans-serif;
+$font-accent: 	'Open Sans', sans-serif;
+$font-title: 	"Nexa Rust Shadow",sans-serif;
+$font-title2: 	"Bernardette", cursive;
+$font-title3: 	"Nexa Script", cursive;
+$font-title4: 	"Nexa Rust Black",sans-serif;
+$font-title5: 	'Open Sans Condensed', sans-serif;
+$font-menu: 	"Nexa Script", cursive;
+$font-boxes:	'Open Sans', sans-serif;
+$font-assinatura: "Nexa Script", cursive;
+
+@mixin responsive($size)
+{
+	@media #{$size}
+	{
+		@content;
+	}
+}

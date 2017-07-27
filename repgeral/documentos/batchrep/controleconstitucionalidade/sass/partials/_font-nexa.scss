@@ -1,0 +1,119 @@
+/*
+@font-face {
+	font-family: 'Nexa Rust';
+	src: url("../fonts/nexa-rust/NexaRustScriptL-0.otf") format("opentype");
+	src: url('../fonts/nexa-rust/NexaRustScriptL-0.otf?#iefix') format('embedded-opentype');
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Nexa Rust Black';
+	src: url("../fonts/nexa-rust/NexaRustSans-Black.otf") format("opentype");
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Nexa Rust Shadow';
+	src: url("../fonts/nexa-rust/NexaRustSlab-BlackShadow01.otf") format("opentype");
+}
+@font-face {
+	font-family: 'Nexa Rust Symbol';
+	src: url("../fonts/nexa-rust/NexaRustExtras-Free.otf") format("opentype");
+}
+/*
+@font-face {
+	font-family: 'Nexa Script';
+	src: url("../fonts/nexa-script/NexaScriptLight.otf") format("opentype");
+	src: url("../fonts/nexa-script/NexaScriptLight.otf?#iefix") format('embedded-opentype');
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Nexa Script';
+	src: url("../fonts/nexa-script/NexaScript.otf") format("opentype");
+	font-weight: bold;
+}
+*/
+
+@font-face {
+    font-family: 'Nexa Script';
+    src: url('../fonts/nexa-script/nexascript-webfont.woff2') format('woff2'),
+         url('../fonts/nexa-script/nexascript-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Nexa Script Bold';
+    src: url('../fonts/nexa-script/nexascriptbold-webfont.woff2') format('woff2'),
+         url('../fonts/nexa-script/nexascriptbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Nexa Script Heavy';
+    src: url('../fonts/nexa-script/nexascriptheavy-webfont.woff2') format('woff2'),
+         url('../fonts/nexa-script/nexascriptheavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Nexa Script Light';
+    src: url('../fonts/nexa-script/nexascriptlight-webfont.woff2') format('woff2'),
+         url('../fonts/nexa-script/nexascriptlight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Nexa Script Semibold';
+    src: url('../fonts/nexa-script/nexascriptsemibold-webfont.woff2') format('woff2'),
+         url('../fonts/nexa-script/nexascriptsemibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Nexa Script Thin';
+    src: url('../fonts/nexa-script/nexascriptthin-webfont.woff2') format('woff2'),
+         url('../fonts/nexa-script/nexascriptthin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'Nexa Rust Symbol';
+    src: url('../fonts/nexa-rust/nexarustextras-free-webfont.woff2') format('woff2'),
+         url('../fonts/nexa-rust/nexarustextras-free-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nexa Rust Handmade';
+    src: url('../fonts/nexa-rust/nexarusthandmade-extended-webfont.woff2') format('woff2'),
+         url('../fonts/nexa-rust/nexarusthandmade-extended-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nexa Rust Black';
+    src: url('../fonts/nexa-rust/nexarustsans-black-webfont.woff2') format('woff2'),
+         url('../fonts/nexa-rust/nexarustsans-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nexa Rust';
+    src: url('../fonts/nexa-rust/nexarustscriptl-0-webfont.woff2') format('woff2'),
+         url('../fonts/nexa-rust/nexarustscriptl-0-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nexa Rust Shadow';
+    src: url('../fonts/nexa-rust/nexarustslab-blackshadow01-webfont.woff2') format('woff2'),
+         url('../fonts/nexa-rust/nexarustslab-blackshadow01-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

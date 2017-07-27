@@ -1,0 +1,83 @@
+.lightboxed {
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	
+	&::after {
+		content: 'Clique para aumentar';
+		position: absolute;
+		top: -10px;
+		left: 50%;
+		transform: translateX(-50%);
+		background: rgba(0,0,0,0.5);
+		color: #fff;
+		font-weight: bold;
+		font-size: 1.1rem;
+		text-align: center;
+		padding: 3px 8px;
+		transition: all 0.25s ease-in-out;
+		opacity: 0;
+	}
+	&:hover::after, &.active::after {
+		top: 20px;
+		opacity: 1;
+	}
+	
+	&.lightlinked {
+		.lb-only {
+			display: none;
+		}
+		&::after {
+			display: none;
+		}
+	}
+}
+#lightbox {
+	background: rgba(0, 0, 0, 0.0);
+	transition: all 0.35s ease-in-out;
+	position: fixed;
+	top: 100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+	text-align: center;
+	opacity: 0;
+	overflow: auto;
+	.janela {
+		position: relative;
+		z-index: 5;
+		max-width: 100%;
+		cursor: default;
+		margin: 50px auto 50px;
+		color: #fff;
+		
+		figcaption {
+			margin: 0.5em auto 1.0em;
+			font-weight: bold;
+		}
+	}
+	.lb-hide {
+		display: none;
+	}
+	
+	&.active {
+		background: rgba(0, 0, 0, 0.8);
+		top: 0;
+		overflow: auto;
+		cursor: pointer;
+		opacity: 1;
+		
+		&::after {
+			content: '';
+			background: url("../img/close.svg") no-repeat center;
+			background-size: 100% auto;
+			position: fixed;
+			top: 10px;
+			right: 10px;
+			width: 32px;
+			height: 32px;
+			z-index: 1005;
+		}
+	}
+}

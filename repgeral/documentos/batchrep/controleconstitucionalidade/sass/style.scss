@@ -1,0 +1,59 @@
+/*@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+/*@import url(https://fonts.googleapis.com/css?family=Ubuntu:700,400);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+*/
+
+/* Colors { */
+@import 'components/color';
+@import 'components/variables';
+/* Colors } */
+
+/* Fonts */
+/*@import 'partials/font-museo';
+@import 'partials/font-dense';*/
+@import 'partials/font-nexa';
+@import 'partials/font-bernardette';
+
+/* Variables { */
+@import 'partials/variables';
+/* Variables } */
+
+/* Reset { */
+@import 'partials/reset';
+/* Reset } */
+
+/* Main CSS  { */
+@import 'partials/geral';
+/* Main CSS  } */
+
+/* Menu { */
+@import 'partials/menu';
+/* Menu } */
+
+/* BookBlock { */
+@import 'partials/bookblock';
+/* BookBlock } */
+
+/* Específicas { */
+@import 'partials/especificas';
+/* Específicas } */
+
+/* Boxes { */
+@import 'partials/boxes';
+/* Boxes } */
+
+/* Quadros { */
+@import 'partials/quadros';
+/* Quadros } */
+
+/* Responsividade { */
+@import 'partials/responsive';
+/* Responsividade } */
+
+/* Leitores de tela { */
+@import 'partials/screen-reader';
+/* Leitores de tela } */
+
+/* Tutorial { */
+@import 'partials/tutorial';
+/* Tutorial } */

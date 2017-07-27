@@ -1,0 +1,85 @@
+@import "../especificas/base";
+
+@import "../especificas/page-header";
+
+@import "../especificas/page-footer";
+
+@import "../especificas/article";
+
+@import "../especificas/lightbox";
+
+@import "../especificas/boxes";
+
+@import "../especificas/tabelas";
+
+@import "../especificas/capa";
+
+@import "../especificas/elements";
+
+/*
+.linha {
+	position: relative;
+	height: 1px;
+	border-top: 4px dotted;
+	text-shadow: 2px 2px 2px rgba(0,0,0,1.00);
+	margin: 50px auto;
+}
+.linha-amarela {
+	color: color('custom2','base');
+}
+*/
+
+
+/*
+.ideia {
+    background: url(../img/mao-lampada.png) no-repeat left center;
+    background-size: 300px auto;
+    padding: 10px 10px 10px 320px;
+}
+#apresenta .capa { text-align:  justify; }
+
+.fundo-azul {
+	background-color: rgb(36, 183, 215) !important;
+}
+.fundo-amarelo {
+	background-color: rgb(247, 236, 41) !important;
+}
+.fundo-laranja {
+	background-color: rgb(245, 131, 31) !important;
+}
+.fundo-vermelho {
+	background-color: rgb(237, 35, 36) !important;
+}
+.fundo-cinza {
+	background-color: rgb(230, 230, 230) !important;
+}
+.erro {
+	background-color: rgb(255,255,0) !important;
+	color: rgb(255, 0, 0);
+}
+
+ol.ordinal {
+	counter-reset: li;
+	margin-left: 0;
+	padding-left: 0;
+	
+	li {
+		position: relative;
+		margin: 0px 0px 0.2em 4.0em;
+		padding: 4px 8px;
+		list-style: none;
+	}
+	li::before {
+		content: counter(li,decimal) "\00ba)";
+		counter-increment: li;
+		position: absolute;
+		top: -0px;
+		left: -3.0em;
+		width: 3.0em;
+		margin-right: 4px;
+		padding: 4px;
+		font-weight: bold;
+		text-align: right;
+	}
+}
+*/

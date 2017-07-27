@@ -1,0 +1,45 @@
+@media #{$medium-and-up}
+{
+	.fig-right {
+		margin-right: 0;
+		margin-left: 15px;
+		float: right;
+		width: 50%;
+	}
+	.fig-left {
+		margin-right: 15px;
+		margin-left: 0px;
+		float: left;
+	}
+	@for $i from 1 through 20
+	{
+		.fig-w#{$i*5} {
+			width: $i*5%;
+		}
+	}
+}
+@media #{$medium-and-down}
+{
+	.bb-item {
+		.content {
+			position: relative;
+		}
+	}
+	
+}
+@media #{$small-and-down} {
+	
+	.fig-half {
+		width: 100%;
+	}
+	.fig-third {
+		width: 40%;
+	}
+	
+}
+
+@media all and (max-height: 500px) {
+	.bb-page {
+		padding-bottom: 0px;
+	}
+}
