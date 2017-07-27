@@ -16,18 +16,15 @@
 	<link rel="stylesheet" type="text/css" href="../include/css/style.css">	
 	<link rel="stylesheet" type="text/css" href="../include/css/aula1.css">
 	
-	<script src="../include/js/modernizr.custom.79639.js"></script>
-	<script src="../include/js/jquery-2.1.1.min.js"></script>
-	<script src="../include/js/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="../include/js/modernizr.custom.79639.js"></script>
+	<script type="text/javascript" src="../include/js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../include/js/jquery.mobile-1.4.5.min.js"></script>
 	<script type="text/javascript" src="../include/js/materialize.min.js"></script>
-
-	<link href="../include/css/introjs.min.css" rel="stylesheet">
-
 
 
 </head>
 
-<body class="ui-mobile-viewport ui-overlay-a" cz-shortcut-listen="true"><div data-role="page" data-url="" tabindex="0" class="ui-page ui-page-theme-a ui-page-active" style="min-height: 815px;">
+<body ><div data-role="page" data-url="" tabindex="0" >
 	<header class="page-header">
 		<nav aria-label="Menu principal" class="aula1">
 			<div style="; display:inline" class="hide-on-med-and-down"><img src="../include/images/ead_setas.png" style="max-height:60px;margin-right:10px; " class="hide-on-med-and-down"><img class="" src="../include/images/ead_logo.png" style="max-height:60px;"></div>
@@ -199,7 +196,28 @@
 						</div> <!-- fecha scroller -->
 					</div> <!-- fecha content -->
 				</div> <!-- fecha bb-item -->
+				<div class="bb-item item-01-00-tutorial aula1" id="01-00-tutorial" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" style="margin-top:50px" >
+									<div class="row">
+										<div class="col s12 m12 l12">
+											<h3 class="" >Tutorial de Navegação</h3>
+											<img src="../include/images/ponto2.png" style=" width:100%; margin-top:-10px">
+													<p>Olá! Antes de começar, o que acha de conhecer os recursos que estarão disponíveis para você nessa aula?</p>
+													<p>Basta clicar no botão abaixo </p>
+													<a class="btn waves-effect " style="margin-left:60px;" id="abreTutorial">Ver tutorial</a>
+													
+										</div>	
 
+									</div>
+								</div>
+							</article>
+
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
 				
 				<div class="bb-item item-01-00-paginaAzul aula1" id="01-00-paginaAzul" style="display: none;">
 					<div class="content">
@@ -210,11 +228,7 @@
 										<p class="titulo-sem-titulo"><strong><em>Introdução</em></strong></p>
 										<p>Olá!</p>
 										<p>Na apresentação do curso, expusemos a proposta do nosso estudo, os passos que pretendemos seguir e a bibliografia indicada para enriquecer as lições, está lembrado? </p>
-										<p class="no-indent text-center"><a id="startButton" class="btn btn-large btn-success" onclick="javascript:introJs().setOption('showProgress', true).start();">Ver tutorial</a></p>
 										
-										<p data-step="1" data-intro="Primeira dica" data-position='top'>Nesta primeira aula, em abordagem ainda introdutória, iniciaremos o conteúdo do curso propriamente dito. Para tanto, nosso objetivo principal é introduzir o tema da repercussão geral, tratando de temas adicionais que lhe dizem respeito, tais como os casos de competência originária e recursal do Supremo Tribunal Federal (STF), bem como as distinções entre os sistemas de <em>common law</em> e de <em>civil law</em>. </p>
-
-										<p data-step="2" data-intro="Segunda e última dica."  data-position='top'>Como se sabe, a repercussão geral é instituto jurídico dos mais importantes à atuação do  STF, já que o julgamento de recursos extraordinários sob a sistemática de tal instituto é atribuição das mais relevantes dessa Corte, apesar de, claro, não ser a única. Como mencionado na apresentação do curso, sobreleva-se a importância do tema, tendo em vista a recente entrada em vigor do Novo Código de Processo Civil (Lei nº 13.105/2015). Nesse sentido, mostra-se essencial que você, servidor do STF, tenha profundo conhecimento desse instituto jurídico, desde as suas origens históricas até sua aplicação prática neste Tribunal, passando também pela evolução do tratamento legislativo da questão.</p>
 
 										<p>Para tanto, abordaremos a seguir dois aspectos introdutórios mais gerais que nos ajudam a apreender a colocação da repercussão em nosso ordenamento jurídico. Inicialmente, propor-se-á uma análise geral sobre as competências constitucionais do Supremo Tribunal Federal. Na sequência, apresentar-se-á a problematização entre <em>civil law</em> – tradição jurídica à qual o Brasil historicamente se filia – e <em>common law</em> – da qual originariamente derivada a ideia de respeito aos precedentes. Essa distinção se faz importante no contexto de análise sobre em que medida a vinculatividade da jurisprudência e dos precedentes prevista pelo Novo Código de Processo Civil representa ou não um afastamento da tradição do <em>civil law</em>.</p>
 										<p>Antes, porém, para uma visão rápida sobre a importância da repercussão geral e alguns pontos de reformas propostas, veja a seguinte entrevista dos Ministros Gilmar Mendes e Roberto Barroso: <https://www.youtube.com/watch?v=DxwjYmDNH_8>.</https:>
@@ -375,12 +389,56 @@
 	
 	<script src="../include/js/page.js"></script>
 	<script src="../include/js/functions.js" type="text/javascript"></script>
-	<script type="text/javascript" src="../include/js/intro.min.js"></script>
+
 		
 
 </div>
 
 
+<div class="mainTutorial">
+	<div class="lightbox">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<defs>
+				<mask id="hole">
+					<rect width="100%" height="100%" fill="white"></rect>
+					<circle class="foco" r="50" cx="100" cy="100" fill="black"></circle>
+				</mask>
+			</defs>
+			
+			<rect id="donut" x="0" y="0" width="100%" height="100%" mask="url(#hole)" ></rect>
+		</svg>
+	</div>
+	<div class="explica">
+		<div class="titulo"></div>
+		<div class="texto"></div>
+		<div class="navBut">
+			<div class="prev">
+				<div class="btn waves-effect waves-light">
+					Anterior
+					<i class="material-icons left">navigate_before</i>
+				</div>
+			</div>
+			<div class="next">
+				<div class="btn waves-effect waves-light">
+					Próximo
+					<i class="material-icons right">navigate_next</i>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="buttons">
+		<div class="pular">
+			<div class="btn waves-effect waves-light">
+				<span style="color:#FFF">Pular tutorial</span>
+				<i class="material-icons right">navigate_next</i>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<script src="../include/js/tutorial_roteiro.js"></script>
+<script src="../include/js/tutorial.js"></script>
     
 
 

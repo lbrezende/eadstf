@@ -546,7 +546,7 @@ header.page-header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999999999; }
+  z-index: 999; }
   header.page-header nav.aula1 {
     position: relative;
     z-index: 2;
@@ -1817,7 +1817,115 @@ article p i {
 
   }
 
+/* Leitores de tela } */
+/* Tutorial { */
+.telaTutorial {
+  overflow: hidden;
+  height: 0px;
+  visibility: hidden;
+  margin: 0px auto; }
+  .telaTutorial.active {
+    height: auto;
+    visibility: visible; }
+  .telaTutorial .video-container img {
+    width: 100%;
+    height: auto; }
 
+.mainTutorial {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  color: #fff;
+  display: none; }
+  .mainTutorial.abrindo, .mainTutorial.fechando {
+    display: block;
+    z-index: 99999; }
+  .mainTutorial.active {
+    display: block;
+    z-index: 99999; }
+  .mainTutorial .lightbox {
+    /*background: rgba(0,0,0,0.8);*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    z-index: 1; }
+    .mainTutorial .lightbox svg {
+      width: 100%;
+      height: 100%;
+      fill: rgba(0, 0, 0, 0.8);
+      transition: all 0.25s ease-out; }
+  .mainTutorial .explica {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 90%;
+    max-width: 20em;
+    font-size: 1.5rem; }
+    .mainTutorial .explica {
+      background-color: rgba(0, 0, 0, 0.75);
+      border-radius: 10px;
+      padding: 1.0em 1.0em; }
+      .mainTutorial .explica .btn {
+        padding: 0.0em 0.5em; }
+    .mainTutorial .explica .titulo {
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      text-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.8);
+      margin: 0em auto 0.5em; }
+    .mainTutorial .explica .texto {
+      text-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.8);
+      line-height: 1.7em;
+      margin: 0.5em auto; }
+    .mainTutorial .explica .navBut {
+      margin-top: 1.0em;
+      display: flex;
+      justify-content: space-around; }
+    .mainTutorial .explica .ui-link {
+      text-shadow: 0em 0em 0.4em white;
+      background-color: #fff; }
+  .mainTutorial .roteiro {
+    display: block; }
+  .mainTutorial .btn {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    background-color: #fab615;
+    color: #FFF; }
+  .mainTutorial .buttons {
+    position: absolute;
+    bottom: 1.0rem;
+    right: 1.0rem;
+    color: #242057;
+    font-size: 1.5rem; }
+    .mainTutorial .buttons .pular * {
+      color: inherit; }
+
+.video-play {
+  background: url("../img/youtube-128.png") no-repeat;
+  background-position: center center;
+  background-size: contain;
+  display: inline-block;
+  width: 2.0em;
+  height: 1.5em;
+  margin-bottom: -0.4em; }
+
+@keyframes fechar {
+  0% {
+    opacity: 1;
+    z-index: 99999; }
+  90% {
+    opacity: 0.1;
+    z-index: 99999; }
+  100% {
+    opacity: 0;
+    z-index: -1; } }
+/* Tutorial } */
 
 /*Hacks*/
 .back-home {
