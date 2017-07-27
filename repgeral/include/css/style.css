@@ -16,6 +16,10 @@
 }
 
 
+.text-center {
+  text-align: center;
+}
+
 
 /* Colors { */
 
@@ -1239,8 +1243,13 @@ Estilos Aula 1
 
 
 .aula1 h3 {
-  border-bottom:1px solid #616465;
+/*  border-bottom:1px solid #616465;*/
   color:#843220;
+font-size: 1.9em;
+    font-family: 'Bignoodletitling', sans-serif;
+    font-weight: 100;
+    margin:0px;
+    padding: 0px;
 }
 
 .aula1 .box-clean {
