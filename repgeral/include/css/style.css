@@ -576,7 +576,7 @@ header.page-header {
     top: -100%;
     left: 0px;
     /*background: #D2565C;*/
-    background:#B3462F;
+    background:#873624;
     font-family: "Bignoodletitling", sans-serif;
     font-size: 1.5rem;
     padding: 15px 35px 10px 35px;
@@ -585,7 +585,7 @@ header.page-header {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 5px; }
     header.page-header #titulo_aula.aula1 {
-      background:#B3462F;
+      background:#873624;
       }
     header.page-header #titulo_aula.aula2 {
       background:#709128;
@@ -722,6 +722,7 @@ article {
     margin: 0 auto 1.0em;
     margin-right: 20px;
     margin-left: 20px;
+    color:#000;
      }
   article p {
     font-size: 1.0em;
@@ -1238,7 +1239,8 @@ Estilos Aula 1
 
 
 .aula1 h3 {
-  border-bottom:3px solid #96DBE3;
+  border-bottom:1px solid #616465;
+  color:#843220;
 }
 
 .aula1 .box-clean {
