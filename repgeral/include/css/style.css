@@ -18,7 +18,7 @@
 }
 @font-face {
   font-family: 'Oswald Stencil';
-  src: url("../fonts/Oswald-Bold.ttf") format("opentype");
+  src: url("../fonts/Oswald-Stencil.otf") format("opentype");
 }
 @font-face {
   font-family: 'BigNoodleTitling';
@@ -30,7 +30,7 @@
 }
 @font-face {
   font-family: 'Bebas Neue';
-  src: url("../fonts/BebasNeue.ttf") format("opentype");
+  src: url("../fonts/BebasNeue.otf") format("opentype");
 }
 
 
@@ -611,7 +611,7 @@ header.page-header {
     /*background: #D2565C;*/
     background:#873624;
     font-family: "Bignoodletitling", sans-serif;
-    font-size: 1.5rem;
+    /*font-size: 1.5rem;*/
     padding: 15px 35px 10px 35px;
     transition: all 0.25s ease-in-out;
     opacity: 0;
