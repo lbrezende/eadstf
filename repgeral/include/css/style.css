@@ -5,13 +5,44 @@
 @import url(https://fonts.googleapis.com/css?family=Yellowtail);
 
 @font-face {
+  font-family: 'DejaVu Sans';
+  src: url("../fonts/DejaVuSansCondensed.ttf") format("opentype");
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Regular.ttf") format("opentype");
+}
+@font-face {
+  font-family: 'MerriweatherSans';
+  src: url("../fonts/MerriweatherSans-Bold.ttf") format("opentype");
+}
+@font-face {
+  font-family: 'Oswald Stencil';
+  src: url("../fonts/Oswald-Bold.ttf") format("opentype");
+}
+@font-face {
+  font-family: 'BigNoodleTitling';
+  src: url("../fonts/big_noodle_titling.ttf") format("opentype");
+}
+@font-face {
+  font-family: 'NotoSans';
+  src: url("../fonts/NotoSans-Regular.ttf") format("opentype");
+}
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("../fonts/BebasNeue.ttf") format("opentype");
+}
+
+
+@font-face {
   font-family: 'Multicolore';
   src: url("../fonts/Multicolore.otf") format("opentype");
 }
 
+
 .top-title{
-  font-family: 'Bignoodletitling', sans-serif;
-  font-size: 0.8em !important;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.7em !important;
   color:#D4CCC5;
 }
 
@@ -237,7 +268,7 @@ strong {
     height: auto;
     font-size: 1.6rem;
     line-height: 2.0em;
-    font-family: "Bignoodletitling", sans-serif;
+    font-family: "DejaVu Sans", sans-serif;
     background: #AF452F;
     margin: 1px auto;
     padding: 0px 20px;
@@ -715,7 +746,7 @@ main {
 article {
   padding-top: 30px;
   padding-bottom: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: "NotoSans", sans-serif;
   font-size: 1.2rem;
   position: relative;
   background: #f7f7f7; }
@@ -1964,4 +1995,8 @@ article p i {
     line-height: 19px;
 }
    
+}
+
+.sumario{
+  font-family: 'DejaVu Sans', sans-serif;
 }
