@@ -3,6 +3,7 @@ var fcnLbClose;
 var fcnLbOpen;
 $(document).ready(function(e)
 {
+
 	bb = Page.init();
 	//
 	$('.button-collapse').sideNav(
@@ -91,5 +92,6 @@ $(document).ready(function(e)
 		e.stopPropagation();
 		fcnLbOpen($(this));
 	});
-	
+
+
 });

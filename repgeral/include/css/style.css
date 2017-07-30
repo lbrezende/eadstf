@@ -253,7 +253,7 @@ strong {
         background-color: #74195D;  }
 
 #mainMenu.aula1 {
-  background-image: url(../img/modelas.png);
+  /*background-image: url(../img/modelas.png);*/
   background-repeat: no-repeat;
   background-position: 160px center;
   background-color: #AF452F; }
@@ -1971,11 +1971,11 @@ article p i {
 }
 
  @media only screen and (min-width: 993px) {
-  .mobileautor{ margin-top:500px !important; }
+  /*.mobileautor{ margin-top:100px !important; }*/
 
 }
  @media only screen and (max-width: 992px) {
-  .mobileautor{ margin-top:0px !important; }
+  
   #intro img{
     padding-top:10px;
   }
