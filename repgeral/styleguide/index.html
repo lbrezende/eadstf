@@ -196,10 +196,49 @@
 					<div class="content">
 						<div class="scroller">
 							<article style="padding:0px" id="intro">
-							<p style="margin-top:100px; float:left; "><h3 class="mobileautor " style="font-size:1.2em; margin-left:30px;text-align: left; font-family: 'Open Sans' !important;float:left;text-transform: none !important; color: #B7AA9F;margin-top: 300px;">
+<style type="text/css">
+	/* Large desktops and laptops */
+.ajustaCapa{
+	font-size:1.2em !important; margin-left:30px !important;text-align: left !important; font-family: 'Open Sans' !important;float:left !important;text-transform: none !important; color: #B7AA9F !important;margin-top: 56px !important;
+}
+.ajustaImagemCapa{
+	max-height: 100% !important;max-width: 100% !important;margin-top: 0px !important; float: right !important;text-align:left !important;float: left !important;
+}
+@media (min-width: 1200px) {
+.ajustaCapa{
+		font-size:1.2em !important; margin-left:30px !important;text-align: left !important; font-family: 'Open Sans' !important;float:left !important;text-transform: none !important; color: #B7AA9F !important;margin-top: 400px !important;
+	}
+.ajustaImagemCapa{
+		height: 100% !important;max-width: 100% !important;margin-top: -20px !important; float: right !important;text-align:left !important;float: left !important;
+	}
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+}
+</style>
+
+
+							<p style="margin-top:100px; float:left; "><h3 class="mobileautor ajustaCapa" style="">
 									Abhner Youssif Mota Arabi</h3>
 								</p>
-								<img src="../include/images/mapaCortado.png" class="mobiletopimage" aria-hidden="true" style="max-height: 100%;max-width: 100%;margin-top: -20px; float: right;text-align:left;float: left; " alt="Imagem do título do curso de Pontuação" role="presentation" >
+								<img src="../include/images/mapaCortado.png" class="mobiletopimage ajustaImagemCapa" aria-hidden="true" style="" alt="Imagem do título do curso de Pontuação" role="presentation" >
 								
 							</article>
 						</div> <!-- fecha scroller -->
@@ -324,13 +363,14 @@
 											<p>O Supremo Tribunal Federal é um dos órgãos integrantes do Poder Judiciário (art. 92, I, da Constituição de 1988), possuindo seu desenho institucional fixado no texto constitucional (art. 101 e seguintes). O Tribunal é composto de 11 Ministros, escolhidos dentre cidadãos com mais de 35 e menos de 65 anos de idade, de notável saber jurídico e reputação ilibada. Os Ministros são nomeados pelo Presidente da República, depois de aprovada a escolha pela maioria absoluta do Senado Federal.</p>
 											<p>Suas competências jurisdicionais são previstas no art. 102 da Constituição Federal. Vamos analisar esse dispositivo? Ele é assim disposto:</p>
 											
-												<p class="well" style="text-indent:0em;  ">
+												<!--<p class="well" style="text-indent:0em;  ">
 												<span id="abrir-tvaberta"><a class="btn btn-info btn-small botao-tvaberta" href="javascript:void(0);">Conheça art. 102 da Constituição Federal</a></span></p>
-												<div id="conteudo-tvaberta" style="display:none;background: url(../include/images/fundoLei.png);width: 300px !important;">	
+												<div id="conteudo-tvaberta" style="display:none;;">	
 													<p style="margin-top: 20px;">Art. 102. Compete ao Supremo Tribunal Federal, precipuamente, a guarda da Constituição, cabendo-lhe:
 													<br>I – processar e julgar, originariamente:
 													<br>a) a ação direta de inconstitucionalidade de lei ou ato normativo federal ou estadual e a ação declaratória de constitucionalidade de lei ou ato normativo federal; (Redação dada pela Emenda Constitucional nº 3, de 1993)</p>
-												</div>
+													<p></p>
+												</div>-->
 										</div>		
 										<div class="col s12 m6 l6">
 											
@@ -390,7 +430,7 @@
 											<h3 class="" >4. Introdução</h3>
 											<img src="../include/images/ponto2.png" style="    width: 150%;    margin-top: -30px;    margin-left: -255px;">
 											<p>As informações que enfatizaremos neste tópico são de seu total domínio, com certeza. A intenção é rememorar as características peculiares e as competências desta Suprema Corte. Vamos juntos?</p>
-											<p>O Supremo Tribunal Federal é um dos órgãos integrantes do Poder Judiciário (art. 92, I, da Constituição de 1988), possuindo seu desenho institucional fixado no texto constitucional (art. 101 e seguintes). O Tribunal é composto de 11 Ministros, escolhidos dentre cidadãos com mais de 35 e menos de 65 anos de idade, de notável saber jurídico e reputação ilibada. Os Ministros são nomeados pelo Presidente da República, depois de aprovada a escolha pela maioria absoluta do Senado Federal.</p>
+											<p>O Supremo Tribunal Federal é um dos órgãos integrantes do Poder Judiciário (<a href="#art92" rel="modal" >art. 92, I</a>, da Constituição de 1988), possuindo seu desenho institucional fixado no texto constitucional (art. 101 e seguintes). O Tribunal é composto de 11 Ministros, escolhidos dentre cidadãos com mais de 35 e menos de 65 anos de idade, de notável saber jurídico e reputação ilibada. Os Ministros são nomeados pelo Presidente da República, depois de aprovada a escolha pela maioria absoluta do Senado Federal.</p>
 											<p>Suas competências jurisdicionais são previstas no art. 102 da Constituição Federal. Vamos analisar esse dispositivo? Ele é assim disposto:</p>
 										</div>		
 										<div class="col s12 m6 l6">
@@ -477,6 +517,80 @@
 	
 </div>
 
+<style type="text/css">
+	#teste{
+		display: none;
+width:100%;
+height:100px;
+background:#f00;
+position:absolute;
+z-index:100;
+top:30%;
+left:40;
+	}
+	.window{
+    display:none;
+    width:90%;    
+    position:absolute;
+    left:0;
+    top:0;
+    background:#FFF;
+    z-index:9900;
+    padding:10px;
+    border-radius:10px;
+}
+	.windowLei{
+    display:none;
+    width:50%;    
+    position:absolute;
+    left:0;
+    top:0;
+    background:#FFF;
+    z-index:9900;
+    padding:10px;
+    border-radius:100%;
+    border-color: #AF442F;
+    border-width: 3px;
+}
+ 
+#mascara{
+    display:none;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#000;
+}
+ 
+.fechar{display:block; text-align:right;}
+</style>
+<div class="div_teste" id="teste">
+texto
+<a href="#" onclick="document.getElementById('teste').style.display='none';">[Fechar]</a>
+	
+</div>
+
+<div class="window" id="janela1">
+    <a href="#" class="fechar">X Fechar</a>
+    <h4>Direitos autorais</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam venenatis auctor tempus. Lorem ipsum dolor sit amet,</p>
+    <p>Morbi dui lacus, placerat eget pretium vehicula, mollis id ligula. Nulla facilisi. </p>
+</div>
+
+<div class="window" id="art92" style="width: 30% !important; border-radius: 90% !important;border: 3px #AF442F solid;">
+	<div class="row">
+		<div class="col l2 m2 s2"></div>
+		<div class="col l8 m8 s8" style="padding: 5px;">
+			<a href="#" class="fechar" style="text-align: right;">X Fechar</a>
+			<p class="text-center">Art. 92. São órgãos do Poder Judiciário:</p>
+			<p class="text-center">I - o Supremo Tribunal Federal;</p>
+		</div>
+		<div class="col l2 m2 s2"></div>
+	</div>
+</div>
+
+<div id="mascara"></div>
+
 <div class="fixed-action-btn">
     <a class="btn-floating btn-large red">
       <i class="large material-icons">description</i>
@@ -484,7 +598,9 @@
     <ul>
       <li><a class="btn-floating red" 
       onclick="javascript:$(document).ready(function(){tut.init();});"><i class="material-icons">help</i></a></li>
-      <li><a class="btn-floating grey" onclick="javascript:alert('Abrir tela com direitos autorais');"><i class="material-icons">copyright</i></a></li>
+      <li><a class="btn-floating" style="background-color: #b7aa9f;" href="#janela1" rel="modal"><i class="material-icons">copyright</i></a></li><!--
+		href="#janela1" rel="modal"
+      onclick="document.getElementById('teste').style.display='block';"-->
     </ul>
   </div>
         
@@ -492,7 +608,38 @@
 <script src="../include/js/tutorial_roteiro.js"></script>
 <script src="../include/js/tutorial.js"></script>
     <script type="text/javascript">
-    $(document).ready(function() {		
+    $(document).ready(function() {
+
+    $("a[rel=modal]").click( function(ev){
+        ev.preventDefault();
+ 
+        var id = $(this).attr("href");
+ 
+        var alturaTela = $(document).height();
+        var larguraTela = $(window).width();
+     
+        //colocando o fundo preto
+        $('#mascara').css({'width':larguraTela,'height':alturaTela});
+        $('#mascara').fadeIn(1000); 
+        $('#mascara').fadeTo("slow",0.8);
+ 
+        var left = ($(window).width() /2) - ( $(id).width() / 2 );
+        var top = ($(window).height() / 2) - ( $(id).height() / 2 );
+     
+        $(id).css({'top':top,'left':left});
+        $(id).show();   
+    });
+ 
+    $("#mascara").click( function(){
+        $(this).hide();
+        $(".window").hide();
+    });
+ 
+    $('.fechar').click(function(ev){
+        ev.preventDefault();
+        $("#mascara").hide();
+        $(".window").hide();
+    });		
 
     $(".botao-tvaberta").click(function(){
      $("#abrir-tvaberta").hide('fade');
