@@ -1997,4 +1997,10 @@ O mapa fica muito esticado, por isso há duas versões longo e curto com imagens
 }
 
 
+.bold {
+  font-weight: bold;
+}
 
+.img-circle{
+  border-radius:100%; border:1px solid #843220; padding:20px; max-width:100%
+}
