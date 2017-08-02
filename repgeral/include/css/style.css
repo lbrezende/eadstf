@@ -2066,3 +2066,8 @@ O mapa fica muito esticado, por isso há duas versões longo e curto com imagens
     margin-top: 20px !important;
 }
 
+.list-coloured li::before {
+  content: "• ";
+  color: red; /* or whatever color you prefer */
+}
+}
