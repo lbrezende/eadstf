@@ -1218,7 +1218,7 @@ div.margin p{
     margin: -56px auto 0px;
     display: table;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.2em;
     width: 119%;
     background: #b3462f;
     border-radius: 50px;
@@ -2010,6 +2010,7 @@ O mapa fica muito esticado, por isso há duas versões longo e curto com imagens
 }
 
 .recuo-citacao {
-  margin-left:20%;
-  font-size:0.9em;
+    margin-left: 20% !important;
+    font-size: 0.9em;
+    margin-top: 20px !important;
 }
