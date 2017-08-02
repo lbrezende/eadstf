@@ -1990,6 +1990,7 @@ article p i {
 
  @media only screen and (min-width: 993px) {
   /*.mobileautor{ margin-top:100px !important; }*/
+  .margemDuasColunas{margin-top: 65px;}
 
 }
  @media only screen and (max-width: 992px) {
@@ -2071,3 +2072,4 @@ O mapa fica muito esticado, por isso há duas versões longo e curto com imagens
   color: red; /* or whatever color you prefer */
 }
 }
+
