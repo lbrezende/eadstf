@@ -1225,10 +1225,55 @@ div.margin p{
     margin-left: -29px;
 }
 
+.autor {
+    padding: 5px;
+    margin: -56px auto 0px;
+    display: table;
+    font-weight: bold;
+    font-size: 0.8em;
+    width: 80%;
+    background: #b3462f;
+    border-radius: 50px;
+    margin-left: -29px;
+    color: white;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.autor-area {
+  margin-top:30px;
+  padding-right: 0px !important;
+  margin-right: 18px !important;
+}
+
+.autor-area p {
+  padding-left: 80px;
+  font-size: 0.8em;
+}
+
 .imgsaibamais {
   margin: -73px;
   float: left
 }
+
+.imgautor {
+  margin: -100px;
+  float: left;
+  margin-left: -100px;
+      margin-top: -40px;
+}
+
+.elemento-autor {
+  border-radius:100%; 
+  border:1px solid #843220; padding:20px; max-width:100%;
+}
+
+.img-circle-autor{
+  border-radius:100%; 
+  border:3px solid #b3462f; padding:5px; max-width:100%;
+}
+
+
 .ficaadica {
   margin: -121px -10px 0px 0px;
   float: right;
@@ -1952,6 +1997,11 @@ article p i {
   #intro img{
     padding-top:10px;
   }
+
+  .autor-area p {
+  padding-left: 10px;
+  padding-top: 100px}
+}
   
  
 
@@ -2006,7 +2056,8 @@ O mapa fica muito esticado, por isso há duas versões longo e curto com imagens
 }
 
 .img-circle{
-  border-radius:100%; border:1px solid #843220; padding:20px; max-width:100%
+  border-radius:100%; 
+  border:1px solid #843220; padding:20px; max-width:100%;
 }
 
 .recuo-citacao {
@@ -2014,3 +2065,4 @@ O mapa fica muito esticado, por isso há duas versões longo e curto com imagens
     font-size: 0.9em;
     margin-top: 20px !important;
 }
+
