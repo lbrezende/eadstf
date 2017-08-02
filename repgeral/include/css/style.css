@@ -1,47 +1,9 @@
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Advent+Pro:300,500,700);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:700,400);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
-@import url(https://fonts.googleapis.com/css?family=Yellowtail);
-
-@font-face {
-  font-family: 'DejaVu Sans';
-  src: url("../fonts/DejaVuSansCondensed.ttf") format("opentype");
-}
-@font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/OpenSans-Regular.ttf") format("opentype");
-}
-@font-face {
-  font-family: 'MerriweatherSans';
-  src: url("../fonts/MerriweatherSans-Bold.ttf") format("opentype");
-}
-@font-face {
-  font-family: 'Oswald Stencil';
-  src: url("../fonts/Oswald-Stencil.otf") format("opentype");
-}
-@font-face {
-  font-family: 'BigNoodleTitling';
-  src: url("../fonts/big_noodle_titling.ttf") format("opentype");
-}
-@font-face {
-  font-family: 'NotoSans';
-  src: url("../fonts/NotoSans-Regular.ttf") format("opentype");
-}
-@font-face {
-  font-family: 'Bebas Neue';
-  src: url("../fonts/BebasNeue.otf") format("opentype");
-}
-
-
-@font-face {
-  font-family: 'Multicolore';
-  src: url("../fonts/Multicolore.otf") format("opentype");
-}
+@import url('https://fonts.googleapis.com/css?family=BenchNine|Comfortaa|Fjalla+One|Noto+Sans|Open+Sans|Oswald|Roboto');
 
 
 .top-title{
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Fjalla One', sans-serif;
   font-size: 0.7em !important;
   color:#D4CCC5;
 }
@@ -268,7 +230,7 @@ strong {
     height: auto;
     font-size: 1.6rem;
     line-height: 2.0em;
-    font-family: "DejaVu Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     background: #AF452F;
     margin: 1px auto;
     padding: 0px 20px;
@@ -610,7 +572,7 @@ header.page-header {
     left: 0px;
     /*background: #D2565C;*/
     background:#873624;
-    font-family: "Bignoodletitling", sans-serif;
+    font-family: "BenchNine", sans-serif;
     font-size: 1.5rem;
     padding: 15px 35px 10px 35px;
     transition: all 0.25s ease-in-out;
@@ -653,6 +615,8 @@ header.page-header {
   header.page-header .disabled:hover {
     background: none; }
   header.page-header .pages {
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
     height: 100%;
     background: #B3462F;
     color: #FFF;
@@ -664,6 +628,7 @@ header.page-header {
     background: #B3462F;
     border: 8px solid #B8AB9E;
     border-radius:100%;
+
      }
   header.page-header .pages.aula2 {
     background: #B0E246; }
@@ -2004,5 +1969,5 @@ article p i {
 }
 
 .sumario{
-  font-family: 'DejaVu Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
