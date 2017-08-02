@@ -4215,6 +4215,7 @@ button.btn-floating {
   z-index: -1; }
 
 .modal {
+  border: 10px solid #b3462f;
   display: none;
   position: fixed;
   left: 0;
@@ -4248,7 +4249,7 @@ button.btn-floating {
 
 .modal-overlay {
   position: fixed;
-  z-index: 999;
+  z-index: 1014;
   top: -100px;
   left: 0;
   bottom: 0;
