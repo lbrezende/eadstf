@@ -192,6 +192,18 @@
 	</header>
 	
 	<main>
+
+	  <!-- Modal Structure -->
+	  <div id="modal-exequatur" class="modal">
+	    <div class="modal-content">
+	      <h3 class="" >Exequatur</h3>
+	<img src="../include/images/ponto2.png" style="    width: 100%;    margin-top: -30px;    margin-left: -255px;">
+	      <p>Exequatur é expressão latina que significa “execute-se, cumpra-se”. No âmbito do Direito Processual Civil trata-se da autorização conferida por um Estado ao cumprimento da prática de determinado ato processual advindo de solicitação de autoridade judiciária estrangeira, especificamente em relação às cartas rogatórias. As cartas rogatórias, por sua vez, são “uma forma de comunicação entre o judiciário de países diferentes, com objetivo de obter colaboração para prática de atos processuais”. Trata-se de instrumento jurídico de cooperação internacional entre países no campo do Direito Processual e encontra previsão no art. 36 do Código de Processo Civil (Lei nº 13.105/2015). Quando concedido exequatur, a carta rogatória segue para um juiz federal brasileiro, que promoverá seu cumprimento. Após ser cumprida, a carta rogatória é remetida de volta ao Superior Tribunal de Justiça, para que seja remetida ao seu país de origem. A citação é do sítio eletrônico do Tribunal de Justiça do Distrito Federal e dos Territórios, ao qual o leitor pode se remeter para eventuais dúvidas: <a href="http://www.tjdft.jus.br/institucional/imprensa/direito-facil-1/carta-precatoria-x-carta-rogatoria-1" target="_blank"> TJDFT - Carta Precatória x Carta Rogatória</a></p>
+	    </div>
+	  </div>
+	  <!-- Modal Structure -->
+
+
 		<div class="bb-custom-wrapper">
 			<div id="bb-bookblock" class="bb-bookblock" style="perspective: 2000px;" role="main">
 				<!-- página 1 - 01-introducao -->
@@ -375,9 +387,16 @@
 										</div>		
 										<div class="col s12 m6 l6">
 											<p>Como podemos notar, o inciso I fixa as competências originárias do Supremo Tribunal Federal, ou seja, diz respeito àqueles processos que já se iniciam no STF, cabendo a este órgão jurisdicional processar e julgar originariamente essas causas. São os casos, por exemplo, das ações do controle concentrado de constitucionalidade (ação direta de inconstitucionalidade, ação declaratória de constitucionalidade e arguição por descumprimento de preceito fundamental), das ações penais para casos em que se fixa o foro por prerrogativa de função, das ações rescisórias de seus julgados, bem como de alguns casos de <em>habeas corpus</em> e de mandados de segurança, entre outros itens constantes no rol acima citado. </p>
-											<p>Outro ponto: notou que não existe a alínea “h”? Na redação original da Constituição de 1988, esse dispositivo previa a competência originária do STF para a homologação das sentenças estrangeiras e a concessão do <em>exequatur</em><sup>1</sup>  às cartas rogatórias (nesse sentido também era o Código de Processo Civil de 1973, que em seus arts. 483 e 484 também previa essa competência ao STF). Entretanto, com a Emenda Constitucional nº 45/2004, tal atribuição jurisdicional foi transferida ao Superior Tribunal de Justiça (incluiu-se a alínea “i’” no inciso I do art. 105 da CRFB/1988). Também nesse sentido já se adaptou o Novo Código de Processo Civil (Lei 13.105/2015), que corrigiu o vício superveniente de seu antecessor. Quanto ao ponto, vale a pena checar o <a href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm" target="_blank"> art. 960 do NCPC</a>!</p>
+											<p>Outro ponto: notou que não existe a alínea “h”? Na redação original da Constituição de 1988, esse dispositivo previa a competência originária do STF para a homologação das sentenças estrangeiras e a concessão do 
 
-											<p><sup>1</sup>Exequatur é expressão latina que significa “execute-se, cumpra-se”. No âmbito do Direito Processual Civil trata-se da autorização conferida por um Estado ao cumprimento da prática de determinado ato processual advindo de solicitação de autoridade judiciária estrangeira, especificamente em relação às cartas rogatórias. As cartas rogatórias, por sua vez, são “uma forma de comunicação entre o judiciário de países diferentes, com objetivo de obter colaboração para prática de atos processuais”. Trata-se de instrumento jurídico de cooperação internacional entre países no campo do Direito Processual e encontra previsão no art. 36 do Código de Processo Civil (Lei nº 13.105/2015). Quando concedido exequatur, a carta rogatória segue para um juiz federal brasileiro, que promoverá seu cumprimento. Após ser cumprida, a carta rogatória é remetida de volta ao Superior Tribunal de Justiça, para que seja remetida ao seu país de origem. A citação é do sítio eletrônico do Tribunal de Justiça do Distrito Federal e dos Territórios, ao qual o leitor pode se remeter para eventuais dúvidas: <a href="http://www.tjdft.jus.br/institucional/imprensa/direito-facil-1/carta-precatoria-x-carta-rogatoria-1" target="_blank"> < http://www.tjdft.jus.br/institucional/imprensa/direito-facil/carta-precatoria-x-carta-rogatoria-1></a>.</p>
+											<a class="modal-trigger" href="#modal-exequatur">exequatur</a>
+
+
+											 às cartas rogatórias (nesse sentido também era o Código de Processo Civil de 1973, que em seus arts. 483 e 484 também previa essa competência ao STF). Entretanto, com a Emenda Constitucional nº 45/2004, tal atribuição jurisdicional foi transferida ao Superior Tribunal de Justiça (incluiu-se a alínea “i’” no inciso I do art. 105 da CRFB/1988). Também nesse sentido já se adaptou o Novo Código de Processo Civil (Lei 13.105/2015), que corrigiu o vício superveniente de seu antecessor. Quanto ao ponto, vale a pena checar o <a href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm" target="_blank"> art. 960 do NCPC</a>!</p>
+
+											 
+
+
 										</div>			
 									</div>
 
@@ -881,6 +900,13 @@ texto
 
   });
     </script>
+
+	 <script type="text/javascript">
+  	  $(document).ready(function(){
+	    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+	    $('.modal').modal();
+	  });
+  </script>
 
 
 </body></html>
