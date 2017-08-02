@@ -160,7 +160,7 @@ iframe {
 /* Main CSS  { */
 body {
   font: 100% "Opensans", sans-serif !important;
-  color: #565659;
+  color: #000;
   height: 100%;
   display: flex;
   min-height: 100vh;
@@ -1072,25 +1072,29 @@ h3 {
 
   article ol.type_a1 {
     counter-reset: list;
-    font-size: 1.2em;
-    margin-left: 2.5em; 
-    margin-right: 2.5em; }
+    font-size: 1em;
+    margin-left: 1.7em; 
+    margin-right: 2.5em;
+            line-height: 1.6;
+        text-align: justify; }
     article ol.type_a1 > li {
       margin-bottom: 0.5em;
       list-style: none;
       position: relative;  padding-left:20px; margin-bottom:15px;}
     article ol.type_a1 > li:before {
-      counter-increment: list;
-      content: counter(list,lower-alpha) " ";
-      position: absolute;
-      left: -1.1em; 
-      padding: 0px 10px 0px;
-      width: 33px;
-      height: 32px;
-      border-radius: 100px;
-      margin-top: 3px;
-      font-weight: bold;
-          top: -5px;
+    counter-increment: list;
+        content: counter(list,lower-alpha) " ";
+        position: absolute;
+        left: -1.1em;
+        padding: 5px 8px 0px 10px;
+        width: 30px;
+        height: 31px;
+        border-radius: 100px;
+        margin-top: 3px;
+        font-weight: bold;
+        top: -5px;
+        line-height: 1.2em;
+
         }
               /*content: counter(list,lower-alpha) ") ";*/
 
@@ -1256,19 +1260,19 @@ font-size: 1.9em;
 }
 
 .aula1 article ol.type_n1 > li:before {
-  background:#7FD4DE;
-  color:#555257; 
+  background:#873624;
+  color: #FFF;
 }
 
 .aula1 article ol.type_n2 > li:before {
   background:#7FD4DE;
-  color:#555257; 
+
 }
 
 
 .aula1 article ol.type_a1 > li:before {
-  background:#00747A;
-  color:#fff; 
+  background:#873624;
+  color: #FFF;
 }
 
 .aula1 .highlight{
@@ -1971,3 +1975,26 @@ article p i {
 .sumario{
   font-family: 'Roboto', sans-serif;
 }
+
+
+
+
+/**Repercussão Geral Elements*/
+
+
+/*
+O mapa fica muito esticado, por isso há duas versões longo e curto com imagens diferentes.
+*/
+.fundoMapa-longo {
+  background: url('../images/bg2.png');
+  background-size: 100% 100%;
+  padding: 50px 35px;
+}
+.fundoMapa-curto {
+  background: url('../images/bg1.png');
+  background-size: 100% 100%;
+  padding: 30px 35px;
+}
+
+
+
