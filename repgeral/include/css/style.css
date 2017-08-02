@@ -1213,16 +1213,20 @@ div.margin p{
   }
 
 .saibamais {
-  background: white;
-  padding: 10px;
-  margin: -56px auto 0px;
-  display: table;
-  font-weight: bold;
-  font-size: 1.5em;
+    background: #faf7f5;
+    padding: 10px;
+    margin: -56px auto 0px;
+    display: table;
+    font-weight: bold;
+    font-size: 1.5em;
+    width: 119%;
+    background: #b3462f;
+    border-radius: 50px;
+    margin-left: -29px;
 }
 
 .imgsaibamais {
-  margin: -55px;
+  margin: -73px;
   float: left
 }
 .ficaadica {
@@ -1281,15 +1285,15 @@ font-size: 1.9em;
 }
 
 .aula1 .border{
-   border-color:#00747A;
+   border: 1px solid #b1b1b1;
 }
 
 .aula1 .saibamais {
-  color: #00747A;
+  color: #FFF;
 }
 
 .aula1 .filled {
-  background:#7FD4DE;
+  background:#faf7f5;
 }
 
 .segura {
@@ -2003,4 +2007,9 @@ O mapa fica muito esticado, por isso há duas versões longo e curto com imagens
 
 .img-circle{
   border-radius:100%; border:1px solid #843220; padding:20px; max-width:100%
+}
+
+.recuo-citacao {
+  margin-left:20%;
+  font-size:0.9em;
 }
