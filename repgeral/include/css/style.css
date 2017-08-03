@@ -228,13 +228,16 @@ strong {
       width:100%; }
   #mainMenu.aula1 li a {
     height: auto;
-    font-size: 1.6rem;
-    line-height: 2.0em;
+    font-size: 1.1rem;
+    line-height: 1.8em;
+    /* padding-bottom: 16px; */
     font-family: "Roboto", sans-serif;
     background: #AF452F;
     margin: 1px auto;
     padding: 0px 20px;
     color: #B7AB9F;
+    /* text-shadow: -2px 2px 2px rgba(0,0,0,1.00); */
+    padding-bottom: 12px;
     /*text-shadow: -2px 2px 2px rgba(0,0,0,1.00);*/ }
   #mainMenu.aula1 li a:hover {
     background-color: #FFF;
