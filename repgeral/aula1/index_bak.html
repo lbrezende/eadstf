@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR" class="js no-touch cssanimations csstransforms csstransforms3d csstransitions ui-mobile">
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Aula 1 - REPERCUSSÃO GERAL | INTRODUÇÃO: ASPECTOS GERAIS E A IMPORTÂNCIA DA REPERCUSSÃO GERAL</title>
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0"> 
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../include/css/bookblock.css">
+	<link rel="stylesheet" type="text/css" href="../include/css/materialize.css">
+	<link rel="stylesheet" href="../include/fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../include/css/style.css">	
+	<link rel="stylesheet" type="text/css" href="../include/css/aula1.css">
+	
+	<script type="text/javascript" src="../include/js/modernizr.custom.79639.js"></script>
+	<script type="text/javascript" src="../include/js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../include/js/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="../include/js/materialize.min.js"></script>
+
+</head>
+
+<body ><div data-role="page" data-url="" tabindex="0" >
+	<header class="page-header">
+		<nav aria-label="Menu principal" class="aula1">
+			<div style="; display:inline" class="hide-on-med-and-down"><img src="../include/images/ead_setas.png" style="max-height:60px;margin-right:10px; " class="hide-on-med-and-down"><img class="" src="../include/images/ead_logo.png" style="max-height:60px;"></div>
+			<div class="brand-logo hide-on-med-and-down" style="width:66%; margin-left:100px ">
+			<h1 style="display: table;  ; margin: 0 auto">
+			<!-- <img src="../include/images/ead_setas.png" style="max-height:60px;margin-right:10px;" class="hide-on-med-and-down"><img class="" src="../include/images/ead_logo.png" style="max-height:60px;"> -->
+				<span class=" hide-on-med-and-down top-title" style=" line-height: 21px;float: left;text-align: left;margin-top: 21px;margin-left: 21px; "><span style="font-size:1.3em">REPERCUSSÃO GERAL</span> : Origens, inovações e sua aplicação ao STF</h1>
+			<!--<img src="../include/images/logo.png" style="max-height:60px;" class="" />&nbsp; <h1 style="float:right;" class="deslocaTitulo"><span class="bignoodle">Redação</span> <span class="nick">Argumentativa</span></h1>-->
+			</div>
+
+				<ul class="navegacao right">
+					<li id="bb-nav-prev"  data-position="bottom" data-delay="50" >
+						<a class="waves-effect waves-light ui-link">
+							<span class="material-icons">chevron_left</span>
+							<span class="screen-reader-text">Página anterior</span>
+						</a>
+					</li>
+					<li id="bb-nav-next"  data-position="bottom" data-delay="50"  >
+						<a class="waves-effect waves-light ui-link">
+							<span class="material-icons">chevron_right</span>
+							<span class="screen-reader-text">Próxima página</span>
+						</a>
+					</li>
+				</ul>
+			
+				<div class="pages right aula1" role="status">
+					<span class="screen-reader-text">Página atual: </span>
+					<span class="page page-atual">2</span>
+					<span class="screen-reader-text"> de </span>
+					<span class="separa" aria-hidden="true">/</span>
+					<span class="page page-total">25</span>
+				</div>
+
+				<ul class="font-config right" aria-hidden="true">
+					<li>
+						<a class="tooltipped a-menos ui-link" data-position="bottom" data-delay="50" data-tooltip="Diminuir fonte" data-action="-1" data-tooltip-id="e9820861-feb1-9e78-4a23-c767e2bc6643">
+							A-
+						</a>
+					</li>
+					<li>
+						<a class="tooltipped a-zero ui-link" data-position="bottom" data-delay="50" data-tooltip="Retomar tamanho padrão da fonte" data-action="0" data-tooltip-id="defa175e-2118-0699-3fde-a7b6880fe102">
+							A
+						</a>
+					</li>
+					<li>
+						<a class="tooltipped a-mais ui-link" data-position="bottom" data-delay="50" data-tooltip="Aumentar fonte" data-action="+1" data-tooltip-id="a92f2a81-9a17-0569-6a06-ed3723861db2">
+							A+
+						</a>
+					</li>
+					<li class="separador">
+					</li>
+				</ul>
+				<script>
+				$(document).ready(function()
+				{
+					$('.font-config').on('click','a',null,function(e)
+					{
+						var action = $(this).data('action');
+						if ($(this).hasClass('disabled'))
+						{
+							e.preventDefault();
+							e.stopPropagation();
+							return false;
+						}
+						var padrao = ($('article').parent().css('font-size'));
+						var atual = ($('article').css('font-size'));
+						padrao = Number(padrao.replace('px',''));
+						atual = Number(atual.replace('px',''));
+				
+						var size = Number(atual/padrao);
+						switch (action.toString()) {
+							case '+1':
+								size *= 1.2;
+								break;
+							case '-1':
+								size *= 0.9;
+								break;
+							case '0':
+							default:
+								size = 1;
+								break;
+						}
+						console.log(size);
+				
+						if (size < .7)
+						{
+							size = 0.7;
+							$('.font-config a-menos').addClass('disabled');
+						}
+						else if (size > 2)
+						{
+							size = 2.0;
+							$('.font-config a-mais').addClass('disabled');
+						}
+						else
+						{
+							$('.font-config a-menos').removeClass('disabled');
+							$('.font-config a-mais').removeClass('disabled');
+						}
+						
+						$('article').css('font-size',size+'em');
+					});
+				})
+				</script>
+				<ul id="mainMenu" class="side-nav aula1 sumario" role="menu" style="width: 320px; transform: translateX(-100%);">
+					<li class="header" aria-hidden="true">
+						<a class="close ui-link" style="color:#EC620D; background:none">
+							<span class="material-icons">close</span>
+						</a>
+						<img src="../include/images/logoponto.png" alt="Sumário" title="Sumário" role="presentation" />
+					</li>
+					
+										
+					<li>
+						<a href="index.html#01-introducao" data-target="01-introducao" data-aula="Item de menu" role="menuitem" class="ui-link">
+							Página Inicial							
+						</a>
+					</li>
+					<li>
+						<a href="index.html#01-introducao" data-target="01-00-tutorial" data-aula="Item de menu" role="menuitem" class="ui-link">
+							Tutorial de Navegação							
+						</a>
+					</li>
+
+					<li>
+						<a href="index.html#02-00-primeiraAula" data-target="02-00-primeiraAula" data-aula="Item de menu" role="menuitem" class="ui-link">
+							<span class="numero">1.1&nbsp;</span>
+							Página 1
+						</a>
+					</li>			
+				
+					<li>
+						<a href="index.html#03-00-primeiraAula" data-target="03-00-primeiraAula" data-aula="Item de menu" role="menuitem" class="ui-link">
+							<span class="numero">1.2&nbsp;</span>
+							Página 2
+						</a>
+					</li>
+					<li>
+						<a href="index.html#03-01-primeiraAula" data-target="03-01-primeiraAula" data-aula="Item de menu" role="menuitem" class="ui-link">
+							<span class="numero">1.3&nbsp;</span>
+							Página 3
+						</a>
+					</li>
+					<li>
+						<a href="index.html#05-00-primeiraAula" data-target="05-00-primeiraAula" data-aula="Item de menu" role="menuitem" class="ui-link">							
+							Página 4
+						</a>
+					</li>
+				</ul>
+
+
+				<a href="index.html#" data-activates="mainMenu" id="tblcontents" class="btn aula1 waves-effect waves-light button-collapse show-on-large ui-link" aria-hidden="true" style="box-shadow:none;"><span class="material-icons aula1">menu</span></a>
+
+			</nav>
+			<script>
+			$(document).ready(function(){
+				$('.tooltipped').tooltip({delay: 50});
+			});
+			</script>		
+			<div id="titulo_aula" class="active aula1"><h2><span style=" display: -webkit-box;font-size: 1.2em;">AULA 1</span></h2></div>
+
+	</header>
+	
+	<main>
+		<div class="bb-custom-wrapper">
+			<div id="bb-bookblock" class="bb-bookblock" style="perspective: 2000px;" role="main">
+				<!-- página 1 - 01-introducao -->
+				<div class="bb-item item-01-introducao" id="01-introducao" style="display: block;">
+					<div class="content">
+						<div class="scroller">
+							<article style="padding:0px; overflow: hidden;" id="intro">
+								<img src="../include/images/capa.png" class="" aria-hidden="true" style="width:100%" alt="Imagem do título do curso de Pontuação" role="presentation" style="max-width:600px;">
+
+							</article>
+						</div> <!-- fecha scroller -->
+						<!--<div class="scroller">
+
+
+
+							<article style="padding:0px;" id="intro">
+							
+							<p style="margin-top:100px;  "><h3 class="mobileautor " style="font-size:1.2em; margin-left:30px;text-align: left; font-family: 'Open Sans' !important;float:left;text-transform: none !important; color: #B7AA9F;">
+									Abhner Youssif Mota Arabi</h3>
+								
+								<img src="../include/images/mapa.png" class="mobiletopimage " aria-hidden="true" style="max-width:100%;max-height:100%;text-align:left; margin-top:-100px;border:0px;" alt="Imagem do título do curso de Pontuação" role="presentation" >
+
+
+
+								
+							</article>
+						</div> <!-- fecha scroller -->
+
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+				
+				<div class="bb-item item-01-00-tutorial aula1" id="01-00-tutorial" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" style="margin-top:50px" >
+									<div class="row">
+										<div class="col s12 m12 l12">
+											<h3 class="" >Tutorial de Navegação</h3>
+											<img src="../include/images/ponto2.png" style=" width:100%; margin-top:-10px">
+													<p>Olá! Antes de começar, o que acha de conhecer os recursos que estarão disponíveis para você nessa aula?</p>
+													<p>Basta clicar no botão abaixo </p>
+													<a class="btn waves-effect " style="margin-left:60px;" id="abreTutorial">Ver tutorial</a>
+													
+										</div>	
+
+									</div>
+								</div>
+							</article>
+
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+				
+				
+				<!--<div class="bb-item item-01-00-paginaAzul aula1" id="01-00-paginaAzul" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" style="background: #f5f5f5;    box-shadow: 0px 2px 5px rgba(0,0,0,0.4);">
+									<div class="row">
+										<p class="titulo-sem-titulo"><strong><em>Apresentação do curso</em></strong></p>
+										 											<p><strong><em>Olá!</em></strong></p>
+										<p>Na apresentação do curso, expusemos a proposta do nosso estudo, os passos que pretendemos seguir e a bibliografia indicada para enriquecer as lições, está lembrado? </p>
+										
+
+										<p>Para tanto, abordaremos a seguir dois aspectos introdutórios mais gerais que nos ajudam a apreender a colocação da repercussão em nosso ordenamento jurídico. Inicialmente, propor-se-á uma análise geral sobre as competências constitucionais do Supremo Tribunal Federal. Na sequência, apresentar-se-á a problematização entre <em>civil law</em> – tradição jurídica à qual o Brasil historicamente se filia – e <em>common law</em> – da qual originariamente derivada a ideia de respeito aos precedentes. Essa distinção se faz importante no contexto de análise sobre em que medida a vinculatividade da jurisprudência e dos precedentes prevista pelo Novo Código de Processo Civil representa ou não um afastamento da tradição do <em>civil law</em>.</p>
+										<p>Antes, porém, para uma visão rápida sobre a importância da repercussão geral e alguns pontos de reformas propostas, veja a seguinte entrevista dos Ministros Gilmar Mendes e Roberto Barroso:
+											<p>As informações que enfatizaremos neste tópico são de seu total domínio, com certeza. A intenção é rememorar as características peculiares e as competências desta Suprema Corte. Vamos juntos?</p>
+
+
+
+										
+										
+									</div>
+								</div>
+							</article>
+						</div> !-- fecha scroller --
+					</div> fecha content --
+				</div> -- fecha bb-item -->
+
+				<div class="bb-item item-02-00-primeiraAula aula1" id="02-00-primeiraAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" >
+									<div class="row">
+										<h3 class="text-center" style="margin-top:50px;font-size:2.2em !important ">Aula 1 - INTRODUÇÃO: ASPECTOS GERAIS E A IMPORTÂNCIA DA REPERCUSSÃO GERAL</h3>
+											
+									</div>
+									<div class="row">
+										<div class="col s12 m6 l6">
+											<h3 class="" >1. Introdução</h3>
+											<img src="../include/images/ponto2.png" style="  width: 150%;margin-top: -4px;margin-left: -255px;">
+												<p><strong><em>Olá!</em></strong></p>
+												<p>Na apresentação do curso, expusemos a proposta do nosso estudo, os passos que pretendemos seguir e a bibliografia indicada para enriquecer as lições, está lembrado?</p>
+												<p>Nesta primeira aula, em abordagem ainda introdutória, iniciaremos o conteúdo do curso propriamente dito. Para tanto, nosso objetivo principal é introduzir o tema da repercussão geral, tratando de temas adicionais que lhe dizem respeito, tais como os casos de competência originária e recursal do Supremo Tribunal Federal (STF), bem como as distinções entre os sistemas de <em>common law</em> e de <em>civil law</em>. </p>
+												<p>Como se sabe, a repercussão geral é instituto jurídico dos mais importantes à atuação do  STF, já que o julgamento de recursos extraordinários sob a sistemática de tal instituto é atribuição das mais relevantes dessa Corte, apesar de, claro, não ser a única. Como mencionado na apresentação do curso, sobreleva-se a importância do tema, tendo em vista a recente entrada em vigor do Novo Código de Processo Civil (Lei nº 13.105/2015). Nesse sentido, mostra-se essencial que você, servidor do STF, tenha profundo conhecimento desse instituto jurídico, desde as suas origens históricas até sua aplicação prática neste Tribunal, passando também pela evolução do tratamento legislativo da questão.</p>
+
+											
+										</div>		
+										<div class="col s12 m6 l6">
+											
+											<p>Para tanto, abordaremos a seguir dois aspectos introdutórios mais gerais que nos ajudam a apreender a colocação da repercussão em nosso ordenamento jurídico. Inicialmente, propor-se-á uma análise geral sobre as competências constitucionais do Supremo Tribunal Federal. Na sequência, apresentar-se-á a problematização entre <em>civil law</em> – tradição jurídica à qual o Brasil historicamente se filia – e <em>common law</em> – da qual originariamente derivada a ideia de respeito aos precedentes. Essa distinção se faz importante no contexto de análise sobre em que medida a vinculatividade da jurisprudência e dos precedentes prevista pelo Novo Código de Processo Civil representa ou não um afastamento da tradição do <em>civil law</em>.</p>
+											<p>Antes, porém, para uma visão rápida sobre a importância da repercussão geral e alguns pontos de reformas propostas, veja a seguinte entrevista dos Ministros Gilmar Mendes e Roberto Barroso:</p>
+											<p class="no-indent player"><iframe width="100%" height="315" src="https://www.youtube.com/embed/DxwjYmDNH_8" frameborder="0" allowfullscreen></iframe></p>
+											<!--<p class="no-indent"><img class="img-responsive" style="text-indent:0;" src="../include/images/gilmar.png"  /></p>-->
+											<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/DxwjYmDNH_8" frameborder="0" allowfullscreen></iframe> -->
+
+
+
+										</div>			
+									</div>
+
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+				<div class="bb-item item-03-00-primeiraAula aula1" id="03-00-primeiraAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" style="margin-top:50px" >
+									<div class="row">
+										<div class="col s12 m6 l6">
+											<h3 class="" >2. Visão geral sobre a competência do Supremo Tribunal Federal</h3>
+											<img src="../include/images/ponto2.png" style="    width: 150%;    margin-top: -30px;    margin-left: -255px;">
+											<p>As informações que enfatizaremos neste tópico são de seu total domínio, com certeza. A intenção é rememorar as características peculiares e as competências desta Suprema Corte. Vamos juntos?</p>
+											<p>O Supremo Tribunal Federal é um dos órgãos integrantes do Poder Judiciário (art. 92, I, da Constituição de 1988), possuindo seu desenho institucional fixado no texto constitucional (<a href="http://www.planalto.gov.br/ccivil_03/constituicao/constituicaocompilado.htm" target="_blank" >art. 101 e seguintes</a>). O Tribunal é composto de <a href="http://www.stf.jus.br/portal/cms/verTexto.asp?servico=sobreStfComposicaoComposicaoPlenariaApresent" target="_blank"> 11 Ministros</a>, escolhidos dentre cidadãos com mais de 35 e menos de 65 anos de idade, de notável saber jurídico e reputação ilibada. Os Ministros são nomeados pelo Presidente da República, depois de aprovada a escolha pela maioria absoluta do Senado Federal.</p>
+											<p>Suas competências jurisdicionais são previstas no art. 102 da Constituição Federal. Vamos analisar esse dispositivo? Ele é assim disposto:</p>
+											<p class="well" style="text-indent:0em;  ">
+												<span id="abrir-tvaberta"><a class="btn btn-info btn-small botao-tvaberta" href="javascript:void(0);">Conheça art. 102 da Constituição Federal</a></span></p>
+												<div id="conteudo-tvaberta" style="display:none;;">	
+													<p>Art. 102. Compete ao Supremo Tribunal Federal, precipuamente, a guarda da Constituição, cabendo-lhe:</p>
+													<p>I – processar e julgar, originariamente:</p>
+													<p>a) a ação direta de inconstitucionalidade de lei ou ato normativo federal ou estadual e a ação declaratória de constitucionalidade de lei ou ato normativo federal; (Redação dada pela Emenda Constitucional nº 3, de 1993)</p>
+													<p>b) nas infrações penais comuns, o Presidente da República, o Vice-Presidente, os membros do Congresso Nacional, seus próprios Ministros e o Procurador-Geral da República;</p>
+													<p>c) nas infrações penais comuns e nos crimes de responsabilidade, os Ministros de Estado e os Comandantes da Marinha, do Exército e da Aeronáutica, ressalvado o disposto no art. 52, I, os membros dos Tribunais Superiores, os do Tribunal de Contas da União e os chefes de missão diplomática de caráter permanente;(Redação dada pela Emenda Constitucional nº 23, de 1999)</p>
+													<p>d) o habeas corpus, sendo paciente qualquer das pessoas referidas nas alíneas anteriores; o mandado de segurança e o habeas data contra atos do Presidente da República, das Mesas da Câmara dos Deputados e do Senado Federal, do Tribunal de Contas da União, do Procurador-Geral da República e do próprio Supremo Tribunal Federal;</p>
+													<p>e) o litígio entre Estado estrangeiro ou organismo internacional e a União, o Estado, o Distrito Federal ou o Território;</p>
+													<p>f) as causas e os conflitos entre a União e os Estados, a União e o Distrito Federal, ou entre uns e outros, inclusive as respectivas entidades da administração indireta;</p>
+													<p>g) a extradição solicitada por Estado estrangeiro;</p>
+													<p>i) o habeas corpus, quando o coator for Tribunal Superior ou quando o coator ou o paciente for autoridade ou funcionário cujos atos estejam sujeitos diretamente à jurisdição do Supremo Tribunal Federal, ou se trate de crime sujeito à mesma jurisdição em uma única instância;(Redação dada pela Emenda Constitucional nº 22, de 1999)</p>
+													<p>j) a revisão criminal e a ação rescisória de seus julgados;</p>
+													<p>l) a reclamação para a preservação de sua competência e garantia da autoridade de suas decisões;</p>
+													<p>m) a execução de sentença nas causas de sua competência originária, facultada a delegação de atribuições para a prática de atos processuais;</p>
+													<p>n) a ação em que todos os membros da magistratura sejam direta ou indiretamente interessados, e aquela em que mais da metade dos membros do tribunal de origem estejam impedidos ou sejam direta ou indiretamente interessados;</p>
+													<p>o) os conflitos de competência entre o Superior Tribunal de Justiça e quaisquer tribunais, entre Tribunais Superiores, ou entre estes e qualquer outro tribunal;</p>
+													<p>p) o pedido de medida cautelar das ações diretas de inconstitucionalidade;</p>
+													<p>q) o mandado de injunção, quando a elaboração da norma regulamentadora for atribuição do Presidente da República, do Congresso Nacional, da Câmara dos Deputados, do Senado Federal, das Mesas de uma dessas Casas Legislativas, do Tribunal de Contas da União, de um dos Tribunais Superiores, ou do próprio Supremo Tribunal Federal;</p>
+													<p>r) as ações contra o Conselho Nacional de Justiça e contra o Conselho Nacional do Ministério Público; (Incluída pela Emenda Constitucional nº 45, de 2004)</p>
+													<p>II – julgar, em recurso ordinário:</p>
+													<p>a) o habeas corpus, o mandado de segurança, o habeas data e o mandado de injunção decididos em única instância pelos Tribunais Superiores, se denegatória a decisão;</p>
+													<p>b) o crime político;</p>
+													<p>III – julgar, mediante recurso extraordinário, as causas decididas em única ou última instância, quando a decisão recorrida:
+													<p>a) contrariar dispositivo desta Constituição;</p>
+													<p>b) declarar a inconstitucionalidade de tratado ou lei federal;</p>
+													<p>c) julgar válida lei ou ato de governo local contestado em face desta Constituição.</p>
+													<p>d) julgar válida lei local contestada em face de lei federal. (Incluída pela Emenda Constitucional nº 45, de 2004)</p>
+													<p>§ 1º A argüição de descumprimento de preceito fundamental, decorrente desta Constituição, será apreciada pelo Supremo Tribunal Federal, na forma da lei. (Transformado em § 1º pela Emenda Constitucional nº 3, de 17/03/93)</p>
+													<p>§ 2º As decisões definitivas de mérito, proferidas pelo Supremo Tribunal Federal, nas ações diretas de inconstitucionalidade e nas ações declaratórias de constitucionalidade produzirão eficácia contra todos e efeito vinculante, relativamente aos demais órgãos do Poder Judiciário e à administração pública direta e indireta, nas esferas federal, estadual e municipal. (Redação dada pela Emenda Constitucional nº 45, de 2004)</p>
+													<p>§ 3º No recurso extraordinário o recorrente deverá demonstrar a repercussão geral das questões constitucionais discutidas no caso, nos termos da lei, a fim de que o Tribunal examine a admissão do recurso, somente podendo recusá-lo pela manifestação de dois terços de seus membros.</p>
+												</div>
+										</div>		
+										<div class="col s12 m6 l6">
+											<p>Como podemos notar, o inciso I fixa as competências originárias do Supremo Tribunal Federal, ou seja, diz respeito àqueles processos que já se iniciam no STF, cabendo a este órgão jurisdicional processar e julgar originariamente essas causas. São os casos, por exemplo, das ações do controle concentrado de constitucionalidade (ação direta de inconstitucionalidade, ação declaratória de constitucionalidade e arguição por descumprimento de preceito fundamental), das ações penais para casos em que se fixa o foro por prerrogativa de função, das ações rescisórias de seus julgados, bem como de alguns casos de <em>habeas corpus</em> e de mandados de segurança, entre outros itens constantes no rol acima citado. </p>
+											<p>Outro ponto: notou que não existe a alínea “h”? Na redação original da Constituição de 1988, esse dispositivo previa a competência originária do STF para a homologação das sentenças estrangeiras e a concessão do <em>exequatur</em><sup>1</sup>  às cartas rogatórias (nesse sentido também era o Código de Processo Civil de 1973, que em seus arts. 483 e 484 também previa essa competência ao STF). Entretanto, com a Emenda Constitucional nº 45/2004, tal atribuição jurisdicional foi transferida ao Superior Tribunal de Justiça (incluiu-se a alínea “i’” no inciso I do art. 105 da CRFB/1988). Também nesse sentido já se adaptou o Novo Código de Processo Civil (Lei 13.105/2015), que corrigiu o vício superveniente de seu antecessor. Quanto ao ponto, vale a pena checar o <a href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm" target="_blank"> art. 960 do NCPC</a>!</p>
+
+											<p><sup>1</sup>Exequatur é expressão latina que significa “execute-se, cumpra-se”. No âmbito do Direito Processual Civil trata-se da autorização conferida por um Estado ao cumprimento da prática de determinado ato processual advindo de solicitação de autoridade judiciária estrangeira, especificamente em relação às cartas rogatórias. As cartas rogatórias, por sua vez, são “uma forma de comunicação entre o judiciário de países diferentes, com objetivo de obter colaboração para prática de atos processuais”. Trata-se de instrumento jurídico de cooperação internacional entre países no campo do Direito Processual e encontra previsão no art. 36 do Código de Processo Civil (Lei nº 13.105/2015). Quando concedido exequatur, a carta rogatória segue para um juiz federal brasileiro, que promoverá seu cumprimento. Após ser cumprida, a carta rogatória é remetida de volta ao Superior Tribunal de Justiça, para que seja remetida ao seu país de origem. A citação é do sítio eletrônico do Tribunal de Justiça do Distrito Federal e dos Territórios, ao qual o leitor pode se remeter para eventuais dúvidas: <a href="http://www.tjdft.jus.br/institucional/imprensa/direito-facil-1/carta-precatoria-x-carta-rogatoria-1" target="_blank"> < http://www.tjdft.jus.br/institucional/imprensa/direito-facil/carta-precatoria-x-carta-rogatoria-1></a>.</p>
+										</div>			
+									</div>
+
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+
+				<div class="bb-item item-03-01-primeiraAula aula1" id="03-01-primeiraAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" style="margin-top:50px" >
+									<div class="row">
+										<p></p>
+										<div class="col s12 m6 l6">
+
+											<p>Além de tais competências originárias, o STF também possui atribuições recursais, seja em relação ao recurso ordinário (inciso II) ou ao recurso extraordinário (inciso III). É nesse último campo, no âmbito do recurso extraordinário, que surge o instituto da repercussão geral, tal como exige o citado § 3º do art. 102 do texto constitucional. Entretanto, como veremos, não se trata de exigência constante do texto original da Constituição de 1988, sendo fruto da atuação do constituinte derivado, especificamente pela Emenda Constitucional nº 45/2004, conhecida como a emenda da “Reforma do Judiciário”. Foi essa alteração a responsável, por exemplo, pela criação do Conselho Nacional de Justiça (CNJ) e do Conselho Nacional do Ministério Público (CNMP), além de outras várias disposições relevantes.</p>
+											<p>Por fim, cumpre lembrar que o Supremo Tribunal Federal já se pronunciou diversas vezes no sentido de que o rol constitucional de suas competências é taxativo, isto é, rígido e fechado, não comportando ampliação por norma infraconstitucional. Nesse sentido, podem ser destacados os seguintes precedentes (grifos nossos):</p>
+											<p>RECLAMAÇÃO – INVIABILIDADE – INOCORRÊNCIA DOS PRESSUPOSTOS QUE AUTORIZAM A SUA UTILIZAÇÃO – INEXISTÊNCIA, NO CASO, DE SITUAÇÃO CARACTERIZADORA DE USURPAÇÃO DE COMPETÊNCIA DESTA SUPREMA CORTE – ACÓRDÃO PROFERIDO, EM SEDE DE MANDADO DE SEGURANÇA, PELO E. TRIBUNAL REGIONAL ELEITORAL DO ESTADO DO PIAUÍ EM FACE DE ATO COATOR IMPUTÁVEL AO PRESIDENTE DESSE MESMO E. TRIBUNAL, E NÃO, COMO ALEGADO NESTA SEDE RECLAMATÓRIA, AO CONSELHO NACIONAL DE JUSTIÇA (CNJ) – A QUESTÃO DAS ATRIBUIÇÕES JURISDICIONAIS ORIGINÁRIAS DO SUPREMO TRIBUNAL FEDERAL (CF, ART. 102, I, “d”) – <strong>CARÁTER ESTRITO E TAXATIVO DO ROL FUNDADO NO ART. 102 DA CONSTITUIÇÃO DA REPÚBLICA</strong> – REGRA DE COMPETÊNCIA QUE NÃO COMPREENDE A APRECIAÇÃO DE MANDADO DE SEGURANÇA DEDUZIDO CONTRA ATO EMANADO DE TRIBUNAL REGIONAL ELEITORAL – SÚMULA Nº 624/STF – RECURSO DE AGRAVO IMPROVIDO. (Rcl 14.566-AgR, Rel. Min. Celso de Mello, Segunda Turma, <em>DJE</em> de 4/5/2015.)</p>
+										</div>		
+										<div class="col s12 m6 l6">
+											<p>Agravo regimental em ação originária. Falta de impugnação dos fundamentos da decisão agravada. Incompetência do Supremo Tribunal Federal para apreciar originariamente a demanda. Não provimento do agravo. 1. Os fundamentos da decisão agravada não foram infirmados pelo agravante. Não subsiste o agravo regimental que deixa de atacar especificamente os fundamentos da decisão monocrática (art. 317, § 1º, RISTF). Precedentes. 2. <strong>A competência originária do Supremo Tribunal Federal submete-se a regime de direito estrito. Hipóteses taxativamente previstas no art. 102, inciso I, da Constituição. Precedentes</strong>. 3. Agravo regimental não provido. (AO 7.971-AgR, Rel. Min. Dias Toffoli, Segunda Turma, <em>DJE</em> de 15/4/2015.)</p>
+
+												<p>PENAL E PROCESSUAL PENAL. HABEAS CORPUS SUBSTITUTIVO DE RECURSO ORDINÁRIO. TRÁFICO DE DROGAS. PRISÃO PREVENTIVA. AUSÊNCIA DE FUNDAMENTAÇÃO. CONSTRANGIMENTO ILEGAL. ORDEM CONCEDIDA EX OFFICIO. 1. Não cabe ao Supremo Tribunal Federal julgar <em>habeas corpus</em> substitutivo de recurso ordinário, <strong>em razão da taxatividade da competência da Corte definida em rol <em>numerus clausus</em> pela Constituição da República</strong> (CF, art. 102, I, “d” e “i”). Precedente: HC 109.956, Rel. Min. Marco Aurélio, Primeira Turma, julgado em 7/8/2012). 2. O Supremo Tribunal Federal rechaça a prisão preventiva decretada somente com base na gravidade em abstrato do delito ou mediante a repetição dos predicados legais e a utilização de fórmulas retóricas que, em tese, serviriam para qualquer situação. Precedentes: RE 217.631, Rel. Min. Sepúlveda Pertence, Primeira Turma, julgado em 9/9/1997; HC 980.06, Rel. Min. Carlos Britto, Primeira Turma, julgado em 24/11/2009). 3. <em>In casu</em>, o magistrado plantonista não analisou as circunstâncias concretas do delito praticado, se limitando a repetir os pressupostos legais para a prisão preventiva. <em>In foco</em>, ao utilizar expressões como “o delito de tráfico de drogas [...] se qualifica como um delito de origem para vários outros, especialmente que envolvem violência ou grave ameaça à pessoa, com grave perturbação da paz social” o Juízo a quo tomou como fundamento da segregação cautelar a gravidade em abstrato do delito. 4. <em>Habeas corpus</em> julgado extinto, concedida a ordem <em>ex officio</em>. (HC 114.932, Rel. Min. Marco Aurélio, Rel. p/ o ac. Min. Luiz Fux, Primeira Turma, <em>DJE</em> de 6/2/2015.)</p>
+
+												<p>AGRAVO REGIMENTAL EM MANDADO DE SEGURANÇA. IMPETRAÇÃO CONTRA ATO DO TRIBUNAL DE CONTAS DA UNIÃO. ILEGITIMIDADE PASSIVA <em>AD CAUSAM</em>. AUSÊNCIA DE COMPETÊNCIA ORIGINÁRIA DO SUPREMO TRIBUNAL FEDERAL PARA JULGAMENTO DO <em>WRIT</em>. Constatado que a alegada supressão remuneratória não decorreu de ato concreto e individualizado praticado pelo Tribunal de Contas da União, ausente a legitimidade do referido órgão para figurar no polo passivo do mandado de segurança. A competência do Supremo Tribunal Federal para processar e julgar, originariamente, mandado de segurança contra ato do Tribunal de Contas da União decorre de <strong>expressa previsão no art. 102, I, “d”, da Constituição da República</strong>. Emanado o ato impugnado de autoridade outra, não referida no <strong>rol taxativo do texto constitucional</strong>, a consequência é a não inserção do presente <em>mandamus</em> no âmbito da competência originária do Supremo Tribunal Federal. Agravo regimental conhecido e não provido. (MS 31.897-AgR, Rel. Min. Rosa Weber, Primeira Turma, <em>DJE</em> de 17/9/2014.)</p>
+
+											<p>Com esses pontos, revisamos alguns aspectos fundamentais para o entendimento dos assuntos da nossa aula. <strong><em>Vamos continuar?</em></strong></p>
+										</div>			
+									</div>
+
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+
+
+				<div class="bb-item item-03-02-primeiraAula aula1" id="03-02-primeiraAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" style="margin-top:50px" >
+									<div class="row">
+										<div class="col s12 m6 l6">
+											<h3 class="" >3. A tradição do <em>civil law</em> e a vinculatividade das decisões no Novo Código de Processo Civil</h3>
+											<img src="../include/images/ponto2.png" style="    width: 150%;    margin-top: -30px;    margin-left: -255px;">
+											<p>Outro ponto relevante nessa abordagem introdutória é analisar em que medida a vinculatividade da jurisprudência e dos precedentes prevista pelo Novo Código de Processo Civil representa ou não um afastamento da tradição do <em>civil law</em>. É que, apesar de a tradição jurídica brasileira decorrer desse sistema, a repercussão geral, como veremos no estudo de suas origens históricas, é instituto que nasce a partir de apropriações de sistemas de <em>common law</em>, adaptadas e modificadas à realidade brasileira.</p>
+											<p>As expressões <em>common law</em> e <em>civil law</em> são utilizadas para representar sistemas jurídicos de diferentes tradições históricas. Apesar de muitos autores considerarem que essa diferenciação entre ambos é cada vez mais fluida e liquefeita, trata-se de conceito comumente encontrado nos textos jurídicos, principalmente aqueles que se aventuram para a análise de direito comparado de algum aspecto jurídico. Vamos então analisar rapidamente o que elas significam?</p>
+											<p><em>Common law</em> é uma expressão que representa uma tradição jurídica anglo-saxônica, fortemente baseada na construção do entendimento do Direito pela formação da jurisprudência dos Tribunais (os “precedentes”) e pela aplicação do <em>stare decisis</em><sup>2</sup>.  Nesse sistema, também se aponta uma maior força jurídica aos costumes (direito consuetudinário). São exemplos de países típicos dessa tradição a Inglaterra, os Estados Unidos, o Canadá, a Nova Zelândia e a Austrália, entre outros.</p>
+											
+										</div>		
+										<div class="col s12 m6 l6">
+											<p>De modo distinto, a <em>civil law</em> representa uma tradição jurídica de origem romano-germânica, em que os atos legislativos e normativos exsurgem como a principal fonte do Direito (a formação de códigos legislativos, por exemplo, é característica típica desse sistema). Além disso, a própria construção discursiva e argumentativa do Direito se dá pela referência aos <em>doutrinadores</em> (que modernamente representam a figura dos antigos <em>glosadores</em><sup>3</sup>). É esse o sistema ao qual o Brasil histórica e majoritariamente se filia, ao lado de países como a Itália, a Alemanha, Portugal, Espanha e os países da Europa continental em geral.</p>
+											<p>Como veremos mais à frente, uma das mais destacadas inovações do Novo Código de Processo Civil diz respeito à tentativa de se conferirem maior estabilidade e força aos precedentes judiciais, dificultando a sua alteração inconsequente e obrigando as instâncias inferiores a seguirem o entendimento dos Tribunais hierarquicamente superiores. Aliás, como estudaremos, um dos motivos que ensejaram o nascimento do que hoje conhecemos por repercussão geral foi justamente a necessidade de se conferir maior uniformidade na aplicação do Direito, bem como compatibilização entre os entendimentos das diferentes instâncias judiciais do país.</p>
+											<p><sup>2</sup><em>Stare decisis</em> é expressão latina que significa “estar decidido”, passando a ideia de que determinada questão decidida deve ser respeitada, não podendo ser revisitada por qualquer razão. Devem ser respeitadas as coisas decididas e não se deve mudar aquilo que já estabelecido. Do ponto de vista jurídico, traduz maior força vinculativa aos precedentes jurisprudenciais, dando maior vigor normativo ao entendimento reiterado dos Tribunais sobre determinada questão.</p>
+											<p><sup>3</sup>A figura dos glosadores remonta aos Séculos XII e XIII, especialmente na Itália. Eram estudiosos da legislação romana (como o <em>Digesto</em> de Justiniano) que escreviam à margem dos textos estudados suas <em>glosas</em>, que consistiam em comentários e notas explicativas do texto normativo e de seus institutos.</p>
+											<P>SAIBA MAIS</P>
+											<p>Sobre a aproximação entre os sistemas do <em>civil law</em> com o da <em>common law</em>, sobretudo a partir do Novo Código de Processo Civil, indica-se o seguinte texto.</p>
+											<p>Para o aprofundamento da questão, indica-se o excelente trabalho do Professor Luiz Guilherme Marinoni, publicado na <em>Revista da Faculdade de Direito da Universidade Federal do Paraná</em> (UFPR), número 49 (2009). O trabalho, conforme seu próprio resumo, “objetiva demonstrar, mediante um método histórico-crítico, a aproximação entre as jurisdições do <em>civil law</em> e do <em>common law</em>, e, em tal dimensão, a necessidade de se render respeito aos precedentes no direito brasileiro”. O artigo é longo, mas bastante minucioso e profundo, além de ser bastante pertinente ao nosso curso. Aos que se interessarem, fica a sugestão.</p>
+											<p><a href="http://revistas.ufpr.br/direito/article/viewFile/17031/11238" target="_blank">< http://revistas.ufpr.br/direito/article/viewFile/17031/11238></a>.</p>
+											<p>O tema será posteriormente abordado mais especificamente quando tratarmos das principais alterações do Novo Código de Processo Civil sobre o tema.</p>
+
+											<p>Nesse contexto, cumpre fazer algumas observações sobre a maior vinculatividade da jurisprudência e dos precedentes prevista pelo Novo Código de Processo Civil. A necessidade de atendimento ao que decidido pelos Tribunais Superiores não é novidade no Brasil, já que se trata de demanda relativa à própria uniformização de aplicação do Direito. Como afirmam Teresa Arruda Alvim Wambier e Bruno Dantas:</p>
+											<p>[...] o fato de haver entendimentos diferentes nos Tribunais a respeito da mesma questão jurídica equivale à existência de duas normas diferentes disciplinando a mesma situação. Essa constatação nasce do reconhecimento de que as manifestações do Judiciário contribuem para o desenho final da norma. Sob o ponto de vista teórico, pode-se dizer que a jurisprudência escancaradamente dispersa compromete a forma sistemática do direito, gerando desarmonia interna. Isso sem falar no desrespeito à isonomia e na impossibilidade de que haja a menor parcela de previsibilidade (= segurança jurídica). Efeitos nocivos dessa situação são sentidos pelos jurisdicionados, pela sociedade e pelo país. O descrédito do Judiciário se alastra e se estimulam tanto a propositura de ações quanto a interposição de recursos. (WAMBIER; DANTAS, 2016, p. 275-276.)</p>
+
+											<p>Teresa Arruda Alvim Wambier</p>
+											<p>Possui graduação em Direito pela Pontifícia Universidade Católica de São Paulo (1980), mestrado em Direito pela Pontifícia Universidade Católica de São Paulo (1985), doutorado em Direito pela Pontifícia Universidade Católica de São Paulo (1990) e Livre docência em Direito pela Pontifícia Universidade Católica de São Paulo (2004). Atualmente é professora permanente da Pontifícia Universidade Católica de São Paulo e sócia do escritório Arruda Alvim, Aragão, Lins, Sato e Vasconcelos – Advogados.</p>
+											<p><a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4794461P5" target="_blank">+ Currículo.</a></p>
+
+											<p>Bruno Dantas Nascimento</p>
+											<p>Doutor e Mestre em Direito Processual Civil (PUC-SP). Possui Pós-Doutorado em Direito pela Universidade Estadual do Rio de Janeiro (UERJ). Ministro do Tribunal de Contas da União (desde 2014). Por onze anos foi consultor legislativo do Senado Federal especializado em Direito Processual Civil (2003/2014). Compôs a Comissão de Juristas instituída pelo Presidente do Senado Federal para elaborar anteprojeto de novo Código de Processo Civil (2009/2010). Compôs o Conselho Nacional de Justiça (2011/2013) e o Conselho Nacional do Ministério Público (2009/2011).</p>
+											<p><a href="http://portal.tcu.gov.br/institucional/ministros/bruno-dantas/" target="_blank">+ Currículo.</a></p>
+
+
+											<p>Infelizmente, é comum notarmos na prática dos Tribunais brasileiros a constante – e muitas vezes inconsequente – alteração dos entendimentos por eles afirmados, sem falar na própria contradição que muitas vezes se encontra entre os órgãos de um mesmo Tribunal (entre dois órgãos julgadores ou mesmo entre decisões monocráticas de seus componentes, por exemplo). É preciso que se desenvolva a consciência de que a atividade de interpretação do Direito acaba por definir elementos do próprio conteúdo da norma, o que evidencia o ascendente e importante papel que possui a atuação do Poder Judiciário.</p>
+
+										</div>			
+									</div>
+
+								</div>
+							</article>
+
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->				
+										
+
+				<div class="bb-item item-03-03-primeiraAula aula1" id="03-03-primeiraAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" style="margin-top:50px" >
+									<div class="row">
+										<p></p>
+										<div class="col s12 m6 l6">
+											
+											<p>PALAVRA DO CONTEUDISTA: </p>
+											<p>Sobre o contexto mais amplo de ascensão institucional do Poder Judiciário na democracia brasileira, reforçando a importância da atuação judicial na conformação do Direito, já tive a oportunidade de assentar em livro de minha autoria que:</p>
+
+											<p>Com a implementação de um Estado constitucional de Direito, e sua expansão mundo afora, a Constituição passa a ser vista também como uma norma, um diploma jurídico e, mais que isso, como a maior das normas jurídicas dentro de um ordenamento. Nesse novo modelo que se instaurava, o texto constitucional é que passou a ocupar posto de centralidade, e, como consequência do princípio da supremacia da constituição, começava a ganhar força a ideia da supremacia judicial, justamente pelo fato de se atribuir a guarda da Constituição a órgãos judiciários e pelo consequente exercício da jurisdição constitucional [...]. É a partir desse novo modelo de Estado, que prima pela centralidade e hegemonia da Constituição e que acaba por desaguar em uma supremacia judicial que, aos poucos, foi se dando a ascensão institucional do Poder Judiciário, [...] constatada por uma ampliação da participação ativa deste poder em assuntos de caráter aprioristicamente político e que acabam por influenciar diretamente o dia a dia da população. Nesse contexto, o qual não é exclusivo da realidade brasileira, mas antes é um fato que se nota em diversas democracias no direito comparado, viabilizaram-se fenômenos como a judicialização da política e das relações sociais: questões consideradas relevantes (seja do ponto de vista moral, ético, político, econômico ou social) passam a ser decididas, e de forma definitiva, pelo Poder Judiciário e, no caso brasileiro, em especial pelo Supremo Tribunal Federal. (ARABI, 2015, p. 36-37.)</p>
+
+										</div>		
+										<div class="col s12 m6 l6">
+											<p>Desse modo, a brusca alteração de entendimento jurisprudencial, a depender do modo como se dá, pode representar verdadeira quebra da segurança jurídica, princípio que representa a necessidade de que existam previsibilidade e confiança nas relações jurídicas, tendo como objetivos últimos a pacificação social, o bem-estar do cidadão e o respeito aos direitos. Cabe refletir que tais inseguranças geram não apenas consequências jurídicas para o caso concreto, mas verdadeiros custos econômicos e sociais para toda a sociedade.</p>
+											<p>Note que, de um lado, invoca-se a segurança jurídica como justificativa à existência do efeito vinculante das decisões das Cortes Superiores, por exemplo, ao argumento de que se conferem maior certeza e previsibilidade ao jurisdicionado de que aquele entendimento será empregado ao seu caso concreto, uniformizando a aplicação de determinada norma jurídica a situações fáticas idênticas (função primordial para a qual idealizado o instituto da repercussão geral). Para tanto, sempre se levanta o forte argumento de necessidade de tal instituto jurídico diante do alto volume de processos submetidos à apreciação do Judiciário, na busca de conferir mais celeridade à composição dessas controvérsias.</p>
+											<p>Por outro lado, porém, essa mesma segurança jurídica parece ser por vezes violada por decisões nas quais há uma completa alteração de entendimento sobre determinado tema, sem que se conceda ao jurisdicionado qualquer previsibilidade, ou mesmo um prazo para que se adapte àquela nova realidade. Deve-se observar que tais situações parecem ainda mais graves em campos nos quais a atuação estatal representa forte intervenção na esfera privada do cidadão, como no Direito Penal (em que se restringe sua liberdade) e no Direito Tributário (em que se afeta seu patrimônio), por exemplo.</p>
+
+										</div>		
+
+									</div>
+
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+
+				<div class="bb-item item-03-04-primeiraAula aula1" id="03-04-primeiraAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" style="margin-top:50px" >
+									<div class="row">
+										<p></p>
+										<div class="col s12 m6 l6">
+											<p>Com base em todas essas preocupações é que o Novo Código de Processo Civil procurou introduzir novos institutos e ferramentas destinados a assegurar maior vinculatividade e estabilidade das decisões judiciais. A propósito, vejamos os arts. 926 a 928 dessa lei, que tratam das disposições gerais da ordem dos processos nos Tribunais:</p>
+											<p class="well" style="text-indent:0em;  ">
+												<span id="abrir-art926"><a class="btn btn-info btn-small botao-art926" href="javascript:void(0);">Conheça art. 926 do CPC</a></span></p>
+												<div id="conteudo-art926" style="display:none;;">	
+													<p>Art. 926.  Os tribunais devem uniformizar sua jurisprudência e mantê-la estável, íntegra e coerente.</p>
+													<p>§ 1º Na forma estabelecida e segundo os pressupostos fixados no regimento interno, os tribunais editarão enunciados de súmula correspondentes a sua jurisprudência dominante.</p>
+													<p>§ 2º Ao editar enunciados de súmula, os tribunais devem ater-se às circunstâncias fáticas dos precedentes que motivaram sua criação.</p>
+
+													<p>Art. 927.  Os juízes e os tribunais observarão:</p>
+													<p>I – as decisões do Supremo Tribunal Federal em controle concentrado de constitucionalidade;</p>
+													<p>II – os enunciados de súmula vinculante;</p>
+													<p>III – os acórdãos em incidente de assunção de competência ou de resolução de demandas repetitivas e em julgamento de recursos extraordinário e especial repetitivos;</p>
+													<p>IV – os enunciados das súmulas do Supremo Tribunal Federal em matéria constitucional e do Superior Tribunal de Justiça em matéria infraconstitucional;</p>
+													<p>V – a orientação do plenário ou do órgão especial aos quais estiverem vinculados.</p>
+													<p>§ 1º Os juízes e os tribunais observarão o disposto no art. 10 e no art. 489, § 1o, quando decidirem com fundamento neste artigo.</p>
+													<p>§ 2º A alteração de tese jurídica adotada em enunciado de súmula ou em julgamento de casos repetitivos poderá ser precedida de audiências públicas e da participação de pessoas, órgãos ou entidades que possam contribuir para a rediscussão da tese.</p>
+													<p>§ 3º Na hipótese de alteração de jurisprudência dominante do Supremo Tribunal Federal e dos tribunais superiores ou daquela oriunda de julgamento de casos repetitivos, pode haver modulação dos efeitos da alteração no interesse social e no da segurança jurídica.</p>
+													<p>§ 4º A modificação de enunciado de súmula, de jurisprudência pacificada ou de tese adotada em julgamento de casos repetitivos observará a necessidade de fundamentação adequada e específica, considerando os princípios da segurança jurídica, da proteção da confiança e da isonomia.</p>
+													<p>§ 5º Os tribunais darão publicidade a seus precedentes, organizando-os por questão jurídica decidida e divulgando-os, preferencialmente, na rede mundial de computadores.</p>
+
+													<p>Art. 928.  Para os fins deste Código, considera-se julgamento de casos repetitivos a decisão proferida em:</p>
+													<p>I – incidente de resolução de demandas repetitivas;</p>
+													<p>II – recursos especial e extraordinário repetitivos.</p>
+													<p>Parágrafo único.  O julgamento de casos repetitivos tem por objeto questão de direito material ou processual.</p>
+												</div>
+
+										</div>		
+										<div class="col s12 m6 l6">
+												<p>Apesar de anteriormente já existente, fortaleceu-se, em tal diploma legislativo, um sistema de precedentes obrigatórios, que devem ser observados como paradigmas para posteriores situações idênticas ou semelhantes. É nesse contexto que se inserem institutos que já existiam (como é o caso da repercussão geral), bem como outros que são agora criados (tais como o incidente de resolução de demandas repetitivas e o incidente de assunção de competência, por exemplo).</p>
+												<p>Como afirma Patrícia Perrone:</p>
+
+												<p>O Novo Código de Processo Civil (CPC/2015) introduziu um grande número de precedentes vinculantes no sistema brasileiro. Além das decisões proferidas em controle concentrado da constitucionalidade e das súmulas vinculantes, que já possuíam tal eficácia anteriormente, o novo código atribuiu efeitos obrigatórios e gerais: i) aos julgados proferidos pelo Supremo Tribunal Federal e pelo Superior Tribunal de Justiça, em recursos extraordinários e especiais repetitivos, ii) aos acórdãos produzidos pelos demais tribunais, em incidente de resolução de demandas repetitivas (IRDR) e iii) em incidente de assunção de competência. Com a vigência do Novo CPC, os precedentes proferidos em todos esses casos deverão ser obrigatoriamente observados pelas demais instâncias, sob pena de cassação do entendimento divergente, por meio de reclamação.” (MELLO, Patrícia Perrone Campos. <strong>Como se opera com precedentes segundo o Novo CPC?</strong> In: Jota. Disponível <a href="https://jota.info/artigos/como-se-opera-com-precedentes-segundo-o-novo-cpc-22032016" target="_blank">aqui</a>. Acesso em: 22 mar 2016.)</p>
+
+												<p>Patrícia Perrone</p>
+												<p>Patrícia Perrone Campos Mello é Professora-Doutora de Direito Constitucional do (UniCEUB. Professora de Direitos Sociais e Políticas Públicas do Programa de Mestrado e Doutorado do UniCEUB. É doutora e mestre em Direito pela UERJ. É Procuradora do Estado do Rio de Janeiro. Atualmente, ocupa o cargo de Assessora de Ministro do Supremo Tribunal Federal. Publicou, recentemente, o livro “Nos Bastidores do Supremo Tribunal Federal”. É Membro do Instituto de Diálogos Constitucionais (IDCon) e do Centro Brasileiro de Estudos Constitucionais (CBEC).</p>
+												<p><a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4238672D6" target="_blank">+ Currículo.</a></p>
+
+										</div>		
+
+									</div>
+
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+				<div class="bb-item item-03-05-primeiraAula aula1" id="03-05-primeiraAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" style="margin-top:50px" >
+									<div class="row">
+										<div class="col s12 m6 l6">
+											<p>SAIBA MAIS</p>
+										 	<p>Recomendamos a leitura integral do artigo de Patrícia Perrone, mencionado acima, que faz parte da série intitulada “Os Precedentes no Novo CPC”, veiculada pelo portal jurídico <em>Jota</em>. </p>
+											<p>No mesmo site, sugerimos também que leia o texto disponível <a href="https://jota.info/artigos/serie-os-precedentes-no-novo-cpc-08032016" target="_blank">aqui</a>.</p>
+											<p>Para uma visão interna do próprio Judiciário, cita-se, ainda, notícia publicada pelo <a href="https://coad.jusbrasil.com.br/noticias/315768762/valorizacao-de-precedentes-jurisprudenciais-e-destaque-do-novo-cpc-que-entra-em-vigor-hoje" target="_blank">sítio eletrônico do Superior Tribunal de Justiça</a> na data de entrada em vigor do Novo Código de Processo Civil.</p>
+											<p>Vale a pena enriquecer o estudo com essas indicações!</p>
+
+											<p>Sobre a referida obrigatoriedade dos precedentes, Teresa Arruda Alvim Wambier e Bruno Dantas afirmam, à luz do Novo CPC, a existência de “três graus de obrigatoriedade” (forte, média e fraca), conforme passagem a seguir transcrita:</p>
+											<p>A obrigatoriedade será tida como forte quando o respeito a um precedente é exigido, sob pena o manejo de medida ou ação <em>especialmente concebida para esse fim</em>. São precedentes obrigatórios, no sentido forte, à luz do NCPC, por exemplo, as decisões proferidas em recursos repetitivos, no regime dos arts. 543-B e 543-C do CPC/1973 e do art. 1.036 e ss. Do CPC/2015 (art. 988, § 5º, II).</p>
+											<p><em>Média</em> é a obrigatoriedade de um precedente quando o seu desrespeito pode gerar a correção por meios não concebidos necessariamente para esse fim, como, por exemplo, recursos. Assim, se o juiz, ao decidir o caso entre A e B, o faz em desconformidade com o que o STJ tenha decidido em recurso especial, interposto em processo que corre entre C e D, em caso idêntico, a via apropriada para a parte prejudicada corrigir a decisão do juiz, adequando-a àquilo que o STJ havia decidido antes, é a recursal.</p>
+											<p>[...]</p>
+										</div>		
+										<div class="col s12 m6 l6">											
+											<p>A obrigatoriedade <em>fraca</em> é (apenas) cultural. É aquela que decorre do bom senso, da razão de ser das coisas, do que se deve ter o direito de razoavelmente esperar ( = justa expectativa da sociedade). Dá 'lógica’ do direito. O juiz decide o conflito entre A e B do modo x. C e D lhe submetem conflito idêntico à apreciação, no dia seguinte, e o <em>mesmo juiz</em> decide de modo y. Expectativa legítima e razoável tinham C e D de que o conflito seria decidido do modo x!</p>
+											<p>É desejável que o mesmo juiz não mude de opinião; que os tribunais de 2º grau mantenham jurisprudência firme e estável; mas é, principalmente, não só desejável, como imprescindível para o bom funcionamento do sistema, que os Tribunais Superiores não alterem com frequência suas posições. Afinal, o direito não pode se confundir com a sucessão de ‘opiniões’ diferentes, de diferentes juízes de Cortes Superiores. A jurisprudência firmada há de ser do <em>tribunal</em>, e não de cada ministro, individualmente considerado. (WAMBIER; DANTAS, 2016, p. 278-279.)</p>
+											<p>Adotando essa sistemática, ter-se-ia como <em>forte</em> a obrigatoriedade gerada por decisão proferida pelo Supremo Tribunal Federal em sede de repercussão geral, ao lado de outras hipóteses tais como recursos extraordinário ou especial repetitivos e acórdão proferido em julgamento de incidente de resolução de demandas repetitivas ou de incidente de assunção de competência. Segundo o texto do Novo CPC (Lei nº 13.105/2015), quando houver descumprimento do que decidido em tais incidentes processuais, seria cabível o manejo da reclamação. </p>
+											<p>Entretanto, há autores que consideram que, a partir da Lei nº 13.256/2016 – que alterou o Novo CPC antes mesmo do início de sua vigência –, seria <em>média</em> a eficácia vinculante dos precedentes formados em julgamento de recursos extraordinário/especial repetitivos ou no julgamento de recurso extraordinário com repercussão geral. Isso porque, com a inclusão do inciso II ao § 5º do art. 988 do Novo CPC (modificação implementada pela citada lei), o cabimento da reclamação nessa hipótese seria condicionado ao prévio esgotamento das instâncias ordinárias. </p>
+											<p>Assim, com a criação desse novo dispositivo, ter-se-ia uma vinculatividade <em>média</em>, já que, no caso de desrespeito a precedente firmado em julgamento de recursos extraordinário/especial repetitivos ou no julgamento de recurso extraordinário com repercussão geral, ter-se-ia a possibilidade do ajuizamento de reclamação apenas quando exauridas as vias recursais ordinárias. </p>
+										</div>		
+
+									</div>
+
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+				<div class="bb-item item-03-06-primeiraAula aula1" id="03-06-primeiraAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" style="margin-top:50px" >
+									<div class="row">
+										<p></p>
+										<div class="col s12 m6 l6">
+											<p>Essa é a posição de Daniel Amorim Assumpção Neves, por exemplo, que assim leciona:</p>
+											<p>Com a Lei 13.256, de 04.02.2016, passa a ser possível se falar em três graus de eficácia vinculante: grande, médio e pequeno.</p>
+											<p>O julgamento proferido em controle concentrado de constitucionalidade, as súmulas vinculantes, o IRDR e o incidente de assunção de competência têm eficácia vinculante grande, porque o desrespeito a qualquer deles, por qualquer decisão, proferida em qualquer grau de jurisdição, é impugnável por reclamação constitucional.</p>
+											<p>O precedente formado em julgamento de recursos especial e extraordinário repetitivos e no julgamento de recurso extraordinário com repercussão geral tem eficácia vinculante média, já que o cabimento da reclamação constitucional exige o exaurimento das instâncias ordinárias.</p>
+											<p>Finalmente, os enunciados das súmulas do Supremo Tribunal Federal em matéria constitucional e do Superior Tribunal de Justiça em matéria infraconstitucional e a orientação do plenário ou do órgão especial aos quais estiverem vinculados têm eficácia vinculante pequena, porque da decisão que a desrespeita não cabe reclamação constitucional. (NEVES, 2016, p. 1.498.)</p>
+
+											<p>Em linhas gerais, a <strong>reclamação</strong> é processo de competência originária do STF, destinada a garantir a autoridade de suas decisões, o cumprimento de enunciado de súmula vinculante ou a exclusividade do exercício de sua competência (art. 102, como já vimos). </p>
+											<p>Em relação aos casos específicos relacionados à aplicação, pelos Tribunais inferiores, da tese fixada pelo STF no julgamento de recurso submetido à sistemática da repercussão geral, há peculiaridades e aspectos específicos quanto ao cabimento da reclamação que serão objeto de nossa reflexão em momento adequado do curso. Mas, por enquanto, já guarde essa informação, tudo bem? Por fim, apenas para conferir maior profundidade a nosso estudo, já se criaram na doutrina brasileira discussões sobre o verdadeiro alcance do sistema de precedentes vinculantes estipulado pelo art. 927 do Novo CPC.</p>
+											<p>A primeira polêmica que se tem é quanto ao sentido que se deve atribuir ao termo <em>“observarão”</em>, previsto no <em>caput</em> do art. 927. Há os que entendam que a expressão não cria vinculatividade quanto ao conteúdo dos precedentes, mas tão somente em relação ao dever de levar tais precedentes em consideração, ainda que para deles discordar. Para tal corrente, o órgão jurisdicional teria necessariamente que considerar os precedentes listados no art. 927, mas não estaria vinculado a segui-los, desde que aponte fundamentação em que se apresente a equivocidade do precedente. Por outro lado, e pode-se dizer que esta é a corrente majoritária até o momento, há os que aplicam ao termo o sentido de que os órgãos jurisdicionais devem obrigatoriamente seguir os precedentes ali listados, os quais teriam efetiva eficácia vinculante.</p>
+											
+										</div>		
+										<div class="col s12 m6 l6">		
+											<p>Considerado esse último sentido, surge a segunda polêmica: ao enunciar casos de precedentes vinculantes não constantes da Constituição de 1988, o dispositivo seria constitucional? O questionamento é levantado já que, das hipóteses do art. 927, apenas as previstas nos incisos I (<em>as decisões do Supremo Tribunal Federal em controle concentrado de constitucionalidade</em>) e II (<em>os enunciados de súmula vinculante</em>) possuem previsão constitucional expressa, conforme se observa dos arts. 102, § 2º, e 103-A da CRFB/1988, respectivamente. Os incisos III (<em>os acórdãos em incidente de assunção de competência ou de resolução de demandas repetitivas e em julgamento de recursos extraordinário e especial repetitivos</em>), IV (<em>os enunciados das súmulas do Supremo Tribunal Federal em matéria constitucional e do Superior Tribunal de Justiça em matéria infraconstitucional</em>) e V (<em>a orientação do plenário ou do órgão especial aos quais estiverem vinculados</em>), de modo diverso, apenas possuem previsão infraconstitucional.</p>
+											<p>Diante desse contexto, afirma-se que esses casos de vinculação obrigatória atribuiriam ao Poder Judiciário a competência para a criação de verdadeiras normas jurídicas, o que representaria invasão de áreas de atuação reservada ao Legislativo, pelo que exsurgiria a inconstitucionalidade dos incisos III, IV e V do art. 927 do Novo CPC. Entretanto, imagina-se que deve prevalecer o entendimento de que os dispositivos são constitucionais, na medida em que instrumentalizam o dever de coerência, integridade e estabilidade da jurisprudência dos Tribunais (art. 926 do CPC/2015), não se tratando de atividade normativa executada pelo Judiciário.</p>
+										</div>
+									</div>
+
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+				<div class="bb-item item-04-00-primeiraAula aula1" id="04-00-primeiraAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" style="margin-top:50px" >
+									<div class="row">
+										<div class="col s12 m6 l6">
+											<h3 class="" >4. Conclusão</h3>
+											<img src="../include/images/ponto2.png" style="  width: 150%;margin-top: -4px;margin-left: -255px;">
+										</div>
+										<div class="col s12 m6 l6"></div>
+									</div>
+									<div class="row">
+
+											<p>Com essas considerações, chegamos ao fim de nossa primeira aula! </p>
+											<p>De modo geral, creio que conseguimos alcançar nosso objetivo principal de desenvolver uma abordagem inicial, introduzindo o tema da repercussão geral e tratando de alguns temas conexos e adicionais, tais como os casos de competência originária e recursal do STF (no qual se inclui a repercussão geral), bem como as distinções entre os sistemas de <em>common law</em> e de <em>civil law</em>, sua relação com a ideia geral do Novo Código de Processo Civil quanto ao sistema de precedentes obrigatórios, além de desdobramentos teóricos e práticos que decorrem dessa relação.</p>
+											<p>Espero que tenha sido proveitoso para você! </p>
+											<p><em><strong>Vemo-nos na próxima aula!</strong></em></p>
+									</div>
+
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+				<div class="bb-item item-05-00-primeiraAula aula1" id="05-00-primeiraAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" style="margin-top:50px" >
+									<div class="row">
+										<div class="col s12 m6 l6">
+											<h3 class="" >5. Referências</h3>
+											<img src="../include/images/ponto2.png" style="  width: 150%;margin-top: -4px;margin-left: -255px;">
+										</div>
+										<div class="col s12 m6 l6"></div>
+									</div>
+									<div class="row">
+											<p class="no-indent">ALBUQUERQUE, Maurício de. <strong>Aproximação da civil law com a common law no novo Código de Processo Civil</strong>. Disponível em: <a href="http://www.migalhas.com.br/dePeso/16,MI234946,81042-Aproximacao+da+civil+law+com+a+common+law+no+novo+Codigo+de+Processo" target="_blank">http://www.migalhas.com.br/dePeso/16,MI234946,81042-Aproximacao+da+civil+law+com+a+common+law+no+novo+Codigo+de+Processo</a>. Acesso em: 11 abr. 2017.</p>
+
+											<p class="no-indent">ARABI, Abhner Youssif Mota. <strong>A tensão institucional entre Judiciário e Legislativo</strong>: diálogo, controle de constitucionalidade e a legitimidade da atuação do Supremo Tribunal Federal. Curitiba: Prismas, 2015.</p>
+
+											<p class="no-indent">CARTA precatória x carta rogatória. Disponível em: <a href="http://www.tjdft.jus.br/institucional/imprensa/direito-facil/carta-precatoria-x-carta-rogatoria-1" target="_blank"></a> http://www.tjdft.jus.br/institucional/imprensa/direito-facil/carta-precatoria-x-carta-rogatoria-1</p>. Acesso em: 11 abr. 2017.</p>
+
+											<p class="no-indent">MARINONI, Luiz Guilherme. <strong>Aproximação crítica entre as jurisdições de civil law e de common law e a necessidade de respeito aos precedentes no Brasil</strong>. In: Revista da Faculdade de Direito da Universidade Federal do Paraná, n. 49, 2009. Disponível em: <a href="http://revistas.ufpr.br/direito/article/viewFile/17031/11238" target="_blank">http://revistas.ufpr.br/direito/article/viewFile/17031/11238</a>. Acesso em: 11 abr. 2017.</p>
+
+											<p class="no-indent">MELLO, Patrícia Perrone Campos. <strong>Como se opera com precedentes segundo o Novo CPC?</strong> In: Jota. Disponível em <a href=" http://jota.uol.com.br/como-se-opera-com-precedentes-segundo-o-novo-cpc" target="_blank">http://jota.uol.com.br/como-se-opera-com-precedentes-segundo-o-novo-cpc</a>. Acesso em: 22 mar. 2016.</p>
+
+											<p class="no-indent">MELLO, Patrícia Perrone Campos. <strong>Os precedentes no Novo CPC:</strong> o Novo CPC e a força dos precedentes no direito brasileiro. In: Jota. Disponível em: <a href="https://jota.info/artigos/serie-os-precedentes-no-novo-cpc-08032016" target="_blank">https://jota.info/artigos/serie-os-precedentes-no-novo-cpc-08032016</a>. Acesso em: 11 abr. 2017.</p>
+
+
+											<p class="no-indent">NEVES, Daniel Amorim Assumpção. <strong>Novo Código de Processo Civil comentado</strong>. Salvador: JusPodivm, 2016.</p>
+
+											<p class="no-indent">VALORIZAÇÃO de precedentes jurisprudenciais é destaque do novo CPC que entra em vigor hoje. Disponível em: <a href="https://coad.jusbrasil.com.br/noticias/315768762/valorizacao-de-precedentes-jurisprudenciais-e-destaque-do-novo-cpc-que-entra-em-vigor-hoje" target="_blank">https://coad.jusbrasil.com.br/noticias/315768762/valorizacao-de-precedentes-jurisprudenciais-e-destaque-do-novo-cpc-que-entra-em-vigor-hoje</a>. Acesso em: 11 abr. 2017.</p>
+
+
+											<p class="no-indent">WAMBIER, Teresa Arruda Alvim; DANTAS, Bruno. <strong>Recurso especial, recurso extraordinário e a nova função dos tribunais superiores no direito brasileiro</strong>. São Paulo: Revista dos Tribunais, 2016.</p>
+									</div>
+
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+
+			</div>
+		</div>
+	</main>
+	
+ 		<!--<footer class="page-footer" >
+		<div class="container">
+			<div class="center-align">
+				<img class="img-responsive" src="../include/images/ead_logo.png" style="max-height:60px;" />
+				<h1 style="float:right;"><span class="bignoodle">Redação</span> <span class="nick">Argumentativa</span></h1>
+			</div>
+		</div>
+	</footer> -->
+	
+	<script src="../include/js/jquery.bookblock.js"></script>
+	
+	<script src="../include/js/page.js"></script>
+	<script src="../include/js/functions.js" type="text/javascript"></script>
+
+		
+
+</div>
+
+
+<div class="mainTutorial">
+	<div class="lightbox">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<defs>
+				<mask id="hole">
+					<rect width="100%" height="100%" fill="white"></rect>
+					<circle class="foco" r="50" cx="100" cy="100" fill="black"></circle>
+				</mask>
+			</defs>
+			
+			<rect id="donut" x="0" y="0" width="100%" height="100%" mask="url(#hole)" ></rect>
+		</svg>
+	</div>
+	<div class="explica">
+		<div class="titulo"></div>
+		<div class="texto"></div>
+		<div class="navBut">
+			<div class="prev">
+				<div class="btn waves-effect waves-light">
+					Anterior
+					<i class="material-icons left">navigate_before</i>
+				</div>
+			</div>
+			<div class="next">
+				<div class="btn waves-effect waves-light">
+					Próximo
+					<i class="material-icons right">navigate_next</i>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="buttons">
+		<div class="pular">
+			<div class="btn waves-effect waves-light">
+				<span style="color:#FFF">Pular tutorial</span>
+				<i class="material-icons right">navigate_next</i>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<style type="text/css">
+	#teste{
+		display: none;
+width:100%;
+height:100px;
+background:#f00;
+position:absolute;
+z-index:100;
+top:30%;
+left:40;
+	}
+	.window{
+    display:none;
+    width:90%;    
+    position:absolute;
+    left:0;
+    top:0;
+    background:#FFF;
+    z-index:9900;
+    padding:10px;
+    border-radius:10px;
+}
+	.windowLei{
+    display:none;
+    width:50%;    
+    position:absolute;
+    left:0;
+    top:0;
+    background:#FFF;
+    z-index:9900;
+    padding:10px;
+    border-radius:100%;
+    border-color: #AF442F;
+    border-width: 3px;
+}
+ 
+#mascara{
+    display:none;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#000;
+}
+ 
+.fechar{display:block; text-align:right;}
+</style>
+<div class="div_teste" id="teste">
+texto
+<a href="#" onclick="document.getElementById('teste').style.display='none';">[Fechar]</a>
+	
+</div>
+
+<div class="window" id="janela1">
+    <a href="#" class="fechar">X Fechar</a>
+    <h4>Direitos autorais</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam venenatis auctor tempus. Lorem ipsum dolor sit amet,</p>
+    <p>Morbi dui lacus, placerat eget pretium vehicula, mollis id ligula. Nulla facilisi. </p>
+</div>
+
+<div class="window" id="art92" style="width: 30% !important; border-radius: 90% !important;border: 3px #AF442F solid;">
+	<div class="row">
+		<div class="col l2 m2 s2"></div>
+		<div class="col l8 m8 s8" style="padding: 5px;">
+			<a href="#" class="fechar" style="text-align: right;">X Fechar</a>
+			<p class="text-center">Art. 92. São órgãos do Poder Judiciário:</p>
+			<p class="text-center">I - o Supremo Tribunal Federal;</p>
+		</div>
+		<div class="col l2 m2 s2"></div>
+	</div>
+</div>
+
+<div id="mascara"></div>
+
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">description</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red btn-large" 
+      onclick="javascript:$(document).ready(function(){tut.init();});"><i class="material-icons" style="font-size: 35px">help</i></a></li>
+      <li><a class="btn-floating btn-large" style="background-color: #b7aa9f !important;" href="#janela1" rel="modal"><i class="material-icons" style="font-size: 35px">copyright</i></a></li><!--
+		href="#janela1" rel="modal"
+      onclick="document.getElementById('teste').style.display='block';"-->
+    </ul>
+  </div>
+        
+
+<script src="../include/js/tutorial_roteiro.js"></script>
+<script src="../include/js/tutorial.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+    $("a[rel=modal]").click( function(ev){
+        ev.preventDefault();
+ 
+        var id = $(this).attr("href");
+ 
+        var alturaTela = $(document).height();
+        var larguraTela = $(window).width();
+     
+        //colocando o fundo preto
+        $('#mascara').css({'width':larguraTela,'height':alturaTela});
+        $('#mascara').fadeIn(1000); 
+        $('#mascara').fadeTo("slow",0.8);
+ 
+        var left = ($(window).width() /2) - ( $(id).width() / 2 );
+        var top = ($(window).height() / 2) - ( $(id).height() / 2 );
+     
+        $(id).css({'top':top,'left':left});
+        $(id).show();   
+    });
+ 
+    $("#mascara").click( function(){
+        $(this).hide();
+        $(".window").hide();
+    });
+ 
+    $('.fechar').click(function(ev){
+        ev.preventDefault();
+        $("#mascara").hide();
+        $(".window").hide();
+    });		
+
+    $(".botao-tvaberta").click(function(){
+     	$("#abrir-tvaberta").hide('fade');
+     	$("#conteudo-tvaberta").show('slideUp');
+  	});
+  	$(".botao-art926").click(function(){
+     	$("#abrir-art926").hide('fade');
+     	$("#conteudo-art926").show('slideUp');
+  	});
+
+  });
+    </script>
+
+
+</body></html>

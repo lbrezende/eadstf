@@ -1993,6 +1993,7 @@ article p i {
 
  @media only screen and (min-width: 993px) {
   /*.mobileautor{ margin-top:100px !important; }*/
+  .margemDuasColunas{margin-top: 65px;}
 
 }
  @media only screen and (max-width: 992px) {
@@ -2015,7 +2016,7 @@ article p i {
   header.page-header .pages {
 
     padding: 0px 7px;
-    line-height: 41px;
+    line-height: 50px;
 }
 
 #tblcontents .material-icons {
@@ -2074,3 +2075,4 @@ O mapa fica muito esticado, por isso há duas versões longo e curto com imagens
   color: red; /* or whatever color you prefer */
 }
 }
+
