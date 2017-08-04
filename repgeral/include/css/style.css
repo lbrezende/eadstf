@@ -1735,6 +1735,7 @@ Estilos Aula 6
 
   header.page-header .font-config  {
     /*display: none;*/ }
+  tr {padding: 0px !important;}
   header.page-header #titulo_aula {
     font-size: 1.5rem;
     padding: 5px 15px; }
