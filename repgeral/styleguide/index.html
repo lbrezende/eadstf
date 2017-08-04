@@ -115,17 +115,17 @@
 						if (size < .7)
 						{
 							size = 0.7;
-							$('.font-config a-menos').addClass('');
+							$('.font-config a-menos').addClass('disabled');
 						}
 						else if (size > 2)
 						{
 							size = 2.0;
-							$('.font-config a-mais').addClass('');
+							$('.font-config a-mais').addClass('disabled');
 						}
 						else
 						{
-							$('.font-config a-menos').removeClass('');
-							$('.font-config a-mais').removeClass('');
+							$('.font-config a-menos').removeClass('disabled');
+							$('.font-config a-mais').removeClass('disabled');
 						}
 						
 						$('article').css('font-size',size+'em');
