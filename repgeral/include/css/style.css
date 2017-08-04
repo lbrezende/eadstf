@@ -2074,5 +2074,8 @@ O mapa fica muito esticado, por isso há duas versões longo e curto com imagens
   content: "• ";
   color: red; /* or whatever color you prefer */
 }
-}
 
+.reptable { text-align: center; }
+.reptable th, .reptable td:first-child {background: #AA4A3B; color: white; }
+.reptable td {background: #E6CEC4; text-align: center;}
+.reptable td, .reptable th {padding:5px;border: 3px solid white;}
