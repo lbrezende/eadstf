@@ -1665,6 +1665,10 @@ Estilos Aula 6
       display: none;
     }
 
+  header.page-header .pages.aula1 {
+    line-height: 40px;
+  }
+
 
   article {
     padding-top: 30px; }
@@ -1730,7 +1734,7 @@ Estilos Aula 6
     font-size: 1.3em; }
 
   header.page-header .font-config {
-    display: none; }
+    /*display: none;*/ }
   header.page-header #titulo_aula {
     font-size: 1.5rem;
     padding: 5px 15px; }
