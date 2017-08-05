@@ -14,7 +14,7 @@
 				},
 				"txt": {
 					"titulo": 	"Olá!",
-					"texto": 	"Este é o tutorial de navegação da aula."
+					"texto": 	"Nesse passo a passo você conhecerá os principais recursos de navegação do curso."
 				}
 			},
 			"scripts": [
@@ -34,7 +34,7 @@
 				},
 				"txt": {
 					"titulo": 	"Tamanho da fonte",
-					"texto": 	"Para aumentar, diminuir ou retornar ao tamanho original da fonte, utilize este menu."
+					"texto": 	"Para redimensionar ou retornar ao tamanho original da fonte, utilize este menu."
 				}
 			}
 		},
@@ -115,6 +115,26 @@
 		{
 			"tela":			".telaTutorial01",
 			"foco": {
+				"obj":		"header nav #mainMenu"
+			},
+			"msg": {
+				"pos": {
+					"x": 		50,
+					"y": 		50,
+					"ref":		["center","center"]
+				},
+				"txt": {
+					"titulo": 	"Explicações de conteúdo",
+					"texto": 	"Quando ver um <a class='waves-effect waves-light modal-trigger btn-inline' href='#modal-tutorial' style=' text-indent: 0; '>link como esse <i class='material-icons right' style='text-indent: 0;'>add_to_photos</i></a> clique para abrir explicações extras na tela."
+				}
+			},
+			"scripts": [
+				"$('.button-collapse').sideNav('show');"
+			]
+		},
+		{
+			"tela":			".telaTutorial01",
+			"foco": {
 				"obj":		".mainTutorial .buttons .pular"
 			},
 			"msg": {
@@ -125,7 +145,7 @@
 				},
 				"txt": {
 					"titulo": 	"",
-					"texto": 	"Caso queira ir direto para a aula, utilize o botão “Pular tutorial” abaixo ou pressione ESC."
+					"texto": 	"Vá para a aula utilizando o botão “Pular tutorial” abaixo ou pressione ESC."
 				}
 			},
 			"scripts": [
