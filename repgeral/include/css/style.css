@@ -2084,3 +2084,5 @@ O mapa fica muito esticado, por isso há duas versões longo e curto com imagens
 .reptable th, .reptable td:first-child {background: #AA4A3B; color: white; }
 .reptable td {background: #E6CEC4; text-align: center;}
 .reptable td, .reptable th {padding:5px;border: 3px solid white;}
+
+.btn-inline {font-weight: bold; color: #b3462f !important;}
