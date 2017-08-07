@@ -115,7 +115,7 @@
 		{
 			"tela":			".telaTutorial01",
 			"foco": {
-				"obj":		"header nav #mainMenu"
+				"obj":		""
 			},
 			"msg": {
 				"pos": {
@@ -129,7 +129,7 @@
 				}
 			},
 			"scripts": [
-				"$('.button-collapse').sideNav('show');"
+				"$('.button-collapse').sideNav('hide');"
 			]
 		},
 		{
@@ -145,7 +145,7 @@
 				},
 				"txt": {
 					"titulo": 	"",
-					"texto": 	"Vá para a aula utilizando o botão “Pular tutorial” abaixo ou pressione ESC."
+					"texto": 	"Pronto! Viu como é fácil? Para seguir pressione ESC ou clique no botão abaixo para “Pular tutorial”."
 				}
 			},
 			"scripts": [
