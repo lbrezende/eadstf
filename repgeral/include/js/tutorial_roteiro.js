@@ -145,7 +145,7 @@
 				},
 				"txt": {
 					"titulo": 	"",
-					"texto": 	"Pronto! Viu como é fácil? Para seguir pressione ESC ou clique no botão abaixo para “Pular tutorial”."
+					"texto": 	"Pronto! Viu como é fácil? Para seguir pressione ESC ou clique no botão abaixo “Encerrar tutorial”."
 				}
 			},
 			"scripts": [
