@@ -152,6 +152,40 @@
 		{
 			"tela":			".telaTutorial01",
 			"foco": {
+				"obj":		""
+			},
+			"msg": {
+				"pos": {
+					"x": 		50,
+					"y": 		50,
+					"ref":		["center","center"]
+				},
+				"txt": {
+					"titulo": 	"Imagens",
+					"texto": 	"Cique nas imagens para aumentar seu tamanho."
+				}
+			}
+		},
+		{
+			"tela":			".telaTutorial01",
+			"foco": {
+				"obj":		""
+			},
+			"msg": {
+				"pos": {
+					"x": 		50,
+					"y": 		50,
+					"ref":		["center","center"]
+				},
+				"txt": {
+					"titulo": 	"Vídeos",
+					"texto": 	"Clique em <i class='material-icons' style='text-indent: 0;'>video_library</i> para reproduzir o vídeo."
+				}
+			}
+		},
+		{
+			"tela":			".telaTutorial01",
+			"foco": {
 				"obj":		".mainTutorial .buttons .pular"
 			},
 			"msg": {
