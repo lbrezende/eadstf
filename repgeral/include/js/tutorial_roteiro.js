@@ -124,13 +124,30 @@
 					"ref":		["center","center"]
 				},
 				"txt": {
-					"titulo": 	"Explicações de conteúdo",
+					"titulo": 	"Glossário",
 					"texto": 	"Clique nas palavras destacadas na cor <a class='waves-effect waves-light modal-trigger btn-inline' href='#modal-tutorial' style=' text-indent: 0; '>vermelha <i class='material-icons right' style='text-indent: 0;'>add_to_photos</i></a> para visualizar sua definição. Para voltar à aula, clique fora do quadro ou pressione ESC."
 				}
 			},
 			"scripts": [
 				"$('.button-collapse').sideNav('hide');"
 			]
+		},
+		{
+			"tela":			".telaTutorial01",
+			"foco": {
+				"obj":		""
+			},
+			"msg": {
+				"pos": {
+					"x": 		50,
+					"y": 		50,
+					"ref":		["center","center"]
+				},
+				"txt": {
+					"titulo": 	"Links",
+					"texto": 	"Clique nos textos destacados na cor  <a class='waves-effect waves-light modal-trigger' href='#modal-tutorial' style=' text-indent: 0; '>azul</a>  para acessar links complementares."
+				}
+			}
 		},
 		{
 			"tela":			".telaTutorial01",
