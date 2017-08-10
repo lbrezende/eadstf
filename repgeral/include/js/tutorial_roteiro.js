@@ -125,7 +125,7 @@
 				},
 				"txt": {
 					"titulo": 	"Explicações de conteúdo",
-					"texto": 	"Quando ver um <a class='waves-effect waves-light modal-trigger btn-inline' href='#modal-tutorial' style=' text-indent: 0; '>link como esse <i class='material-icons right' style='text-indent: 0;'>add_to_photos</i></a> clique para abrir explicações extras na tela."
+					"texto": 	"Clique nas palavras destacadas na cor <a class='waves-effect waves-light modal-trigger btn-inline' href='#modal-tutorial' style=' text-indent: 0; '>vermelha <i class='material-icons right' style='text-indent: 0;'>add_to_photos</i></a> para visualizar sua definição. Para voltar à aula, clique fora do quadro ou pressione ESC."
 				}
 			},
 			"scripts": [
