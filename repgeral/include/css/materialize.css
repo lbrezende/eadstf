@@ -4190,7 +4190,8 @@ a.waves-effect .waves-ripple {
       opacity: .8; }
 
 .materialboxed.active {
-  cursor: zoom-out; }
+  cursor: zoom-out;
+  z-index: 999999 }
 
 #materialbox-overlay {
   position: fixed;
