@@ -2089,3 +2089,17 @@ O mapa fica muito esticado, por isso há duas versões longo e curto com imagens
 
 .lista-colorida {color: #B3462F; font-size:1.6em;} 
 .lista-colorida p {color: black; text-indent: 0; font-size: 0.6em}
+
+.legenda {
+    /*background: #faf7f5;*/
+    padding: 10px;
+    margin: -56px auto 0px;
+    /*display: table;
+    font-weight: bold;*/
+    font-size: 0.8em;
+    width: 100%;
+    background: rgba(179, 70, 47, 0.53);
+    border-radius: 50px;
+    margin-left: 0px;
+    font-family: "NotoSans", sans-serif;
+}
