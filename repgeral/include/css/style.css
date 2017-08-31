@@ -2096,7 +2096,7 @@ O mapa fica muito esticado, por isso há duas versões longo e curto com imagens
     margin: -56px auto 0px;
     /*display: table;
     font-weight: bold;*/
-    font-size: 0.8em;
+    font-size: 0.6em !important;
     width: 100%;
     background: rgba(179, 70, 47, 0.53);
     border-radius: 50px;
