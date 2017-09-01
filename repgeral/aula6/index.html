@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR" class="js no-touch cssanimations csstransforms csstransforms3d csstransitions ui-mobile">
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Aula 5 - REPERCUSSÃO GERAL | Aspectos práticos e procedimentais da repercussão geral</title>
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0"> 
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../include/css/bookblock.css">
+	<link rel="stylesheet" type="text/css" href="../include/css/materialize.css">
+	<link rel="stylesheet" href="../include/fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../include/css/style.css">	
+	<link rel="stylesheet" type="text/css" href="../include/css/aula1.css">
+	
+	<script type="text/javascript" src="../include/js/modernizr.custom.79639.js"></script>
+	<script type="text/javascript" src="../include/js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../include/js/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="../include/js/materialize.min.js"></script>
+
+
+
+</head>
+
+
+
+<body ><div data-role="page" data-url="" tabindex="0" >
+	<header class="page-header">
+		<nav aria-label="Menu principal" class="aula1">
+			<div style="; display:inline" class="hide-on-med-and-down"><img src="../include/images/ead_setas.png" style="max-height:47px;margin-right:10px; margin-top:10px; margin-left:10px" class="hide-on-med-and-down"><img class="" src="../include/images/ead_logo.png" style="max-height:47px;"></div>
+			<div class="brand-logo hide-on-med-and-down" style="width:66%; margin-left:100px ">
+			<h1 style="display: table;  ; margin: 0 auto">
+			<!-- <img src="../include/images/ead_setas.png" style="max-height:60px;margin-right:10px;" class="hide-on-med-and-down"><img class="" src="../include/images/ead_logo.png" style="max-height:60px;"> -->
+				<span class=" hide-on-med-and-down top-title" style=" line-height: 21px;float: left;text-align: left;margin-top: 21px;margin-left: 21px; "><span style="font-size:1.3em">REPERCUSSÃO GERAL</span> : Origens, inovações e sua aplicação ao STF</h1>
+			<!--<img src="../include/images/logo.png" style="max-height:60px;" class="" />&nbsp; <h1 style="float:right;" class="deslocaTitulo"><span class="bignoodle">Redação</span> <span class="nick">Argumentativa</span></h1>-->
+			</div>
+
+				<ul class="navegacao right">
+					<li id="bb-nav-prev"  data-position="bottom" data-delay="50" >
+						<a class="waves-effect waves-light ui-link">
+							<span class="material-icons">chevron_left</span>
+							<span class="screen-reader-text">Página anterior</span>
+						</a>
+					</li>
+					<li id="bb-nav-next"  data-position="bottom" data-delay="50"  >
+						<a class="waves-effect waves-light ui-link">
+							<span class="material-icons">chevron_right</span>
+							<span class="screen-reader-text">Próxima página</span>
+						</a>
+					</li>
+				</ul>
+			
+				<div class="pages right aula1" role="status">
+					<span class="screen-reader-text">Página atual: </span>
+					<span class="page page-atual" >2</span>
+					<span class="screen-reader-text"> de </span>
+					<span class="separa" aria-hidden="true">/</span>
+					<span class="page page-total">25</span>
+				</div>
+
+				<ul class="font-config right" aria-hidden="true">
+					<li>
+						<a class="tooltipped a-menos ui-link" data-position="bottom" data-delay="50" data-tooltip="Diminuir fonte" data-action="-1" data-tooltip-id="e9820861-feb1-9e78-4a23-c767e2bc6643">
+							A-
+						</a>
+					</li>
+					<li>
+						<a class="tooltipped a-zero ui-link" data-position="bottom" data-delay="50" data-tooltip="Retomar tamanho padrão da fonte" data-action="0" data-tooltip-id="defa175e-2118-0699-3fde-a7b6880fe102">
+							A
+						</a>
+					</li>
+					<li>
+						<a class="tooltipped a-mais ui-link" data-position="bottom" data-delay="50" data-tooltip="Aumentar fonte" data-action="+1" data-tooltip-id="a92f2a81-9a17-0569-6a06-ed3723861db2">
+							A+
+						</a>
+					</li>
+					<li class="separador">
+					</li>
+				</ul>
+				<script>
+				$(document).ready(function()
+				{
+					$('.font-config').on('click','a',null,function(e)
+					{
+						var action = $(this).data('action');
+						if ($(this).hasClass('disabled'))
+						{
+							e.preventDefault();
+							e.stopPropagation();
+							return false;
+						}
+						var padrao = ($('article').parent().css('font-size'));
+						var atual = ($('article').css('font-size'));
+						padrao = Number(padrao.replace('px',''));
+						atual = Number(atual.replace('px',''));
+				
+						var size = Number(atual/padrao);
+						switch (action.toString()) {
+							case '+1':
+								size *= 1.2;
+								break;
+							case '-1':
+								size *= 0.9;
+								break;
+							case '0':
+							default:
+								size = 1;
+								break;
+						}
+						console.log(size);
+				
+						if (size < .7)
+						{
+							size = 0.7;
+							$('.font-config a-menos').addClass('disabled');
+						}
+						else if (size > 2)
+						{
+							size = 2.0;
+							$('.font-config a-mais').addClass('disabled');
+						}
+						else
+						{
+							$('.font-config a-menos').removeClass('disabled');
+							$('.font-config a-mais').removeClass('disabled');
+						}
+						
+						$('article').css('font-size',size+'em');
+					});
+				})
+				</script>
+				<ul id="mainMenu" class="side-nav aula1 sumario" role="menu" style="width: 320px; transform: translateX(-100%);">
+					<li class="header" aria-hidden="true">
+						<a class="close ui-link" style="color:#EC620D; background:none">
+							<span class="material-icons">close</span>
+						</a>
+						<img src="../include/images/logoponto.png" alt="Sumário" title="Sumário" role="presentation" style="height:200px" />
+					</li>
+					
+										
+					<li style="margin-top:0px">
+						<a href="index.html#01-introducao" data-target="01-introducao" data-aula="Item de menu" role="menuitem" class="ui-link">
+							Página Inicial							
+						</a>
+					</li>
+
+
+					<li>
+						<a href="index.html#02-00-primeiraAula" data-target="02-00-primeiraAula" data-aula="Item de menu" role="menuitem" class="ui-link">
+							<span class="numero">1.&nbsp;</span>
+							Introdução
+						</a>
+					</li>			
+				
+					<li>
+						<a href="index.html#03-00-primeiraAula" data-target="03-00-primeiraAula" data-aula="Item de menu" role="menuitem" class="ui-link">
+							<span class="numero">2.&nbsp;</span>
+							A Repercussão Geral como requisito intrínseco de admissibilidade do recurso extraordinário
+						</a>
+					</li>
+					<li>
+						<a href="index.html#04-00-primeiraAula" data-target="04-00-primeiraAula" data-aula="Item de menu" role="menuitem" class="ui-link">
+							<span class="numero">3.&nbsp;</span>
+							Critérios para a verificação da existência de repercussão geral
+						</a>
+					</li>
+					<li>
+						<a href="index.html#05-00-primeiraAula" data-target="05-00-primeiraAula" data-aula="Item de menu" role="menuitem" class="ui-link">
+							<span class="numero">4.&nbsp;</span>
+							Forma e ônus da arguição e demonstração da existência de repercussão geral
+						</a>
+					</li>
+					<li>
+						<a href="index.html#06-00-primeiraAula" data-target="06-00-primeiraAula" data-aula="Item de menu" role="menuitem" class="ui-link">
+							<span class="numero">5.&nbsp;</span>
+							Competência para apreciação da existência de repercussão geral
+						</a>
+					</li>
+					<li>
+						<a href="index.html#07-00-primeiraAula" data-target="07-00-primeiraAula" data-aula="Item de menu" role="menuitem" class="ui-link">
+							<span class="numero">6.&nbsp;</span>
+							Possibilidade de intervenção de <em>Amicus Curiae</em>
+						</a>
+					</li>
+					<li>
+						<a href="index.html#08-00-primeiraAula" data-target="08-00-primeiraAula" data-aula="Item de menu" role="menuitem" class="ui-link">
+							<span class="numero">7.&nbsp;</span>
+							Conclusão
+						</a>
+					</li>
+					<li>
+						<a href="index.html#09-00-primeiraAula" data-target="09-00-primeiraAula" data-aula="Item de menu" role="menuitem" class="ui-link">
+							Referências
+						</a>
+					</li>
+					<li class="center">
+					
+						<img src="../include/images/logosumario.png" style="margin-top:20px;" />
+					</li>
+				</ul>
+
+
+				<a href="index.html#" data-activates="mainMenu" id="tblcontents" class="btn aula1 waves-effect waves-light button-collapse show-on-large ui-link" aria-hidden="true" style="box-shadow:none;"><span class="material-icons aula1">menu</span></a>
+
+			</nav>
+			<script>
+			$(document).ready(function(){
+				$('.tooltipped').tooltip({delay: 50});
+			});
+			</script>		
+			<div id="titulo_aula" class="active aula1"><h2><span style=" display: -webkit-box;font-size: 1.2em;">AULA 5</span></h2></div>
+
+	</header>
+	
+	<main>
+
+	  <!-- Modal Structure -->
+	  <div id="modal-competencias" class="modal">
+	    <div class="modal-content">
+	      <h3 class="" >Competências originárias e recursais do STF</h3>
+	<img src="../include/images/ponto2.png" style="    width: 100%;    margin-top: -30px;    margin-left: -255px;">
+	      <p>As competências originárias e recursais do STF, dispostas no art. 102 de nossa Constituição, foram objeto de nossa breve análise na Aula 1 de nosso curso.</p>
+	    </div>
+	  </div>
+	  <!-- Modal Structure -->
+
+	  <!-- Modal Structure -->
+	  <div id="modal-recorrida" class="modal">
+	    <div class="modal-content">
+	      <p>Na doutrina processual civil brasileira há algumas pequenas divergências quanto à classificação de alguns requisitos de admissibilidade entre os intrínsecos e os extrínsecos. Há quem faça a distinção, por exemplo, afirmando que a ausência de fato extintivo do direito de recorrer é um requisito intrínseco, enquanto que a ausência de fato impeditivo seria um requisito extrínseco. Entretanto, como o foco do curso não é a Teoria Geral dos Recursos, não entramos a fundo nessa discussão. De todo modo, fica aqui feita a ressalva.</p>
+	    </div>
+	  </div>
+	  <!-- Modal Structure -->	  
+
+
+	  <!-- Modal Structure -->
+	  <div id="modal-constituicaoEUA" class="modal">
+	    <div class="modal-content">
+	      <p>Tradução livre de: “The Congress, whenever two thirds of both Houses shall deem it necessary, shall propose Amendments to this Constitution, or, on the Application of the Legislatures of two thirds of the several States, shall call a Convention for proposing Amendments, which, in either Case, shall be valid to all Intents and Purposes, as Part of this Constitution, when ratified by the Legislatures of three fourths of the several States, or by Conventions in three fourths thereof, as the one or the other Mode of Ratification may be proposed by the Congress; Provided that no Amendment which may be made prior to the Year One thousand eight hundred and eight shall in any Manner affect the first and fourth Clauses in the Ninth Section of the first Article; and that no State, without its Consent, shall be deprived of its equal Suffrage in the Senate”.</p>
+	    </div>
+	  </div>
+	  <!-- Modal Structure -->	  
+
+	  <!-- Modal Structure -->
+	  <div id="modal-revisaoEUA" class="modal">
+	    <div class="modal-content">
+	      <p>Tradução livre de: “For, instead of narrowing the Court’s jurisdiction, Congress chose, in more and more instances, to delegate to the Court the responsibility for determining which federal issues are of suficiente national importance to warrant Supreme Court review. The process of issue selection, therefore, has become an increasingly crucial part of the review function”.</p>
+	    </div>
+	  </div>
+	  <!-- Modal Structure -->
+
+	   <!-- Modal Structure -->
+	  <div id="modal-imagemRepGeral" class="modal" style="width: 80vw;">
+	    <div class="modal-content">
+	      <p class="text-center no-indent"><img class="" style="max-width: 100%;" src="../include/images/rep_geral2.png" alt="Esquema da Repercussão Geral"></p>
+	    </div>
+	  </div>
+	  <!-- Modal Structure -->	  
+
+
+	  <!-- Modal Structure -->
+	  <div id="modal-direitos" class="modal" style="background: #D5D0CB; ">
+	    <div class="modal-content" style="background:url('../include/images/rosto.png') -200px -115px no-repeat; ">
+	      <h3 class="" >Créditos do curso</h3>
+			<img src="../include/images/ponto2.png" style="    width: 100%;    margin-top: -30px;    margin-left: -255px;">
+	      <p><strong>Material didático do curso a distância: </strong>
+			<br />Repercusão Geral: origens, inovações e sua aplicação ao Supremo Tribunal Federal</p>
+			<br />
+			<p><strong>Validação pedagógica e diagramação: </strong>
+			<br />Supremo Tribunal Federal
+			<br />Secretaria de Gestão de Pessoas
+			<br />Coordenadoria de Desenvolvimento de Pessoas
+			<br />Seção de Educação a Distância
+			</p>
+			<br />
+			<p><strong>Conteudista:</strong>
+			<br />Abhner Youssif Mota Arabi (servidor do STF)
+			</p>
+			<br />
+			<p><strong>Revisora de textos:</strong>
+			<br />Tatiana Viana Fraga (servidora do STF)
+			</p>
+			<br />
+			<p><strong>Designer Web:</strong>
+			<br />Higor Bezerra Rodrigues (servidor do STF)
+			</p>
+			<br />
+			<div style="border:1px #000 solid;padding: 15px;">
+				<p class="no-indent">2017, Supremo Tribunal Federal
+				<br>Todos os direitos reservados
+				<br>Este material possui funções didáticas, sem fins comerciais
+				<br>Para mais detalhes sobre as condições de uso, acesse: <a href="https://docs.google.com/drawings/d/1g6AeWqrfYTkl_pqs5wlknDz6U_r91I6-EVnDavGcI04/edit" target="_blank">Licença STF</a>
+				</p>
+			</div>
+			<div style="border:1px #000 solid;margin-top: 20px;padding: 15px;">
+				<p class=""><strong>Dados para referência</strong></p>
+				<p>SUPREMO TRIBUNAL FEDERAL. Curso a distância: Repercusão Geral: origens, inovações e sua aplicação ao Supremo Tribunal Federal. Brasília: Seção de Educação a Distância, 2017.
+				<br>Disponível em <a href="https://ead.stf.jus.br/" target="_blank"> https://ead.stf.jus.br/</a>. Acesso restrito com login e senha.
+				</p>
+			</div>
+			<div class="row" style="margin-top: 30px;">
+				<div class="col l5 m5 s5" style="text-align:right"><img src="../include/images/logo_direitos.jpg" style="max-height:60px; margin-left:10px"></div>
+				<div class="col l6 m6 s6" style="margin-top: 5px;">
+					<p style="font-size: 0.8em;">Ambiente virtual de aprendizagem: <a href="https://ead.stf.jus.br" target="_blank"> https://ead.stf.jus.br</a></p>
+					<p style="font-size: 0.8em;">e-mail: <a href="mailto:seead@stf.jus.br">seead@stf.jus.br</a></p>
+				</div>
+			</div>
+			
+
+			
+	    </div>
+	  </div>
+	  <!-- Modal Structure -->
+
+
+		<div class="bb-custom-wrapper">
+			<div id="bb-bookblock" class="bb-bookblock" style="perspective: 2000px;" role="main">
+				<!-- página 1 - 01-introducao -->
+				<div class="bb-item item-01-introducao" id="01-introducao" style="display: block;">
+					<div class="content">
+						<div class="scroller">
+							<article style="padding:0px; overflow: hidden;" id="intro">
+								<img src="../include/images/capa.jpg" class="" aria-hidden="true" style="width:100%" alt="Imagem do título do curso de Pontuação" role="presentation" style="max-width:600px;">
+
+							</article>
+						</div> <!-- fecha scroller -->
+						<!--<div class="scroller">
+
+
+
+							<article style="padding:0px;" id="intro">
+							
+							<p style="margin-top:100px;  "><h3 class="mobileautor " style="font-size:1.2em; margin-left:30px;text-align: left; font-family: 'Open Sans' !important;float:left;text-transform: none !important; color: #B7AA9F;">
+									Abhner Youssif Mota Arabi</h3>
+								
+								<img src="../include/images/mapa.png" class="mobiletopimage " aria-hidden="true" style="max-width:100%;max-height:100%;text-align:left; margin-top:-100px;border:0px;" alt="Imagem do título do curso de Pontuação" role="presentation" >
+
+
+
+								
+							</article>
+						</div> <!-- fecha scroller -->
+
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->				
+				
+				
+				<div class="bb-item item-02-00-primeiraAula aula1" id="02-00-primeiraAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" >
+									<div class="row">
+										<h3 class="text-center" style="margin-top:50px;font-size:2.2em !important ">
+											AULA 5 – Aspectos práticos e procedimentais da repercussão geral
+										</h3>
+											
+									</div>
+									<div class="row">
+										<div class="col s12 m6 l6">
+											<h3 class="" >1. Introdução</h3>
+											<img src="../include/images/ponto2.png" style="  width: 150%;margin-top: -4px;margin-left: -255px;">
+										</div>
+										<div class="col s12 m6 l6"></div>
+									</div>
+									<div class="row">
+																		
+									</div>
+
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+				<div class="bb-item item-03-00-primeiraAula aula1" id="03-00-primeiraAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" style="margin-top:50px" >
+									<div class="row">
+										<div class="col s12 m6 l6">
+											<h3 class="" >2. A repercussão geral como requisito intrínseco de admissibilidade do recurso extraordinário</h3>
+											<img src="../include/images/ponto2.png" style="    width: 150%;    margin-top: -30px;    margin-left: -255px;">
+										</div>
+										<div class="col s12 m6 l6"></div>
+									</div>
+									<div class="row">
+													
+									</div>
+
+
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+
+				<div class="bb-item item-03-01-primeiraAula aula1" id="03-01-primeiraAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" style="margin-top:50px" >
+									<p></p>
+									<div class="row">
+										<div class="col s12 m6 l6">
+											
+										</div>
+										<div class="col s12 m6 l6">
+											
+										</div>
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+
+				<div class="bb-item item-03-02-primeiraAula aula1" id="03-02-primeiraAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" style="margin-top:50px" >
+									<p></p>
+									<div class="row">
+										<div class="col s12 m6 l6">
+																				
+										</div>		
+										<div class="col s12 m6 l6">											
+															
+										</div>			
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+				<div class="bb-item item-04-00-primeiraAula aula1" id="04-00-primeiraAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" style="margin-top:50px" >
+									<div class="row">
+										<div class="col s12 m6 l6">
+											<h3 class="" >3. Critérios para a verificação da existência de repercussão geral</h3>
+											<img src="../include/images/ponto2.png" style="    width: 150%;    margin-top: -30px;    margin-left: -255px;">
+										</div>
+										<div class="col s12 m6 l6"></div>
+									</div>
+									<div class="row">
+										<div class="col s12 m6 l6">
+											
+											
+										</div>		
+										<div class="col s12 m6 l6">
+											
+										</div>			
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+				<div class="bb-item item-04-01-primeiraAula aula1" id="04-01-primeiraAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" style="margin-top:50px" >
+									<p></p>
+									<div class="row">
+										<div class="col s12 m6 l6">
+											
+										</div>
+										<div class="col s12 m6 l6">
+											
+										</div>
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->		
+
+				<div class="bb-item item-04-02-primeiraAula aula1" id="04-02-primeiraAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" style="margin-top:50px" >
+									<p></p>
+									<div class="row">
+										<div class="col s12 m6 l6">
+											
+										</div>		
+										<div class="col s12 m6 l6">	
+											
+										</div>			
+									</div>
+
+
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->		
+
+				<div class="bb-item item-05-00-primeiraAula aula1" id="05-00-primeiraAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" style="margin-top:50px" >									
+									<div class="row">
+										<div class="col s12 m6 l6">
+											<h3 class="" >4. Forma e ônus da arguição e demonstração da existência de repercussão geral</h3>
+											<img src="../include/images/ponto2.png" style="    width: 150%;    margin-top: -30px;    margin-left: -255px;">
+										</div>
+										<div class="col s12 m6 l6"></div>
+									</div>
+									<div class="row">
+										<div class="col s12 m6 l6">
+															
+										</div>		
+										<div class="col s12 m6 l6">	
+											
+										</div>			
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+
+				<div class="bb-item item-06-00-primeiraAula aula1" id="06-00-primeiraAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" style="margin-top:50px" >									
+									<div class="row">
+										<div class="col s12 m6 l6">
+											<h3 class="" >5. Competência para apreciação da existência de repercussão geral</h3>
+											<img src="../include/images/ponto2.png" style="    width: 150%;    margin-top: -30px;    margin-left: -255px;">
+										</div>
+										<div class="col s12 m6 l6"></div>
+									</div>
+									<div class="row">
+										<div class="col s12 m6 l6">
+											
+										</div>		
+										<div class="col s12 m6 l6">	
+											
+										</div>			
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->	
+				<div class="bb-item item-07-00-primeiraAula aula1" id="07-00-primeiraAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" style="margin-top:50px" >									
+									<div class="row">
+										<div class="col s12 m6 l6">
+											<h3 class="" >6. Possibilidade de intervenção de <em>amicus curiae</em></h3>
+											<img src="../include/images/ponto2.png" style="    width: 150%;    margin-top: -30px;    margin-left: -255px;">
+										</div>
+										<div class="col s12 m6 l6"></div>
+									</div>
+									<div class="row">
+										<div class="col s12 m6 l6">
+											
+										</div>		
+										<div class="col s12 m6 l6">	
+											
+										</div>			
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+				<div class="bb-item item-07-01-primeiraAula aula1" id="07-01-primeiraAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" style="margin-top:50px" >									
+									<p></p>
+									<div class="row">
+										<div class="col s12 m6 l6">
+											
+										</div>		
+										<div class="col s12 m6 l6">	
+											
+										</div>			
+									</div>
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+
+				
+
+
+				<div class="bb-item item-08-00-primeiraAula aula1" id="08-00-primeiraAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" style="margin-top:50px" >
+									<div class="row">
+										<div class="col s12 m6 l6">
+											<h3 class="" >7. Conclusão</h3>
+											<img src="../include/images/ponto2.png" style="    width: 150%;    margin-top: -30px;    margin-left: -255px;">											
+										</div>		
+										<div class="col s12 m6 l6">
+										</div>			
+									</div>
+									<div class="row">
+										
+									</div>
+
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+
+				
+				<div class="bb-item item-09-00-primeiraAula aula1" id="09-00-primeiraAula" style="display: none;">
+					<div class="content">
+						<div class="scroller">
+							<article class="">
+								<div class="container fundoCaderno" style="margin-top:50px" >
+									<div class="row">
+										<div class="col s12 m6 l6">
+											<h3 class="" >Referências</h3>
+											<img src="../include/images/ponto2.png" style="  width: 150%;margin-top: -4px;margin-left: -255px;">
+										</div>
+										<div class="col s12 m6 l6"></div>
+									</div>
+									<div class="row">
+										
+									</div>
+
+								</div>
+							</article>
+						</div> <!-- fecha scroller -->
+					</div> <!-- fecha content -->
+				</div> <!-- fecha bb-item -->
+
+			</div>
+		</div>
+	</main>
+	
+ 		<!--<footer class="page-footer" >
+		<div class="container">
+			<div class="center-align">
+				<img class="img-responsive" src="../include/images/ead_logo.png" style="max-height:60px;" />
+				<h1 style="float:right;"><span class="bignoodle">Redação</span> <span class="nick">Argumentativa</span></h1>
+			</div>
+		</div>
+	</footer> -->
+	
+	<script src="../include/js/jquery.bookblock.js"></script>
+	
+	<script src="../include/js/page.js"></script>
+	<script src="../include/js/functions.js" type="text/javascript"></script>
+
+		
+
+</div>
+
+
+<div class="mainTutorial">
+	<div class="lightbox">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<defs>
+				<mask id="hole">
+					<rect width="100%" height="100%" fill="white"></rect>
+					<circle class="foco" r="50" cx="100" cy="100" fill="black"></circle>
+				</mask>
+			</defs>
+			
+			<rect id="donut" x="0" y="0" width="100%" height="100%" mask="url(#hole)" ></rect>
+		</svg>
+	</div>
+	<div class="explica">
+		<div class="titulo"></div>
+		<div class="texto"></div>
+		<div class="navBut">
+			<div class="prev">
+				<div class="btn waves-effect waves-light">
+					Anterior
+					<i class="material-icons left">navigate_before</i>
+				</div>
+			</div>
+			<div class="next">
+				<div class="btn waves-effect waves-light">
+					Próximo
+					<i class="material-icons right">navigate_next</i>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="buttons">
+		<div class="pular">
+			<div class="btn waves-effect waves-light">
+				<span style="color:#FFF">Encerrar tutorial</span>
+				<i class="material-icons right">navigate_next</i>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<style type="text/css">
+	#teste{
+		display: none;
+width:100%;
+height:100px;
+background:#f00;
+position:absolute;
+z-index:100;
+top:30%;
+left:40;
+	}
+	.window{
+    display:none;
+    width:90%;    
+    position:absolute;
+    left:0;
+    top:0;
+    background:#FFF;
+    z-index:9900;
+    padding:10px;
+    border-radius:10px;
+}
+	.windowLei{
+    display:none;
+    width:50%;    
+    position:absolute;
+    left:0;
+    top:0;
+    background:#FFF;
+    z-index:9900;
+    padding:10px;
+    border-radius:100%;
+    border-color: #AF442F;
+    border-width: 3px;
+}
+ 
+#mascara{
+    display:none;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#000;
+}
+ 
+.fechar{display:block; text-align:right;}
+</style>
+<div class="div_teste" id="teste">
+texto
+<a href="#" onclick="document.getElementById('teste').style.display='none';">[Fechar]</a>
+	
+</div>
+
+<div class="window" id="janela1">
+    <a href="#" class="fechar">X Fechar</a>
+    <h4>Direitos autorais</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam venenatis auctor tempus. Lorem ipsum dolor sit amet,</p>
+    <p>Morbi dui lacus, placerat eget pretium vehicula, mollis id ligula. Nulla facilisi. </p>
+</div>
+
+<div class="window" id="art92" style="width: 30% !important; border-radius: 90% !important;border: 3px #AF442F solid;">
+	<div class="row">
+		<div class="col l2 m2 s2"></div>
+		<div class="col l8 m8 s8" style="padding: 5px;">
+			<a href="#" class="fechar" style="text-align: right;">X Fechar</a>
+			<p class="text-center">Art. 92. São órgãos do Poder Judiciário:</p>
+			<p class="text-center">I - o Supremo Tribunal Federal;</p>
+		</div>
+		<div class="col l2 m2 s2"></div>
+	</div>
+</div>
+
+<div id="mascara"></div>
+
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">description</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red btn-large" 
+      onclick="javascript:$(document).ready(function(){tut.init();});"><i class="material-icons" style="font-size: 35px">help</i></a></li>
+      <li><a class="btn-floating btn-large" style="background-color: #b7aa9f !important;" ><i class="material-icons modal-trigger" href="#modal-direitos" style="font-size: 35px; ">copyright</i></a></li><!--
+		href="#janela1" rel="modal"
+      onclick="document.getElementById('teste').style.display='block';"-->
+    </ul>
+  </div>
+        
+
+
+<script src="../include/js/tutorial_roteiro.js"></script>
+<script src="../include/js/tutorial.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+    $("a[rel=modal]").click( function(ev){
+        ev.preventDefault();
+ 
+        var id = $(this).attr("href");
+ 
+        var alturaTela = $(document).height();
+        var larguraTela = $(window).width();
+     
+        //colocando o fundo preto
+        $('#mascara').css({'width':larguraTela,'height':alturaTela});
+        $('#mascara').fadeIn(1000); 
+        $('#mascara').fadeTo("slow",0.8);
+ 
+        var left = ($(window).width() /2) - ( $(id).width() / 2 );
+        var top = ($(window).height() / 2) - ( $(id).height() / 2 );
+     
+        $(id).css({'top':top,'left':left});
+        $(id).show();   
+    });
+ 
+    $("#mascara").click( function(){
+        $(this).hide();
+        $(".window").hide();
+    });
+ 
+    $('.fechar').click(function(ev){
+        ev.preventDefault();
+        $("#mascara").hide();
+        $(".window").hide();
+    });		
+
+    $(".botao-tvaberta").click(function(){
+     	$("#abrir-tvaberta").hide('fade');
+     	$("#conteudo-tvaberta").show('slideUp');
+  	});
+  	$(".botao-art138").click(function(){
+     	$("#abrir-art138").hide('fade');
+     	$("#conteudo-art138").show('slideUp');
+  	});
+
+  });
+    </script>
+
+	 <script type="text/javascript">
+  	  $(document).ready(function(){
+	    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+	    $('.modal').modal();
+	  });
+  </script>
+
+
+</body></html>
+
