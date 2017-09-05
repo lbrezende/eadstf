@@ -128,7 +128,7 @@
 							$('.font-config a-mais').removeClass('disabled');
 						}
 						
-						$('article').css('font-size',size+'em');
+						$('article').css('font-size',size+'rem');
 					});
 				})
 				</script>
@@ -158,31 +158,31 @@
 					<li>
 						<a href="index.html#03-00-primeiraAula" data-target="03-00-primeiraAula" data-aula="Item de menu" role="menuitem" class="ui-link">
 							<span class="numero">2.&nbsp;</span>
-							A Repercussão Geral como requisito intrínseco de admissibilidade do recurso extraordinário
+							Forma de deliberação
 						</a>
 					</li>
 					<li>
 						<a href="index.html#04-00-primeiraAula" data-target="04-00-primeiraAula" data-aula="Item de menu" role="menuitem" class="ui-link">
 							<span class="numero">3.&nbsp;</span>
-							Critérios para a verificação da existência de repercussão geral
+							Consequências e procedimentos decorrentes da deliberação sobre a (in)existência de repercussão geral
 						</a>
 					</li>
 					<li>
 						<a href="index.html#05-00-primeiraAula" data-target="05-00-primeiraAula" data-aula="Item de menu" role="menuitem" class="ui-link">
 							<span class="numero">4.&nbsp;</span>
-							Forma e ônus da arguição e demonstração da existência de repercussão geral
+							Suspensão e julgamento dos processos que versem temas que apresentam repercussão geral
 						</a>
 					</li>
 					<li>
 						<a href="index.html#06-00-primeiraAula" data-target="06-00-primeiraAula" data-aula="Item de menu" role="menuitem" class="ui-link">
 							<span class="numero">5.&nbsp;</span>
-							Competência para apreciação da existência de repercussão geral
+							Competência para a análise de medidas cautelares no recurso extraordinário sobrestado na origem
 						</a>
 					</li>
 					<li>
 						<a href="index.html#07-00-primeiraAula" data-target="07-00-primeiraAula" data-aula="Item de menu" role="menuitem" class="ui-link">
 							<span class="numero">6.&nbsp;</span>
-							Possibilidade de intervenção de <em>Amicus Curiae</em>
+							Meio processual adequado para impugnar decisão que aplica a tese da repercussão geral ao caso concreto.
 						</a>
 					</li>
 					<li>
@@ -253,9 +253,17 @@
 	  <!-- Modal Structure -->
 
 	   <!-- Modal Structure -->
-	  <div id="modal-imagemRepGeral" class="modal" style="width: 80vw;">
+	  <div id="modal-infografico" class="modal" style="max-height: 85vh !important;">
 	    <div class="modal-content">
-	      <p class="text-center no-indent"><img class="" style="max-width: 100%;" src="../include/images/rep_geral2.png" alt="Esquema da Repercussão Geral"></p>
+	      <p class="text-center no-indent"><img class="" style="max-width: 100%;max-height: 90%;" src="../include/images/infografico.png" alt="Esquema da Repercussão Geral"></p>
+	    </div>
+	  </div>
+	  <!-- Modal Structure -->
+
+	   <!-- Modal Structure -->
+	  <div id="modal-print" class="modal" style="max-height: 85vh !important;">
+	    <div class="modal-content">
+	      <p class="text-center no-indent"><img class="" style="max-width: 100%;max-height: 90%;" src="../include/images/print.png" alt="Foto do site do STF"></p>
 	    </div>
 	  </div>
 	  <!-- Modal Structure -->	  
@@ -441,8 +449,9 @@
 												<p>§ 3º Se o Relator for vencido, ficará designado o Revisor para redigir o acórdão.</p>
 												<p>§ 4º Se não houver Revisor, ou se este também ficar vencido, designar-se-á para redigir o acórdão o Ministro que houver proferido o primeiro voto prevalecente, ressalvado o disposto no art. 324, § 3º, deste Regimento.</p>	
 											</div>
-											<p class="no-indent text-center" style="margin-top: -40px;">
-												<img class="responsive-img materialboxed"  src="../include/images/infografico.png" alt="Esquema do fluxo da deliberação do RE no STF" data-caption="Pressione ESC ou clique na imagem para fechar" width="650" style="background-color:#FAF7F5;">
+											<p class="no-indent text-center" style="margin-top: 10px;">
+											<a class="waves-effect waves-light  ui-link modal-trigger btn-inline" href="#modal-infografico" style=" text-indent: 0; "><img class="responsive-img"  src="../include/images/infografico.png" alt="Esquema do fluxo da deliberação do RE no STF" data-caption="Pressione ESC ou clique na imagem para fechar" width="650" style="background-color:#FAF7F5;"></a>
+												<!--<img class="responsive-img materialboxed"  src="../include/images/infografico.png" alt="Esquema do fluxo da deliberação do RE no STF" data-caption="Pressione ESC ou clique na imagem para fechar" width="650" style="background-color:#FAF7F5;">-->
 											</p>
 										</div>
 									</div>
@@ -558,7 +567,9 @@
 													<p>III – Os embargos de declaração não constituem meio processual adequado para a reforma do decisum, não sendo possível atribuir-lhes efeitos infringentes, salvo em situações excepcionais, o que não ocorre no caso em questão. IV – Embargos declaratórios rejeitados. (RE 596.542-ED, Rel. Min. Ricardo Lewandowski, Presidente, Tribunal Pleno, julgamento em 7/5/2015, decisão publicada no <em>DJE</em> de 1º/6/2015.)</p>
 												</div>
 											</div>
-											<p><img style="border:10px solid #CFB382; float: right;max-width: 274px;margin-left: 15px;margin-top: 10px !important;" src="../include/images/print.png" alt="foto do site do STF" class="responsive-img materialboxed" data-caption="Pressione ESC ou clique na imagem para fechar"> </p>
+											<p class="no-indent text-center" style="margin-top: 10px;float: right;">
+											<a class="waves-effect waves-light  ui-link modal-trigger btn-inline" href="#modal-print" style=" text-indent: 0; "><img class="responsive-img"  src="../include/images/print.png" alt="foto do site do STF" style="border:10px solid #CFB382; float: right;max-width: 274px;"></a></p>
+											<!--<p><img style="border:10px solid #CFB382; float: right;max-width: 274px;margin-left: 15px;margin-top: 20px !important;" src="../include/images/print.png" alt="foto do site do STF" class="responsive-img materialboxed" data-caption="Pressione ESC ou clique na imagem para fechar"> </p>-->
 											<p>Entretanto, a questão foi novamente posta em discussão no RE 855.178, de relatoria do Ministro Luiz Fux. Nesse caso, reconheceu-se a repercussão geral do tema relativo à responsabilidade solidária dos entes federados em matéria de saúde, julgando-se eletronicamente o mérito desde então, ao fundamento de que se tratava de mera reafirmação de jurisprudência. Opostos embargos de declaração ante tal decisão, o feito foi levado a julgamento pelo Plenário Físico do STF, tendo o ministro relator votado pela rejeição do recurso, assentando que “a existência de divergência na reafirmação da jurisprudência no plenário virtual não é causa suficiente a ensejar os embargos de declaração e, muito menos, a obrigatoriedade de discutir o tema em reunião presencial do Plenário”. O julgamento, porém, foi suspenso por pedido de vista do Ministro Edson Fachin, estando a questão pendente de definição (mais detalhes desse caso podem ser obtidos na notícia veiculada no <a href="http://www.stf.jus.br/portal/cms/verNoticiaDetalhe.asp?idConteudo=297086" target="_blank">site do STF</a>.</p>
 										</div>
 									</div>
